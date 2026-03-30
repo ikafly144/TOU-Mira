@@ -1,4 +1,2460 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <resources>
+  <string name="DiscordServer">Discord サーバー</string>
+  <string name="SourceCode">ソースコード</string>
+  <string name="FoolsMode">エイプリルフールモード</string>
+  <string name="TertiaryAbility">第三のアビリティ (ハック能力)</string>
+  <string name="ModifierAbility">モディファイアアビリティ</string>
+  <!-- Client Options -->
+  <string name="ClientTabGameplay">ゲームプレイ</string>
+  <string name="ClientOptionsButton">Tou クライアント設定</string>
+  <string name="ShowVanillaWikiEntries">バニラのWiki項目を表示</string>
+  <string name="DeadSeeGhosts">死亡時に他のゴーストを表示</string>
+  <string name="ShowVents">マップ上にベントを表示</string>
+  <string name="ShowWelcomeMessage">ウェルカムメッセージを表示</string>
+  <string name="ShowSummaryMessage">サマリーメッセージを表示</string>
+  <string name="ShowPracticeButtons">練習用ボタンを表示</string>
+  <string name="AutoRejoinDelay">自動再参加の待機時間</string>
+  <string name="AutoRejoinSelection">自動再参加</string>
+  <string name="EndRejoinAlways">常に</string>
+  <string name="EndRejoinHost">ホストとして</string>
+  <string name="EndRejoinClient">クライアントとして</string>
+  <string name="EndRejoinNever">しない</string>
+  <string name="ZoomingInLobby">ロビーでのズーム</string>
+  <string name="ShowRoleIconOnRoleTab">ロールタブにアイコンを表示</string>
+  <string name="RainbowColorAsFortegreen">虹色をフォルテグリーンとして扱う</string>
+  <string name="ZoomingInPractice">練習モードでのズーム</string>
+  <string name="SeparateChatBubbles">チャットバブルを分ける</string>
+  <string name="ColorPlayerName">プレイヤー名を色付きにする</string>
+  <string name="UseCrewmateTeamColor">基本のクルー色を使用</string>
+  <string name="ShowShieldHud">HUDにシールドを表示</string>
+  <string name="UseSeparateRedChat">個別のプライベートチャットを表示</string>
+  <string name="ButtonUIFactor">ボタンのスケール倍率</string>
+  <string name="OffsetButtons">ベントできない場合にボタンをずらす</string>
+  <string name="SortGuessingByAlignment">陣営ごとに推測をソート</string>
+  <string name="PreciseCooldowns">10秒未満のクールダウンを小数点表示</string>
+  <string name="ArrowStyle">矢印のスタイル</string>
+  <string name="ArrowDefault">デフォルト</string>
+  <string name="ArrowDarkGlow">ダークグロー</string>
+  <string name="ArrowColorGlow">カラーグロー</string>
+  <string name="ArrowLegacy">レガシー</string>
+  <string name="SummaryMsgBreakdown">概要メッセージの内訳</string>
+  <string name="SummarySimple">簡略</string>
+  <string name="SummaryNormal">通常</string>
+  <string name="SummaryAdvanced">詳細</string>
+  <string name="EndSummaryVisibility">終了時の概要の表示</string>
+  <string name="EndSumLeftSide">左側</string>
+  <string name="EndSumSplit">分割</string>
+  <string name="EndSumHidden">非表示</string>
+  <string name="GrenadierFlashColor">グレネーダーのフラッシュ色</string>
+  <string name="FlashWhite">白</string>
+  <string name="FlashLightGray">ライトグレー</string>
+  <string name="FlashGray">グレー</string>
+  <string name="FlashDarkGray">ダークグレー</string>
+  <string name="ParasitePiPLocation">パラサイトのピクチャーインピクチャーの位置</string>
+  <string name="PiPLocationTopLeft">左上</string>
+  <string name="PiPLocationMiddleLeft">左中央</string>
+  <string name="PiPLocationBottomLeft">左下</string>
+  <string name="PiPLocationTopRight">右上</string>
+  <string name="PiPLocationMiddleRight">右中央</string>
+  <string name="PiPLocationBottomRight">右下</string>
+  <string name="PiPLocationDynamic">ダイナミック</string>
+  <string name="ParasitePiPSize">パラサイトのピクチャーインピクチャーのサイズ</string>
+  <string name="TouControlControlledNotif">&lt;controller&gt;に操作されています！</string>
+  <string name="PiPSizeNormal">通常</string>
+  <string name="PiPSizeSmall">小</string>
+  <string name="PiPSizeLarge">大</string>
+  <!-- Player Colors -->
+  <string name="PlayerColorDarker">より暗い</string>
+  <string name="PlayerColorLighter">より明るい</string>
+  <string name="Watermelon">ウォーターメロン</string>
+  <string name="Chocolate">チョコレート</string>
+  <string name="SkyBlue">スカイブルー</string>
+  <string name="Beige">ベージュ</string>
+  <string name="Magenta">マゼンタ</string>
+  <string name="SeaGreen">シーグリーン</string>
+  <string name="Lilac">ライラック</string>
+  <string name="Olive">オリーブ</string>
+  <string name="Azure">アズール</string>
+  <string name="Plum">プラム</string>
+  <string name="Jungle">ジャングル</string>
+  <string name="Mint">ミント</string>
+  <string name="Chartreuse">シャルトルーズ</string>
+  <string name="Macau">マカオ</string>
+  <string name="Tawny">トーニー</string>
+  <string name="Gold">ゴールド</string>
+  <string name="Snow">スノー</string>
+  <string name="Turquoise">ターコイズ</string>
+  <string name="Nacho">ナチョ</string>
+  <string name="Blood">ブラッド</string>
+  <string name="Grass">グラス</string>
+  <string name="Mandarin">マンダリン</string>
+  <string name="Glass">グラス</string>
+  <string name="Ash">アッシュ</string>
+  <string name="Midnight">ミッドナイト</string>
+  <string name="Steel">スチール</string>
+  <string name="Silver">シルバー</string>
+  <string name="Shimmer">シマー</string>
+  <string name="Crimson">クリムゾン</string>
+  <string name="Charcoal">チャコール</string>
+  <string name="Violet">バイオレット</string>
+  <string name="Denim">デニム</string>
+  <string name="CottonCandy">コットンキャンディ</string>
+  <string name="Rainbow">レインボー</string>
+  <!-- Terms used in-game and in the wiki -->
+  <string name="BackButtonText">戻る</string>
+  <string name="PreviousButtonText">前へ</string>
+  <string name="NextButtonText">次へ</string>
+  <string name="Alignment">陣営</string>
+  <string name="WikiDescriptionTab">説明</string>
+  <string name="WikiAbilitiesTab">アビリティ</string>
+  <string name="WikiRoleGuideTab">ロールガイド</string>
+  <string name="SearchboxHeadsUp">検索</string>
+  <string name="Roles">ロール</string>
+  <string name="Modifier">モディファイア</string>
+  <string name="Modifiers">モディファイア</string>
+  <string name="Terminology">用語集</string>
+  <string name="GameSettings">ゲーム設定</string>
+  <string name="TermsPageCount">セクション \%so\%/\%st\% | ページ \%po\%/\%pt\%</string>
+  <string name="Amount">量</string>
+  <string name="Chance">確率</string>
+  <string name="Options">オプション</string>
+  <string name="PlayerHasNoModifiers">モディファイアなし</string>
+  <!-- Settings Wiki -->
+  <string name="WikiSettingsAmongUsGameSettingsTitle">Among Us ゲーム設定</string>
+  <string name="WikiSettingsTouMiraGameSettingsTitle">TOU Mira ゲーム設定</string>
+  <string name="WikiSettingsAssassinSettingsTitle">アサシン設定</string>
+  <string name="WikiSettingsMapsSabotageSettingsTitle">マップ/サボタージュ設定</string>
+  <string name="WikiSettingsBetterMapsSettingsTitle">Better Maps 設定</string>
+  <!-- Terminology Wiki -->
+  <string name="TermsTargetSymbolsTitle">ターゲットシンボル</string>
+  <string name="TermsTargetSymbolsInfo">ターゲットシンボルは会議中やプレイ中にプレイヤー名に表示されます。通常、該当するロールや死亡したプレイヤーにのみ見えます。 • エクセキューショナーのターゲットは \%color=#643B1F\%X\%/color\% でマークされます。 • インクイジターの異端者は、死者に対して \%color=#D94291\%$\%/color\% でマークされます。 • フェアリーのターゲットは \%color=#B3FFFF\%★\%/color\% でマークされます。</string>
+  <string name="TermsProtectionSymbolsTitle">保護シンボル</string>
+  <string name="TermsProtectionSymbolsInfo">保護シンボルは会議中やプレイ中にプレイヤー名に表示され、ほとんどの攻撃を無効化することを示します。通常、該当するロール、そのターゲット、および死亡したプレイヤーにのみ見えます。 • メディックのシールドは \%color=#006600\%+\%/color\% でマークされます。 • クレリックのバリアは \%color=#00FFB3\%Ω\%/color\% でマークされます。 • ウォーデンの要塞化は \%color=#9900FF\%π\%/color\% でマークされます。 • ミラーキャスターの反射は \%color=#90A2C3\%〚〛\%/color\% でマークされます。 • フェアリーの保護は \%color=#FFD900\%★\%/color\% でマークされます。 • ガーディアンエンジェルの保護は \%color=#66AAF3\%☀\%/color\% でマークされます。 • オラクルの祝福は \%color=#BF00BF\%†\%/color\% でマークされます。</string>
+  <string name="TermsStatusEffectSymbolsTitle">状態異常シンボル</string>
+  <string name="TermsStatusEffectInfo">状態異常は会議中やプレイ中にプレイヤー名に表示されます。通常、該当するロールや死亡したプレイヤーにのみ見えます。 • アーソニストのオイル塗布は \%color=#FF4D00\%Δ\%/color\% でマークされます。 • プレーグベアラーの感染は \%color=#E6FFB3\%¥\%/color\% でマークされます。 • 操作されているプレイヤーは \%color=#FF2660\%⦿\%/color\% でマークされます。 • ブラックメールのターゲットは \%color=#2A1119\%M\%/color\% でマークされます。 • 催眠は \%color=#D53F42\%@\%/color\% でマークされます。 • スペルスリンガーの呪いは \%color=#FF0000\%乂\%/color\% でマークされます。 • モナークのナイトは \%color=#EA535B\%♠\%/color\% でマークされます。</string>
+  <string name="TermsCrewRoleAlignmentsTitle">\%color=#8CFFFF\%クルーメイト\%/color\% のサブ属性</string>
+  <string name="TermsCrewRoleAlignmentsInfo">• \%color=#8CFFFF\%調査\%/color\% ロールは他のプレイヤーに関する情報を集めることができます。その情報を使って誰がクルーか推論できます。 • \%color=#8CFFFF\%キル\%/color\% ロールは他者を \%color=#FF8B95\%キル\%/color\% できますが、 \%color=#8CFFFF\%クルーメイト\%/color\% を \%color=#FF8B95\%キル\%/color\% すると報いを受ける場合があります。 • \%color=#8CFFFF\%保護\%/color\% ロールは他のプレイヤーを守る手段を持ち、時には自分自身も守れます。 • \%color=#8CFFFF\%パワー\%/color\% ロールは通常、投票に影響を与えたり、他の \%color=#8CFFFF\%クルーメイト\%/color\% よりも強力な能力を持っています。 • \%color=#8CFFFF\%サポート\%/color\% ロールは通常、他の \%color=#8CFFFF\%クルーメイト\%/color\% を助ける手段を持つか、自分自身に利益をもたらします。</string>
+  <string name="TermsNeutRoleAlignmentsTitle">\%color=#8A8A8A\%ニュートラル\%/color\% のサブ属性</string>
+  <string name="TermsNeutRoleAlignmentsInfo">• \%color=#8A8A8A\%良性\%/color\% ロールは単独で勝利することはできず、他者を助けるか、できるだけ長く生き残ることを目的とします。 • \%color=#8A8A8A\%悪性\%/color\% ロールは自身の目的を達成するために動き、キングメーカーとなったり、勝利して去ったり、ゲームを突然終わらせたりします。 • \%color=#8A8A8A\%キル\%/color\% ロールは何としても最後まで生き残る \%color=#FF8B95\%キラー\%/color\% になることを目指します。 • \%color=#8A8A8A\%異端\%/color\% ロールは独自の目的を達成することを目指しますが、各ロールがゲームに与える影響は異なり、時には \%color=#8A8A8A\%良性\%/color\%、\%color=#8A8A8A\%悪性\%/color\%、\%color=#8A8A8A\%キル\%/color\% ロールが混ざったような挙動をします。</string>
+  <string name="TermsImpRoleAlignmentsTitle">\%color=#FF0000\%インポスター\%/color\% のサブ属性</string>
+  <string name="TermsImpRoleAlignmentsInfo">• \%color=#FF0000\%隠蔽\%/color\% ロールは \%color=#FF8B95\%キル\%/color\% 能力だけでなく、他者を欺いたり、キル時に隠れたりする能力を持ちます。 • \%color=#FF0000\%キル\%/color\% ロールは強化または変更された \%color=#FF8B95\%キル\%/color\% 能力を持ち、より効果的に \%color=#FF8B95\%キル\%/color\% できます。 • \%color=#FF0000\%パワー\%/color\% ロールは他のどのロールよりも強力と思われる能力を持ち、 \%color=#FF0000\%インポスター\%/color\% 陣営に有利な力をもたらします。 • \%color=#FF0000\%サポート\%/color\% ロールは死体を隠したり、 \%color=#FF8B95\%キル\%/color\% をより容易にしたりするのを助けます。</string>
+  <string name="TermsRoleBucketsTitle">ロールリストバケット</string>
+  <string name="TermsRoleBucketsInfo">ロールリストバケットは「ロールリストを設定」設定が有効な場合にのみ関係します。 • 共通 \%color=#8CFFFF\%クルー\%/color\% は調査、保護、サポートロールを含みます。 • 共通 \%color=#FF0000\%インポスター\%/color\% は隠蔽とサポートロールを含みます。 • 共通 \%color=#8A8A8A\%ニュートラル\%/color\% は良性と悪性ロールを含みます。 • 特殊 \%color=#8CFFFF\%クルー\%/color\% はキルとパワーロールを含みます。 • 特殊 \%color=#FF0000\%インポスター\%/color\% はキルとパワーロールを含みます。 • 特殊 \%color=#8A8A8A\%ニュートラル\%/color\% はキルと異端ロールを含みます。 • ワイルドカード \%color=#8A8A8A\%ニュートラル\%/color\% は良性、悪性、異端ロールを含みます。 • 非 \%color=#FF0000\%インポスター\%/color\% はすべての \%color=#8A8A8A\%ニュートラル\%/color\% と \%color=#8CFFFF\%クルーメイト\%/color\% ロールを含みます。 • ランダムバケットは該当する陣営の任意のロールをスポーンさせます（ランダム \%color=#8CFFFF\%クルー\%/color\% など）。 • Anyバケットは有効なすべてのロールをスポーンさせます。</string>
+  <string name="TermsCommonSlangTitle">一般的なスラング</string>
+  <string name="TermsCommonSlangInfo">一般的なスラングは、情報を素早く伝えるためにTOUやTOSコミュニティで作られたものです。 • HCはHard-Clearedの略で、プレイヤーが間違いなく白（クルー）であることを意味します。 • Glorphingは、 \%color=#00FF00\%グリッチ\%/color\%、 \%color=#FF0000\%モーフリング\%/color\%、 \%color=#FF0000\%シェイプシフター\%/color\%、またはその他の同様のロールによって、誰かが別のプレイヤーの姿になっている状態を指します。 • Ghostwalkerは、 \%color=#D4D4D4\%ハウンター\%/color\% や \%color=#662961\%スペクター\%/color\% のようなロールを指し、通常のゴーストロールと区別するために使われます。 • Sidebarは、近接チャットロビーで非公開の事柄を話すためにプレイヤーが呼び出されることを指します。</string>
+  <!-- Task Text Info -->
+  <string name="NeutralBasicTaskHeader">目的を達成せよ。</string>
+  <string name="NeutralBasicDeadTaskHeader">あなたは死亡しました。混乱を楽しんでください。</string>
+  <string name="NeutralBenignTaskHeader">単独では勝利できません。\%nl\%オプションタスク:</string>
+  <string name="NeutralEvilTaskHeader">何としても目標を達成せよ。\%nl\%偽タスク:</string>
+  <string name="NeutralKillingTaskHeader">あらゆる手段で他のすべてのチームを排除せよ。\%nl\%偽タスク:</string>
+  <string name="NeutralOutlierTaskHeader">勝利のために目的を達成せよ。\%nl\%偽タスク:</string>
+  <string name="NeutralSpectreTaskHeader">あなたは死亡しました。勝利のためにタスクを完了せよ！</string>
+  <!-- Role List -->
+  <string name="SetRoleList">ロールリストを設定</string>
+  <string name="NeutralFactionList">ニュートラル陣営リスト</string>
+  <string name="NeutralBenigns">ニュートラル良性</string>
+  <string name="NeutralEvils">ニュートラル悪性</string>
+  <string name="NeutralOutliers">ニュートラル異端</string>
+  <string name="NeutralKillers">ニュートラルキラー</string>
+  <string name="MinimumShort">最小</string>
+  <string name="MaximumShort">最大</string>
+  <!-- Role Subalignments -->
+  <string name="CrewmateGhost">クルーメイトのゴースト</string>
+  <string name="NeutralGhost">ニュートラルのゴースト</string>
+  <string name="ImpostorGhost">インポスターのゴースト</string>
+  <string name="CrewmateAfterlife">クルーメイトのアフターライフ</string>
+  <string name="NeutralAfterlife">ニュートラルのアフターライフ</string>
+  <string name="ImpostorAfterlife">インポスターのアフターライフ</string>
+  <string name="GameOutlier">ゲームアウトライヤー</string>
+  <string name="CrewmateInvestigative">クルーメイト・調査</string>
+  <string name="CrewmateKilling">クルーメイト・キル</string>
+  <string name="CrewmatePower">クルーメイト・パワー</string>
+  <string name="CrewmateProtective">クルーメイト・保護</string>
+  <string name="CrewmateSupport">クルーメイト・サポート</string>
+  <string name="NeutralBenign">ニュートラル・良性</string>
+  <string name="NeutralEvil">ニュートラル・悪性</string>
+  <string name="NeutralOutlier">ニュートラル・異端</string>
+  <string name="NeutralKilling">ニュートラル・キル</string>
+  <string name="ImpostorConcealing">インポスター・隠蔽</string>
+  <string name="ImpostorKilling">インポスター・キル</string>
+  <string name="ImpostorPower">インポスター・パワー</string>
+  <string name="ImpostorSupport">インポスター・サポート</string>
+  <string name="CrewmateHider">クルーメイト・ハイダー</string>
+  <string name="ImpostorSeeker">インポスター・シーカー</string>
+  <string name="ImpostorCultist">インポスター・カルティスト</string>
+  <string name="ImpostorFollower">インポスター・フォロワー</string>
+  <string name="CrewmateBeliever">クルーメイト・ビリーバー</string>
+  <string name="CrewmateObstinate">クルーメイト・オブスティネイト</string>
+  <string name="NeutralObstinate">ニュートラル・オブスティネイト</string>
+  <!-- Role Buckets with Role List -->
+  <string name="CommonCrew">共通クルー</string>
+  <string name="SpecialCrew">特殊クルー</string>
+  <string name="RandomCrew">ランダムクルー</string>
+  <string name="CommonNeutral">共通ニュートラル</string>
+  <string name="SpecialNeutral">特殊ニュートラル</string>
+  <string name="WildcardNeutral">ワイルドカードニュートラル</string>
+  <string name="RandomNeutral">ランダムニュートラル</string>
+  <string name="NonImp">非インポスター</string>
+  <string name="CommonImp">共通インポスター</string>
+  <string name="SpecialImp">特殊インポスター</string>
+  <string name="RandomImp">ランダムインポスター</string>
+  <string name="Any">Any</string>
+  <string name="Random">ランダム</string>
+  <string name="CrewInvestigative">クルー調査</string>
+  <string name="CrewKilling">クルーキル</string>
+  <string name="CrewPower">クルーパワー</string>
+  <string name="CrewProtective">クルー保護</string>
+  <string name="CrewSupport">クルーサポート</string>
+  <string name="ImpConcealing">インポスター隠蔽</string>
+  <string name="ImpKilling">インポスターキル</string>
+  <string name="ImpPower">インポスターパワー</string>
+  <string name="ImpSupport">インポスターサポート</string>
+  <!-- Keywords for use in ui to mark certain text into a certain color -->
+  <string name="RolesHeader">\%type\% ロール</string>
+  <string name="GameKeyword">ゲーム</string>
+  <string name="CrewmateKeyword">クルーメイト</string>
+  <string name="CrewKeyword">クルー</string>
+  <string name="NeutralKeyword">ニュートラル</string>
+  <string name="NeutKeyword">ニュートラル</string>
+  <string name="ImpostorKeyword">インポスター</string>
+  <string name="ImpKeyword">インポスター</string>
+  <string name="GhostKeyword">ゴースト</string>
+  <!-- All possible types of modifiers -->
+  <string name="Alliance">同盟</string>
+  <string name="Universal">ユニバーサル</string>
+  <string name="CrewmateAlliance">クルーメイト同盟</string>
+  <string name="CrewmateUtility">クルーメイトユーティリティ</string>
+  <string name="CrewmateVisibility">クルーメイト視界</string>
+  <string name="CrewmatePostmortem">クルーメイト死後</string>
+  <string name="CrewmatePassive">クルーメイトパッシブ</string>
+  <string name="NeutralAlliance">ニュートラル同盟</string>
+  <string name="NeutralUtility">ニュートラルユーティリティ</string>
+  <string name="NeutralVisibility">ニュートラル視界</string>
+  <string name="NeutralPostmortem">ニュートラル死後</string>
+  <string name="NeutralPassive">ニュートラルパッシブ</string>
+  <string name="ImpostorAlliance">インポスター同盟</string>
+  <string name="ImpostorUtility">インポスターユーティリティ</string>
+  <string name="ImpostorVisibility">インポスター視界</string>
+  <string name="ImpostorPostmortem">インポスター死後</string>
+  <string name="ImpostorPassive">インポスターパッシブ</string>
+  <string name="UniversalUtility">ユニバーサルユーティリティ</string>
+  <string name="UniversalVisibility">ユニバーサル視界</string>
+  <string name="UniversalPostmortem">ユニバーサル死後</string>
+  <string name="UniversalPassive">ユニバーサルパッシブ</string>
+  <string name="AssailantUtility">加害者ユーティリティ</string>
+  <string name="AssailantVisibility">加害者視界</string>
+  <string name="AssailantPostmortem">加害者死後</string>
+  <string name="AssailantPassive">加害者パッシブ</string>
+  <string name="NonCrewmate">非クルーメイト</string>
+  <string name="NonCrewUtility">非クルーユーティリティ</string>
+  <string name="NonCrewVisibility">非クルー視界</string>
+  <string name="NonCrewPostmortem">非クルー死後</string>
+  <string name="NonCrewPassive">非クルーパッシブ</string>
+  <string name="NonNeutral">非ニュートラル</string>
+  <string name="NonNeutUtility">非ニュートラルユーティリティ</string>
+  <string name="NonNeutVisibility">非ニュートラル視界</string>
+  <string name="NonNeutPostmortem">非ニュートラル死後</string>
+  <string name="NonNeutPassive">非ニュートラルパッシブ</string>
+  <string name="NonImpostor">非インポスター</string>
+  <string name="NonImpUtility">非インポスターユーティリティ</string>
+  <string name="NonImpVisibility">非インポスター視界</string>
+  <string name="NonImpPostmortem">非インポスター死後</string>
+  <string name="NonImpPassive">非インポスターパッシブ</string>
+  <string name="HiderUtility">ハイダーユーティリティ</string>
+  <string name="HiderVisibility">ハイダー視界</string>
+  <string name="HiderPostmortem">ハイダー死後</string>
+  <string name="HiderPassive">ハイダーパッシブ</string>
+  <string name="SeekerUtility">シーカーユーティリティ</string>
+  <string name="SeekerVisibility">シーカー視界</string>
+  <string name="SeekerPostmortem">シーカー死後</string>
+  <string name="SeekerPassive">シーカーパッシブ</string>
+  <string name="External">外部</string>
+  <string name="Other">その他</string>
+  <!-- Role Tab and Intro Heads-Up -->
+  <string name="YouAreA">あなたは</string>
+  <string name="YouAreAn">あなたは</string>
+  <string name="YouAreThe">あなたは</string>
+  <string name="YouAre">あなたは</string>
+  <string name="YouWereA">あなたは</string>
+  <string name="YouWereAn">あなたは</string>
+  <string name="YouWereThe">あなたは</string>
+  <string name="YouWere">あなたは</string>
+  <!-- Chat Changes -->
+  <string name="LoverChatTitle">\%player\% (恋人チャット)</string>
+  <string name="ImpostorChatTitle">\%player\% (インポスターチャット)</string>
+  <string name="VampireChatTitle">\%player\% (ヴァンパイアチャット)</string>
+  <string name="JailorChatTitle">\%player\% (ジェイラー)</string>
+  <string name="JaileeChatTitle">\%player\% (投獄中)</string>
+  <string name="SystemChatTitle">システム</string>
+  <string name="AnticheatChatTitle">アンチチートシステム</string>
+  <string name="AnticheatIllegalRpcMessage">\%player\% によってロビー外の機能/アビリティが実行されました。チートや悪用の可能性があります。</string>
+  <string name="AnticheatMessage">\%player\% は以下の異なるModで参加しています:</string>
+  <string name="AnticheatKickMissingMessage">\%player\% には以下のModが不足しています:</string>
+  <string name="AnticheatKickChatMessage">\%player\% はチートModを使用したためキックされました:</string>
+  <string name="SpectatorCommandList">spec:spectate</string>
+  <string name="SpectatorLobbyError">ロビー外で観戦モードを切り替えることはできません！</string>
+  <string name="SpectatorStartError">ゲーム開始中に観戦モードを切り替えることはできません！</string>
+  <string name="SpectatorToggleOn">観戦者に設定しました！</string>
+  <string name="SpectatorToggleOff">観戦者を解除しました！</string>
+  <string name="SpectatorHostError">ホストが /spec を無効にしています！</string>
+  <string name="SummaryCommandList">summary:gamesummary:gamesum</string>
+  <string name="RolesCommandList">roles:role:r</string>
+  <string name="SummaryMissingError">表示するゲームサマリーがありません！</string>
+  <string name="NerfMeCommandList">nerf:nerfme:vision</string>
+  <string name="NerfMeLobbyError">ロビー外で自分を弱体化させることはできません！</string>
+  <string name="NerfMeToggleOn">弱体化ステータスをオンにしました。視界が半分になります。</string>
+  <string name="NerfMeToggleOff">弱体化ステータスをオフにしました。視界が正常に戻ります。</string>
+  <string name="SetNameCommandList">setname:changename:rename:name</string>
+  <string name="SetNameLobbyError">ロビー外で名前を変更することはできません！</string>
+  <string name="SetNameRequirementError">プレイヤー名は1文字以上12文字以内でなければなりません！</string>
+  <string name="SetNameSimilarError">\%name\% と酷似した名前のプレイヤーが既に存在します！別の名前を試してください。</string>
+  <string name="SetNameSuccess">次回の対戦でのプレイヤー名を \%name\% に変更しました。</string>
+  <string name="WelcomeMessageBlurb">Town of Us Mira v\%modVersion\% へようこそ！\%nl\%地球儀アイコンのWikiからロールやモディファイアの情報を確認できます（検索バーも使用可能です）。また、チャットで /help と入力するとコマンド一覧が表示されます。\%nl\%このメッセージはオプションメニューから無効にできます。</string>
+  <string name="InfoCommandList">info</string>
+  <string name="InfoCommandDescription">/info - 最後に受け取ったロール情報を再表示します</string>
+  <string name="InfoCommandNoInfo">再表示できるロール情報がありません。</string>
+  <string name="HelpCommandList">help:support:command:commands:guide</string>
+  <string name="HelpMessageTitle">チャットコマンド:</string>
+  <string name="HelpCommandDescription">/help - このメッセージを表示します</string>
+  <string name="NerfMeCommandDescription">/nerfme - 自身の視界を半分にします</string>
+  <string name="SetNameCommandDescription">/setname - コマンドに続くテキストに名前を変更します（例: /setname \%randomName\%）。次回のマッチから適用されます。</string>
+  <string name="SpectateCommandDescription">/spec - ゲームの残りの時間を自動的に観戦します。（ホストが有効にしている場合）</string>
+  <string name="SummaryCommandDescription">/summary - 前回のゲーム終了時のサマリーを表示します</string>
+  <string name="RolesCommandDescription">/roles - ゲーム内で有効なすべてのロールを表示します。</string>
+  <string name="RulesCommandDescription">/rules - ホストが保存したロビールールを表示します。</string>
+  <string name="UpCommandList">up</string>
+  <string name="UpCommandDescription">/up [ロール] - 次のゲームで指定したロールになるようにします。/up [ロール] [プレイヤー名] で他のプレイヤーに割り当てます。（ホスト + Devビルドのみ）</string>
+  <string name="UpCommandHostError">/up コマンドを使用するにはホストである必要があります。</string>
+  <string name="UpCommandDevBuildError">/up コマンドはDevビルドでのみ使用可能です。</string>
+  <string name="UpCommandLobbyError">/up コマンドはロビーでのみ使用可能です！</string>
+  <string name="UpCommandInvalidError">/up コマンドの使用方法が正しくありません。/up [ロール] または /up [ロール] [プレイヤー名] を使用してください。</string>
+  <string name="UpCommandNoRoleError">ロール名を指定してください。使用法: /up [ロール] または /up [ロール] [プレイヤー名]。</string>
+  <string name="UpCommandRoleNotFoundError">ロール「\%role\%」が見つかりませんでした。ロール名が正しく入力されているか確認してください。</string>
+  <string name="UpCommandPlayerNotFoundError">プレイヤー「\%player\%」が見つかりませんでした。プレイヤー名が正しく入力されているか確認してください。</string>
+  <string name="UpCommandSuccess">次回のゲームのロールを「\%role\%」に設定しました。</string>
+  <string name="UpCommandSuccessOther">プレイヤー「\%player\%」の次回のゲームのロールを「\%role\%」に設定しました。</string>
+  <string name="UpCommandSuccessGlobal">ホストがプレイヤー「\%player\%」の次回のゲームのロールをリクエストしました。</string>
+  <string name="RulesCommandList">rules</string>
+  <string name="RulesMessageTitle">ロビールール</string>
+  <string name="RulesMissingError">ホストが保存したルールはありません。</string>
+  <string name="RulesShowHostError">/rules show を使用するにはホストである必要があります。</string>
+  <string name="ShowRulesOnLobbyJoin">ロビー参加時にルールを表示</string>
+  <string name="JailCommandError">このModでは /jail チャットは使用されなくなりました。代わりにゲーム内の赤いチャットボタンを使用してください。</string>
+  <string name="NoCommandFoundError">無効なコマンドです。チャットコマンドの情報が必要な場合は /help と入力してください。ロールやモディファイアの機能を知りたい場合は、画面右上の地球儀アイコンからWikiを確認してください。</string>
+  <string name="HostStartMeetingNotif">ホストが強制的に会議を開始しました。</string>
+  <string name="HostEndMeetingNotif">ホストが強制的に会議を終了しました。</string>
+  <!-- End Game Summary Details -->
+  <string name="GameSummaryModeButton">ゲーム終了:サマリー</string>
+  <string name="EndGameSummary">ゲーム終了サマリー</string>
+  <string name="EndResult">最終結果: \%victoryType\%</string>
+  <string name="CrewmatesWin">クルーメイトの勝利</string>
+  <string name="ImpostorsWin">インポスターの勝利</string>
+  <string name="CrewmateWin">クルーメイトの勝利</string>
+  <string name="ImpostorWin">インポスターの勝利</string>
+  <string name="HostWin">ホストがゲームを中止しました</string>
+  <string name="NobodyWins">引き分け</string>
+  <string name="SoloWin">\%role\% の勝利</string>
+  <string name="TeamWin">\%role\% チームの勝利</string>
+  <string name="LoversWin">恋人の勝利</string>
+  <string name="StatsTaskCount">タスク: \%count\%</string>
+  <string name="StatsKillCount">キル: \%count\%</string>
+  <string name="StatsBadKillCount">誤認キル: \%count\%</string>
+  <string name="StatsGoodGuessCount">推測成功: \%count\%</string>
+  <string name="StatsBadGuessCount">推測失敗: \%count\%</string>
+  <string name="RoundOfDeath">R\%count\%</string>
+  <string name="RoundOfDeathLong">ラウンド \%count\%</string>
+  <string name="FirstDeadText">(R1で死亡)</string>
+  <!-- Cause of Deaths -->
+  <string name="ExileTextConfirm">\%player\% は \%role\% でした。</string>
+  <string name="DiedByString">\%player\% による \%cod\%</string>
+  <string name="DiedByStringBasic">\%player\% により死亡</string>
+  <string name="Alive">生存</string>
+  <string name="DiedToDisconnect">切断</string>
+  <string name="DiedToEjection">追放</string>
+  <string name="DiedToKiller">キル</string>
+  <string name="DiedToPunishment">処罰</string>
+  <string name="DiedToWinning">勝利による死亡</string>
+  <string name="DiedToSuicide">自殺</string>
+  <string name="DiedToSubmergedOxygen">窒息</string>
+  <string name="DiedToSuicideAltruist">犠牲</string>
+  <string name="DiedToSuicideSheriff">誤射</string>
+  <string name="DiedToMisguess">推測ミス</string>
+  <string name="DiedToGuess">推測</string>
+  <string name="DiedToHeartbreak">失恋</string>
+  <string name="DiedToSheriff">射殺</string>
+  <string name="DiedToDeputy">爆殺</string>
+  <string name="DiedToVeteran">反撃</string>
+  <string name="DiedToJailor">処刑</string>
+  <string name="DiedToProsecutor">告発</string>
+  <string name="DiedToArsonist">点火</string>
+  <string name="DiedToGlitch">バグ</string>
+  <string name="DiedToJuggernaut">粉砕</string>
+  <string name="DiedToPestilence">病死</string>
+  <string name="DiedToSoulCollector">魂の刈り取り</string>
+  <string name="DiedToVampire">吸血</string>
+  <string name="DiedToWerewolf">惨殺</string>
+  <string name="DiedToDoomsayer">破滅</string>
+  <string name="DiedToJester">呪い</string>
+  <string name="DiedToExecutioner">苦悶</string>
+  <string name="DiedToSpectre">怪奇</string>
+  <string name="DiedToInquisitor">討伐</string>
+  <string name="DiedToAmbusherAmbush">待ち伏せ</string>
+  <string name="DiedToBomberBomb">爆破</string>
+  <string name="DiedToViper">溶解</string>
+  <string name="DiedToParasite">寄生</string>
+  <string name="DiedToPuppetControl">操り</string>
+  <!-- Status Effects -->
+  <string name="TouFirstDeathShield">初手死亡保護シールド</string>
+  <string name="TouClericBarrier">クレリックのバリア</string>
+  <string name="TouMedicShield">メディックのシールド</string>
+  <string name="TouWardenFort">ウォーデンの要塞</string>
+  <string name="TouDoused">オイル塗布済み</string>
+  <string name="TouHacked">ハック済み</string>
+  <string name="TouFlash">フラッシュ</string>
+  <string name="TouHypnosis">催眠</string>
+  <string name="TouInfection">感染</string>
+  <string name="TouScatter">散開</string>
+  <!-- Common Terms -->
+  <string name="TargetingNobody">なし</string>
+  <string name="GuesserNoResults">結果なし</string>
+  <!-- Option Tabs -->
+  <string name="TouTabOptionBetterMaps">Better Maps/Sabotages</string>
+  <string name="TouTabOptionBetterMapsDesc">各マップのタスク、クールダウン、ドア、ベント、サボタージュなどを設定します！</string>
+  <string name="TouTabOptionModifiersDesc">すべてのプレイヤーが同盟、ユニバーサル、陣営モディファイアのいずれかを取得できます。</string>
+  <!-- Freeplay Terms -->
+  <string name="FreeplayKillButton">リモートキル</string>
+  <string name="FreeplaySetRoleButton">ロール設定</string>
+  <string name="FreeplaySetModifiersButton">モディファイア設定</string>
+  <string name="FreeplayRestartButton">ゲームリセット</string>
+  <string name="FreeplayRestartPopup">すべての死亡プレイヤーが復活し、タスクがリセットされました！</string>
+  <string name="TouFirstRoundDeathIndicator">第1ラウンド死亡インジケーター</string>
+  <!-- Advanced Utility Options -->
+  <string name="TouOptionAdvancedUtilTasksToUseAdmin">アドミン使用に必要なタスク数</string>
+  <string name="TouOptionAdvancedUtilTasksToUseCams">カメラ使用に必要なタスク数</string>
+  <string name="TouOptionAdvancedUtilTasksToUseDoorlog">ドアログ使用に必要なタスク数</string>
+  <string name="TouOptionAdvancedUtilTasksToUseVitals">バイタル使用に必要なタスク数</string>
+  <string name="TouOptionAdvancedUtilTasksRequiredOnPortableUtils">ポータブル機器でもタスク数を確認する</string>
+  <string name="TouUnavailableUtilityNotif">これを使用するにはあと \%amount\% 個のタスクを完了する必要があります！</string>
+  <string name="TouUnavailableUtilityNotifSingle">これを使用するにはあと \%amount\% 個のタスクを完了する必要があります！</string>
+  <!-- Advanced Sabotage Options -->
+  <string name="TouOptionAdvancedSaboCamouflageComms">カモフラージュ通信</string>
+  <string name="TouOptionAdvancedSaboGlobalCamouflageComms">カモフラージュ通信を切り替える</string>
+  <string name="TouOptionAdvancedSaboKillDuringCamoComms">カモフラージュ中に誰でもキル可能</string>
+  <string name="TouOptionAdvancedSaboCamoKillScreens">通信中のカモフラージュキル画面</string>
+  <string name="TouOptionAdvancedSaboHidePlayerSizeInCamo">カモフラージュでプレイヤーサイズを隠す</string>
+  <string name="TouOptionAdvancedSaboHidePlayerSpeedInCamo">カモフラージュでプレイヤースピードを隠す</string>
+  <!-- Random Map Options -->
+  <string name="TouOptionRandomMapsToggle">ランダムマップを有効にする</string>
+  <string name="TouOptionRandomMapsSkeldChance">Skeld の確率</string>
+  <string name="TouOptionRandomMapsBackwardsSkeldChance">dlekS ecnahC</string>
+  <string name="TouOptionRandomMapsMiraChance">Mira の確率</string>
+  <string name="TouOptionRandomMapsPolusChance">Polus の確率</string>
+  <string name="TouOptionRandomMapsAirshipChance">Airship の確率</string>
+  <string name="TouOptionRandomMapsFungleChance">Fungle の確率</string>
+  <string name="TouOptionRandomMapsSubmergedChance">Submerged の確率</string>
+  <string name="TouOptionRandomMapsLevelImpostorChance">レベルインポスターの確率</string>
+  <!-- Better Door Options -->
+  <string name="TouOptionBetterDoorsEnumSkeld">Skeld</string>
+  <string name="TouOptionBetterDoorsEnumPolus">Polus</string>
+  <string name="TouOptionBetterDoorsEnumAirship">Airship</string>
+  <string name="TouOptionBetterDoorsEnumFungle">Fungle</string>
+  <string name="TouOptionBetterDoorsEnumSubmerged">Submerged</string>
+  <string name="TouOptionBetterDoorsEnumNoDoors">ドアなし</string>
+  <string name="TouOptionBetterDoorsEnumRandom">ランダム</string>
+  <string name="TouOptionBetterDoorsNoneChance">ドアなしの確率</string>
+  <string name="TouOptionBetterDoorsSkeldChance">Skeld ドアの確率</string>
+  <string name="TouOptionBetterDoorsPolusChance">Polus ドアの確率</string>
+  <string name="TouOptionBetterDoorsAirshipChance">Airship ドアの確率</string>
+  <string name="TouOptionBetterDoorsFungleChance">Fungle ドアの確率</string>
+  <string name="TouOptionBetterDoorsSubmergedChance">Submerged ドアの確率</string>
+  <!-- Global Better Map Options -->
+  <string name="TouOptionGlobalBetterMapCamouflageComms">カモフラージュ通信を使用する</string>
+  <string name="TouOptionGlobalBetterMapChangeEnumOff">グローバルで無効</string>
+  <string name="TouOptionGlobalBetterMapChangeEnumOn">グローバルで有効</string>
+  <string name="TouOptionGlobalBetterMapChangeEnumPerMap">マップごとに変更</string>
+  <string name="TouOptionGlobalBetterMapSpeedMultiplier">スピード倍率を変更</string>
+  <string name="TouOptionGlobalBetterMapCrewVisionMultiplier">クルーの視界倍率を変更</string>
+  <string name="TouOptionGlobalBetterMapImpVisionMultiplier">インポスターの視界倍率を変更</string>
+  <string name="TouOptionGlobalBetterMapCooldownOffset">クールダウンオフセットを変更</string>
+  <string name="TouOptionGlobalBetterMapOffsetShortTasks">ショートタスクのオフセットを変更</string>
+  <string name="TouOptionGlobalBetterMapOffsetLongTasks">ロングタスクのオフセットを変更</string>
+  <!-- Better Maps Options -->
+  <string name="TouOptionBetterMapsSpeedMultiplier">スピード倍率</string>
+  <string name="TouOptionBetterMapsCrewVisionMultiplier">クルーの視界倍率</string>
+  <string name="TouOptionBetterMapsImpVisionMultiplier">インポスターの視界倍率</string>
+  <string name="TouOptionBetterMapsNoLadderCooldown">ハシゴのクールダウンなし</string>
+  <string name="TouOptionBetterMapsCooldownOffset">クールダウンオフセット</string>
+  <string name="TouOptionBetterMapsOffsetShortTasks">ショートタスクオフセット</string>
+  <string name="TouOptionBetterMapsOffsetLongTasks">ロングタスクオフセット</string>
+  <string name="TouOptionBetterMapsChangeSaboTimers">サボタージュタイマーを変更</string>
+  <string name="TouOptionBetterMapsChangeOxygenSaboTimer">酸素サボタージュタイマーを変更</string>
+  <string name="TouOptionBetterMapsChangeReactorSaboTimer">リアクターサボタージュタイマーを変更</string>
+  <string name="TouOptionBetterMapsChangeMixUpSaboTimer">シャッフルサボタージュの持続時間を変更</string>
+  <string name="TouOptionBetterMapsSaboCountdownOxygen">酸素サボタージュカウントダウン</string>
+  <string name="TouOptionBetterMapsSaboCountdownReactor">リアクターサボタージュカウントダウン</string>
+  <string name="TouOptionBetterMapsSaboCountdownSeismicStabilizer">地震安定装置サボタージュカウントダウン</string>
+  <string name="TouOptionBetterMapsSaboCountdownCrashCourse">墜落コースサボタージュカウントダウン</string>
+  <string name="TouOptionBetterMapsSaboCountdownWaterLevelStabilizer">水位安定装置サボタージュカウントダウン</string>
+  <string name="TouOptionBetterMapsSaboCountdownOxygenMask">酸素マスクサボタージュカウントダウン</string>
+  <string name="TouOptionBetterMapsSaboDurationMixUp">シャッフルサボタージュの持続時間</string>
+  <string name="TouOptionBetterMapsTheme">マップの装飾テーマ</string>
+  <string name="TouOptionBetterMapsThemeEnumBasic">装飾なし</string>
+  <string name="TouOptionBetterMapsThemeEnumHalloween">ハロウィン</string>
+  <string name="TouOptionBetterMapsThemeEnumBirthday">誕生日</string>
+  <string name="TouOptionBetterMapsThemeEnumAuto">自動</string>
+  <!-- Better Skeld Options -->
+  <string name="TouOptionBetterSkeldDoorType">Skeld のドアタイプ</string>
+  <string name="TouOptionBetterSkeldVentNetwork">Skeld のベントネットワーク</string>
+  <string name="TouOptionBetterSkeldVentModeEnumNormal">変更なし</string>
+  <string name="TouOptionBetterSkeldVentModeEnumFourGroups">4グループ</string>
+  <!-- Better Mira HQ Options -->
+  <string name="TouOptionBetterMiraHqVentNetwork">Mira HQ のベントネットワーク</string>
+  <string name="TouOptionBetterMiraHqVentModeEnumNormal">相互接続</string>
+  <string name="TouOptionBetterMiraHqVentModeEnumThreeGroups">3グループ</string>
+  <string name="TouOptionBetterMiraHqVentModeEnumFourGroups">4グループ</string>
+  <!-- Better Polus Options -->
+  <string name="TouOptionBetterPolusDoorType">Polus のドアタイプ</string>
+  <string name="TouOptionBetterPolusVentNetwork">調整済み Polus ベントネットワーク</string>
+  <string name="TouOptionBetterPolusVitalsInLab">バイタルを研究室に移動</string>
+  <string name="TouOptionBetterPolusTempInDeathValley">低温をデスバレーに移動</string>
+  <string name="TouOptionBetterPolusSwapWikiAndChart">Wi-Fi再起動とコース設定を入れ替え</string>
+  <string name="TouOptionBetterPolusMoveToiletVent">トイレのベントを個室の外に移動</string>
+  <!-- Better Airship Options -->
+  <string name="TouOptionBetterAirshipDoorType">Airship のドアタイプ</string>
+  <string name="TouOptionBetterAirshipSpawnMode">スポーンモード</string>
+  <string name="TouOptionBetterAirshipSpawnEnumNormal">通常</string>
+  <string name="TouOptionBetterAirshipSpawnEnumSameSpawns">全員が同じ場所にスポーン</string>
+  <string name="TouOptionBetterAirshipSpawnEnumHostChoosesOne">強制スポーン地点</string>
+  <string name="TouOptionBetterAirshipSingleLocation">スポーン地点</string>
+  <string name="TouOptionBetterAirshipSpawnLocationEnumMainHall">メインホール</string>
+  <string name="TouOptionBetterAirshipSpawnLocationEnumKitchen">キッチン</string>
+  <string name="TouOptionBetterAirshipSpawnLocationEnumCargoBay">貨物室</string>
+  <string name="TouOptionBetterAirshipSpawnLocationEnumEngineRoom">エンジンルーム</string>
+  <string name="TouOptionBetterAirshipSpawnLocationEnumBrig">監獄</string>
+  <string name="TouOptionBetterAirshipSpawnLocationEnumRecords">記録室</string>
+  <!-- Better Fungle Options -->
+  <string name="TouOptionBetterFungleDoorType">Fungle のドアタイプ</string>
+  <!-- Better Submerged Options -->
+  <string name="TouOptionBetterSubmergedDoorType">Submerged のドアタイプ</string>
+  <string name="TouOptionBetterSubmergedSpawnMode">スポーン地点</string>
+  <string name="TouOptionBetterSubmergedSpawnEnumSelectable">選択可能</string>
+  <string name="TouOptionBetterSubmergedSpawnEnumUpperDeck">アッパーデッキ</string>
+  <string name="TouOptionBetterSubmergedSpawnEnumLowerDeck">ロワーデッキ</string>
+  <!-- Spectator - Game Outlier -->
+  <string name="TouRoleSpectator">スペクター</string>
+  <string name="TouRoleSpectatorIntroBlurb">遠くから混乱を見守る</string>
+  <string name="TouRoleSpectatorTabDescription">ゲームに参加せず、展開される混乱を見守ります！</string>
+  <string name="TouRoleSpectatorWikiDescription">あなたはゲームに参加せず、プレイヤーと交流することもありません。できるのは見守ることだけです。</string>
+  <!-- Hide and Seek - Hiders -->
+  <!-- Chameleon Wiki / Description -->
+  <string name="HnsRoleChameleon">カメレオン</string>
+  <string name="HnsRoleChameleonTabHint">カメレオンのヒント</string>
+  <string name="HnsRoleChameleonTabDescription">一時的にシーカーから隠れます。</string>
+  <string name="HnsRoleChameleonWikiDescription">カメレオンは、シーカーから隠れるために一時的に透明になれるクルーメイトです。</string>
+  <string name="HnsRoleChameleonSwoop">透明化</string>
+  <string name="HnsRoleChameleonSwoopWikiDescription">シーカーから見えなくなります。</string>
+  <string name="HnsRoleChameleonUnswoop">透明化解除</string>
+  <string name="HnsRoleChameleonUnswoopWikiDescription">透明化を途中でキャンセルするか、時間経過で再び姿を現します。</string>
+  <!-- Chameleon Options -->
+  <string name="HnsOptionChameleonSwoopUsesPerRound">透明化の合計使用回数</string>
+  <string name="HnsOptionChameleonSwoopCooldown">透明化のクールダウン</string>
+  <string name="HnsOptionChameleonSwoopDuration">透明化の持続時間</string>
+  <string name="HnsOptionChameleonCanVent">カメレオンはベント可能</string>
+  <!-- Mystic Wiki / Description -->
+  <string name="HnsRoleMystic">ミスティック</string>
+  <string name="HnsRoleMysticTabHint">ミスティックのヒント</string>
+  <string name="HnsRoleMysticTabDescription">キルが発生した場所を把握します。</string>
+  <string name="HnsRoleMysticWikiDescription">ミスティックは、すべてのキル地点を指し示す矢印が表示されるクルーメイトです。</string>
+  <!-- Mystic Options -->
+  <string name="HnsOptionMysticDeadBodyArrowDuration">死体矢印の持続時間</string>
+  <!-- Snitch Wiki / Description -->
+  <string name="HnsRoleSnitch">スニッチ</string>
+  <string name="HnsRoleSnitchTabHint">スニッチのヒント</string>
+  <string name="HnsRoleSnitchTabDescription">タスクをこなすとタイマーが早く進みますが、\%nl\%自分の居場所がバレてしまいます。</string>
+  <string name="HnsRoleSnitchWikiDescription">スニッチは、タスクを完了することで他のプレイヤーよりも早く残り時間を減らすことができますが、シーカーに自分の位置が知らされるという代償があります。</string>
+  <!-- Snitch Options -->
+  <string name="HnsOptionSnitchCommonTaskMultiplier">コモンタスクの倍率</string>
+  <string name="HnsOptionSnitchShortTaskMultiplier">ショートタスクの倍率</string>
+  <string name="HnsOptionSnitchLongTaskMultiplier">ロングタスクの倍率</string>
+  <string name="HnsOptionSnitchNotifyDuration">シーカーへの通知時間</string>
+  <!-- Noisemaker Wiki / Description -->
+  <string name="HnsRoleNoisemaker">ノイズメーカー</string>
+  <string name="HnsRoleNoisemakerTabHint">ノイズメーカーのヒント</string>
+  <string name="HnsRoleNoisemakerTabDescription">キルされたとき、すべてのクルーメイトに自分の位置を知らせます。</string>
+  <string name="HnsRoleNoisemakerWikiDescription">ノイズメーカーは、キルされた瞬間にマップ上のすべてのプレイヤーに赤い死体インジケーターを表示して知らせるクルーメイトです。</string>
+  <!-- Frosty Modifier Wiki / Description -->
+  <string name="HnsModifierFrosty">フロスティ</string>
+  <string name="HnsModifierFrostyTabDescription">キラーを短時間鈍足にします。</string>
+  <string name="HnsModifierFrostyWikiDescription">あなたが死亡した後、キラーは鈍足になります！</string>
+  <string name="HnsModifierFrostyTriggeredNotif">\%player\% は \%modifier\% でした。これによりあなたは \%time\% 秒間鈍足になります。</string>
+  <!-- Frosty Options -->
+  <string name="HnsOptionFrostyChillDuration">鈍足の持続時間</string>
+  <string name="HnsOptionFrostyChillStartSpeed">鈍足時の開始速度</string>
+  <!-- Oblivious Modifier Wiki / Description -->
+  <string name="HnsModifierOblivious">オブライビアス</string>
+  <string name="HnsModifierObliviousTabDescription">シーカーの気配に疎くなります。</string>
+  <string name="HnsModifierObliviousWikiDescription">シーカーが近くにいることを示すインジケーターが表示されません。</string>
+  <!-- Transporter Modifier Wiki / Description -->
+  <string name="HnsModifierTransporter">トランスポーター</string>
+  <string name="HnsModifierTransporterTabDescription">死亡時にシーカーを転送します。</string>
+  <string name="HnsModifierTransporterWikiDescription">キルされたとき、シーカーをランダムなハイダーの場所に転送します。</string>
+  <!-- Giant Modifier Wiki / Description -->
+  <string name="HnsModifierGiant">ジャイアント</string>
+  <string name="HnsModifierGiantTabDescription">他のハイダーよりも大きくなります。</string>
+  <string name="HnsModifierGiantWikiDescription">あなたは平均的なプレイヤーよりも大きく、シーカーに見つかりやすくなります。</string>
+  <!-- Mini Modifier Wiki / Description -->
+  <string name="HnsModifierMini">ミニ</string>
+  <string name="HnsModifierMiniTabDescription">他のハイダーよりも小さくなります。</string>
+  <string name="HnsModifierMiniWikiDescription">あなたは平均的なプレイヤーよりも小さく、シーカーから容易に隠れることができます。</string>
+  <!-- Multitasker Modifier Wiki / Description -->
+  <string name="HnsModifierMultitasker">マルチタスカー</string>
+  <string name="HnsModifierMultitaskerTabDescription">タスク画面が透過します。</string>
+  <string name="HnsModifierMultitaskerWikiDescription">すべてのメニューが透けて見えるため、メニューの背後を確認できます！</string>
+  <!-- Hide and Seek - Seekers -->
+  <!-- Camouflager Wiki / Description -->
+  <string name="HnsRoleCamouflager">カモフラージャー</string>
+  <string name="HnsRoleCamouflagerTabHint">カモフラージャーのヒント</string>
+  <string name="HnsRoleCamouflagerTabDescription">紛れ込んでハイダーを混乱させます。</string>
+  <string name="HnsRoleCamouflagerWikiDescription">カモフラージャーは、一時的にすべてのプレイヤーを自分と同じ姿にできるインポスターです。</string>
+  <string name="HnsRoleCamouflagerCamo">カモフラージュ</string>
+  <string name="HnsRoleCamouflagerCamoWikiDescription">全員の姿を同じにするグローバルカモフラージュを発動します。</string>
+  <!-- Camouflager Options -->
+  <string name="HnsOptionCamouflagerCamoUses">カモフラージュの合計使用回数</string>
+  <string name="HnsOptionCamouflagerCamoCooldown">カモフラージュのクールダウン</string>
+  <string name="HnsOptionCamouflagerCamoDuration">カモフラージュの持続時間</string>
+  <string name="HnsOptionCamouflagerCamoDisablesProxBar">カモフラージュ中は近接バーを無効化</string>
+  <!-- Cultist Mode - Impostors -->
+  <!-- Necromancer - Impostor Cultist -->
+  <string name="CultistRoleNecromancer">ネクロマンサー</string>
+  <string name="CultistRoleNecromancerIntroBlurb">死者を蘇らせて意のままに操る</string>
+  <string name="CultistRoleNecromancerTabDescription">クルーメイトをキルし、ビリーバーを\%nl\%同等のインポスターロールに転換させます！</string>
+  <string name="CultistRoleNecromancerWikiDescription">ネクロマンサーはインポスター・カルティストの役職で、通常通りプレイヤーをキルできるほか、クルーメイト・ビリーバーをインポスター・フォロワーとして蘇らせることができます。</string>
+  <string name="CultistRoleNecromancerRevive">蘇生</string>
+  <string name="CultistRoleNecromancerReviving">蘇生中</string>
+  <string name="CultistRoleNecromancerReviveWikiDescription">最も近い転換可能な死体をインポスターとして蘇らせます。</string>
+  <!-- Crewmate Roles -->
+  <!-- Altruist - Crewmate Protective -->
+  <string name="TouRoleAltruist">アルトルイスト</string>
+  <string name="TouRoleAltruistIntroBlurb">死亡したクルーメイトを蘇らせる</string>
+  <string name="TouRoleAltruistTabDescription">死亡したクルーメイトをグループで蘇らせます。</string>
+  <string name="TouRoleAltruistTabDescriptionGroupSacrifice">自分の命と引き換えに、死亡したクルーメイトを\%nl\%グループで蘇らせます。</string>
+  <string name="TouRoleAltruistTabDescriptionSacrifice">自分の命と引き換えに、死亡したクルーメイトを蘇らせます。</string>
+  <!-- Altruist Wiki / Abilities -->
+  <string name="TouRoleAltruistWikiDescription">アルトルイストはクルーメイト・保護の役職で、死亡したクルーメイトを蘇らせることができますが、自身や蘇生されたクルーメイトによる会議の招集を妨げます。</string>
+  <string name="TouRoleAltruistRevive">蘇生</string>
+  <string name="TouRoleAltruistReviving">蘇生中</string>
+  <string name="TouRoleAltruistRevivedNotif">アルトルイストによって蘇生されました！</string>
+  <string name="TouRoleAltruistReviveSuccessNotif">\%player\% の蘇生に成功しました！</string>
+  <string name="TouRoleAltruistReviveWikiDescription">近くにある死体のグループを蘇らせます。</string>
+  <string name="TouRoleAltruistReviveGroupSacrificeWikiDescription">近くにある死体のグループを蘇らせます。蘇生が完了すると、あなたは死体を残さずに死亡します。</string>
+  <string name="TouRoleAltruistReviveSacrificeWikiDescription">最も近い死体を蘇らせます。蘇生が完了すると、あなたは死体を残さずに死亡します。</string>
+  <!-- Altruist Options -->
+  <string name="TouOptionAltruistReviveType">蘇生タイプ</string>
+  <string name="TouOptionAltruistReviveEnumSacrifice">自己犠牲</string>
+  <string name="TouOptionAltruistReviveEnumGroupSacrifice">グループ自己犠牲</string>
+  <string name="TouOptionAltruistReviveEnumGroupRevive">グループ蘇生</string>
+  <string name="TouOptionAltruistReviveDuration">蘇生時間</string>
+  <string name="TouOptionAltruistReviveRange">蘇生範囲</string>
+  <string name="TouOptionAltruistMaxRevives">蘇生の使用回数</string>
+  <string name="TouOptionAltruistKillOnStartRevive">蘇生開始時にアルトルイストをキルする</string>
+  <string name="TouOptionAltruistFreezeDuringRevive">蘇生中にアルトルイストをフリーズさせる</string>
+  <string name="TouOptionAltruistHideAtBeginningOfRevive">蘇生開始時に死体を隠す</string>
+  <string name="TouOptionAltruistKillersAlertedAtStart">蘇生前にキラーに通知する</string>
+  <string name="TouOptionAltruistKillersAlertedAtEnd">蘇生後にキラーに通知する</string>
+  <string name="TouOptionAltruistKillerEnumNobody">なし</string>
+  <string name="TouOptionAltruistKillerEnumNeutrals">ニュートラル</string>
+  <string name="TouOptionAltruistKillerEnumImpostors">インポスター</string>
+  <string name="TouOptionAltruistKillerEnumNeutralsAndImpostors">ニュートラルとインポスター</string>
+  <!-- Aurial - Crewmate Investigative -->
+  <string name="TouRoleAurial">オーリアル</string>
+  <string name="TouRoleAurialIntroBlurb">オーラの乱れを感知せよ</string>
+  <string name="TouRoleAurialTabDescription">自分のオーラ内で使用されたプレイヤーアビリティを感知します</string>
+  <!-- Aurial Wiki -->
+  <string name="TouRoleAurialWikiDescription">オーリアルはクルーメイト・調査の役職で、近くでプレイヤーがアビリティを使用すると通知を受けます。</string>
+  <!-- Aurial Options -->
+  <string name="TouOptionAurialAuraInnerRadius">発光色の範囲</string>
+  <string name="TouOptionAurialAuraOuterRadius">発光の最大範囲</string>
+  <string name="TouOptionAurialSenseDuration">感知の持続時間</string>
+  <!-- Cleric - Crewmate Protective -->
+  <string name="TouRoleCleric">クレリック</string>
+  <string name="TouRoleClericIntroBlurb">クルーメイトを救え</string>
+  <string name="TouRoleClericTabDescription">クルーメイトのマイナスの状態異常を浄化し、\%nl\%バリアを張ってあらゆる干渉を阻止します</string>
+  <string name="TouRoleClericTabProtecting">バリア展開中: \%player\%</string>
+  <!-- Cleric Wiki / Abilities -->
+  <string name="TouRoleClericWikiDescription">クレリックはクルーメイト・保護の役職で、クルーメイトのマイナスの状態異常を無効化し、バリアを張って干渉を防ぐことができます。</string>
+  <string name="TouRoleClericBarrier">バリア</string>
+  <string name="TouRoleClericBarrierWikiDescription">クルーメイトへの干渉を防ぎます。シールドは \%BarrierCooldown\% 秒間持続します。</string>
+  <string name="TouRoleClericCleanse">浄化</string>
+  <string name="TouRoleClericCleanseWikiDescription">プレイヤーのすべてのマイナスの状態異常（オイル塗布、ハック、感染、ブラックメール、盲目、フラッシュ、催眠）を除去します。</string>
+  <!-- Cleric Feedback -->
+  <string name="TouRoleClericMessageTitle">クレリックのフィードバック</string>
+  <string name="TouRoleClericCleansedEffects">\%player\% の状態異常を浄化しました:</string>
+  <string name="TouRoleClericCleansedNoEffects">\%player\% にマイナスの状態異常は見つかりませんでした。</string>
+  <!-- Cleric Options -->
+  <string name="TouOptionClericBarrierCooldown">バリアのクールダウン</string>
+  <string name="TouOptionClericBarrierDuration">バリアの持続時間</string>
+  <string name="TouOptionClericCleanseCooldown">浄化のクールダウン</string>
+  <string name="TouOptionClericProtectedSeesBarrier">保護されたプレイヤーにバリアを表示する</string>
+  <string name="TouOptionClericAttackNotif">クレリックが攻撃通知を受け取る</string>
+  <!-- Deputy - Crewmate Killing -->
+  <!-- Deputy Wiki / Abilities -->
+  <string name="TouRoleDeputy">デピュティ</string>
+  <string name="TouRoleDeputyIntroBlurb">クルーメイトに張り付いてキラーを捕らえろ</string>
+  <string name="TouRoleDeputyTabDescription">クルーメイトに張り付き、会議でそのキラーを射殺せよ！</string>
+  <string name="TouRoleDeputyWikiDescription">デピュティはクルーメイト・キルの役職で、他のプレイヤーに張り付くことができます。張り付いたプレイヤーが死亡すると、デピュティにその死が通知されます。次の会議で、デピュティはそのプレイヤーをキルした者を射殺しようと試みることができます。成功すればキラーは死亡し、失敗しても何も起こりません。</string>
+  <string name="TouRoleDeputyCamp">張り付き</string>
+  <string name="TouRoleDeputyCampWikiDescription">プレイヤーに張り付き、その死亡時に通知を受けます。死亡後、キラーの射殺を試みることができます。成功すればキラーは死亡し、失敗しても何も起こりません。</string>
+  <!-- Deputy Feedback -->
+  <string name="TouRoleDeputyCampNotif">\%player\% の死を待ち、会議でキラーを撃ち抜きましょう。</string>
+  <string name="TouRoleDeputyCampedKillNotif">張り付いていたターゲット \%player\% が死亡しました！会議で仇を討ってください。</string>
+  <string name="TouRoleDeputyMessageTitle">デピュティのフィードバック</string>
+  <string name="TouRoleDeputyMissedShot">ショットを外しました！相手がキラーではないか、無敵状態です。</string>
+  <!-- Forensic - Crewmate Investigative -->
+  <!-- Forensic Wiki / Abilities -->
+  <string name="TouRoleForensic">フォレンジック</string>
+  <string name="TouRoleForensicIntroBlurb">犯行現場を調査してキラーを見つけ出せ</string>
+  <string name="TouRoleForensicTabDescription">犯行現場を調査し、プレイヤーを調べて\%nl\%現場にいたかどうかを確認します。</string>
+  <string name="TouRoleForensicWikiDescription">フォレンジックはクルーメイト・調査の役職で、犯行現場を調査したり、プレイヤーを調べて現場にいたかどうかを確認したりできます。現場にいたプレイヤーを調べると赤く点滅します。</string>
+  <string name="TouRoleForensicInspect">調査</string>
+  <string name="TouRoleForensicInspectWikiDescription">死体がある場所に犯行現場が発生します。現場を調査し、その後プレイヤーを調べて手がかりを見つけます。次の会議で、キラーの役職を明かすレポートを受け取ります。</string>
+  <string name="TouRoleForensicExamine">鑑定</string>
+  <string name="TouRoleForensicExamineWikiDescription">犯行現場の調査後にプレイヤーを鑑定します。そのプレイヤーが犯行現場にいたかどうかがわかります。</string>
+  <string name="TouRoleForensicInspectNotif">\%player\% の犯行現場を調査しました。キラーや犯行現場に足を踏み入れた者を鑑定すると赤く点滅します。</string>
+  <!-- Forensic Options -->
+  <string name="TouOptionForensicExamineCooldown">鑑定のクールダウン</string>
+  <string name="TouOptionForensicReportOn">フォレンジックレポートを表示する</string>
+  <string name="TouOptionForensicRoleDuration">役職が判明するまでの時間</string>
+  <string name="TouOptionForensicFactionDuration">陣営が判明するまでの時間</string>
+  <!-- Forensic Feedback -->
+  <string name="TouRoleForensicMessageTitle">フォレンジック死体レポート</string>
+  <string name="TouRoleForensicBodyError">死体から情報を得られませんでした。\%nl\% \%time\% 秒前に死亡。</string>
+  <string name="TouRoleForensicBodyOld">死体が古すぎて情報を得られません。\%nl\% \%time\% 秒前に死亡。</string>
+  <string name="TouRoleForensicBodySuicide">自殺のようです！\%nl\% \%time\% 秒前に死亡。</string>
+  <string name="TouRoleForensicBodyKillerRole">キラーは \%role\% のようです！\%nl\% \%time\% 秒前にキル。</string>
+  <string name="TouRoleForensicBodyKillerNeutral">キラーはニュートラルのようです！\%nl\% \%time\% 秒前にキル。</string>
+  <string name="TouRoleForensicBodyKillerCrewmate">キラーはクルーメイトのようです！\%nl\% \%time\% 秒前にキル。</string>
+  <string name="TouRoleForensicBodyKillerImpostor">キラーはインポスターのようです！\%nl\% \%time\% 秒前にキル。</string>
+  <string name="TouRoleForensicAtScene">\%player\% は \%deadPlayer\% の死亡現場にいました！\%nl\%キラーか目撃者の可能性があります。</string>
+  <string name="TouRoleForensicNotAtScene">\%player\% は犯行現場にはいませんでした。</string>
+  <!-- Engineer - Crewmate Investigative -->
+  <!-- Engineer Wiki / Abilities -->
+  <string name="TouRoleEngineer">エンジニア</string>
+  <string name="TouRoleEngineerIntroBlurb">船の重要なシステムを維持せよ</string>
+  <string name="TouRoleEngineerTabDescription">ベントを移動し、サボタージュを遠隔で修理します</string>
+  <string name="TouRoleEngineerWikiDescription">エンジニアはクルーメイト・サポートの役職で、ベント移動とサボタージュの遠隔修理ができます。</string>
+  <string name="TouRoleEngineerFix">修理</string>
+  <string name="TouRoleEngineerFixing">修理中</string>
+  <string name="TouRoleEngineerFixWikiDescription">マップ上のどこにいても、修理ボタンを使ってアクティブなサボタージュを即座に直せます。1ゲームにつき \%engiMaxFixes\% 回使用可能です。</string>
+  <!-- Engineer Options -->
+  <string name="TouOptionEngineerMaxVents">1ゲームあたりのベント使用回数</string>
+  <string name="TouOptionEngineerVentPerTasks">追加のベント使用に必要なタスク数</string>
+  <string name="TouOptionEngineerVentCooldown">ベントのクールダウン</string>
+  <string name="TouOptionEngineerVentDuration">ベントの持続時間</string>
+  <string name="TouOptionEngineerMaxFixes">1ゲームあたりの修理回数</string>
+  <string name="TouOptionEngineerFixPerTasks">追加の修理に必要なタスク数</string>
+  <string name="TouOptionEngineerFixDelay">修理の遅延</string>
+  <!-- Haunter - Crewmate Investigative -->
+  <!-- Haunter Wiki / Description -->
+  <string name="TouRoleHaunter">ハウンター</string>
+  <string name="TouRoleHaunterIntroBlurb">死後にインポスターを暴け！</string>
+  <!-- You cannot start the game as this role, so an intro blurb is unnecessary -->
+  <string name="TouRoleHaunterTabDescription">見つからずにすべてのタスクを完了してインポスターを暴け！</string>
+  <string name="TouRoleHaunterWikiDescription">ハウンターはタスクができるクルーメイトのゴーストです。透明なプレイヤーとして表示されます。すべてのタスクを完了すると、生存者全員に誰がインポスターかが見えるようになります。しかし、先にインポスターにクリックされると通常のゴーストになってしまいます。インポスターには、ハウンターがタスクを完了する直前と完了した時に警告が表示されます。</string>
+  <!-- Haunter Options -->
+  <string name="TouOptionHaunterNumTasksLeftBeforeClickable">クリック可能になるまでの残りタスク数</string>
+  <string name="TouOptionHaunterNumTasksLeftBeforeAlerted">警告が出るまでの残りタスク数</string>
+  <string name="TouOptionHaunterRevealNeutralRoles">ニュートラルロールを明かす</string>
+  <string name="TouOptionHaunterCanBeClickedBy">クリック可能なプレイヤー</string>
+  <string name="TouOptionHaunterClickEnumEveryone">全員</string>
+  <string name="TouOptionHaunterClickEnumNonCrew">クルー以外</string>
+  <string name="TouOptionHaunterClickEnumImpsOnly">インポスターのみ</string>
+  <!-- Haunter Feedback -->
+  <string name="TouRoleHaunterClickableFeedback">プレイヤーからクリックされるようになりました！</string>
+  <string name="TouRoleHaunterSelfAlertFeedback">キラーに警告を発しました！</string>
+  <string name="TouRoleHaunterImpAlertFeedback">ハウンターが放たれました。暴かれる前に捕まえましょう！</string>
+  <string name="TouRoleHaunterSelfRevealFeedback">キラーを暴きました！</string>
+  <string name="TouRoleHaunterImpRevealFeedback">ハウンターがタスクを完了しました！</string>
+  <!-- Hunter - Crewmate Killing -->
+  <!-- Hunter Wiki / Abilities -->
+  <string name="TouRoleHunter">ハンター</string>
+  <string name="TouRoleHunterIntroBlurb">\%color=#FF0000FF\%インポスター\%/color\% を追跡せよ</string>
+  <string name="TouRoleHunterTabDescription">プレイヤーを追跡し、アビリティ使用時に通知を受けます。\%nl\%アビリティを使用したプレイヤーをキルできます。</string>
+  <string name="TouRoleHunterCaughtPlayersText">捕捉したプレイヤー:</string>
+  <string name="TouRoleHunterWikiDescription">ハンターはクルーメイト・キルの役職で、ラウンド中にプレイヤーを追跡できます。追跡されたプレイヤーがアビリティを使用した場合、ハンターはそのプレイヤーを（クルーであっても）いつでもキルできるようになります。</string>
+  <string name="TouRoleHunterStalk">追跡</string>
+  <string name="TouRoleHunterStalking">追跡中</string>
+  <string name="TouRoleHunterStalkWikiDescription">追跡するターゲットを選びます。 \%hunterMaxStalkUsages\% 人まで追跡可能です。追跡中にアビリティを使用するとヒットリストに追加され、キル可能になります。</string>
+  <string name="TouRoleHunterStalkNotif">\%player\% がアビリティを使用すると、このラウンド中いつでもキルできるようになります。</string>
+  <string name="TouRoleHunterCaughtInteractionNotif">\%player\% が他のプレイヤーにアビリティを使用しました！</string>
+  <string name="TouRoleHunterCaughtAbilityNotif">\%player\% が通常のアビリティを使用しました！</string>
+  <!-- Hunter Options -->
+  <string name="TouOptionHunterKillCooldown">ハンターのキルクールダウン</string>
+  <string name="TouOptionHunterStalkCooldown">ハンターの追跡クールダウン</string>
+  <string name="TouOptionHunterStalkDuration">ハンターの追跡持続時間</string>
+  <string name="TouOptionHunterStalkUses">初期追跡回数</string>
+  <string name="TouOptionHunterStalksPerTasks">追加の追跡に必要なタスク数</string>
+  <string name="TouOptionHunterSeesTypeOfInteraction">ハンターに相互作用のタイプを表示する</string>
+  <string name="TouOptionHunterStalkTriggeredBy">追跡がトリガーされる条件</string>
+  <string name="TouOptionHunterStalkTriggerEnumInteraction">相互作用</string>
+  <string name="TouOptionHunterStalkTriggerEnumAlways">すべてのアビリティ</string>
+  <string name="TouOptionHunterRetributionOnVote">追放された場合、最後に自分に投票した者をキルする</string>
+  <string name="TouOptionHunterHunterBodyReport">ハンターは自分がキルした相手をレポートできる</string>
+  <!-- Imitator - Crewmate Support -->
+  <!-- Imitator Wiki / Abilities -->
+  <string name="TouRoleImitator">イミテーター</string>
+  <string name="TouRoleImitatorIntroBlurb">死者を利用してクルーに貢献せよ</string>
+  <string name="TouRoleImitatorTabDescription">会議で死者を模倣することでクルーに貢献します</string>
+  <string name="TouRoleImitatorWikiDescription">イミテーターはクルーメイト・サポートの役職で、死亡したクルーメイトを選択してターゲットを変更するまでそのロールを模倣できます。複数の生存しているイミテーターがいる場合、一部のロールは模倣できません。</string>
+  <string name="TouRoleImitatorCrewmateImitation">クルーメイト模倣</string>
+  <string name="TouRoleImitatorCrewmateImitationWikiDescription">ポリティシャンとメイヤー以外のすべてのクルーメイト役職が模倣可能です。ジェイラーやプロセキューターのような役職は会議アビリティを使用できず、ビジランテは誤射耐性を持ちません。</string>
+  <string name="TouRoleImitatorNeutralCounterparts">ニュートラルの対応役職</string>
+  <string name="TouRoleImitatorNeutralCounterpartsWikiDescription">アムネジアック ⇨ メディック | ドゥーム ⇨ ビジ | エクセ ⇨ スニッチ\%nl\%グリッチ ⇨ シェリフ | フェアリー ⇨ クレリック | インクイジ ⇨ オラクル\%nl\%ジェスター ⇨ プラマー | メルク ⇨ ウォーデン\%nl\%PB/ペスティ ⇨ オーリアル | SC ⇨ ミディアム | WW ⇨ ハンター</string>
+  <string name="TouRoleImitatorImpostorCounterparts">インポスターの対応役職</string>
+  <string name="TouRoleImitatorImpostorCounterpartsWikiDescription">ボマー ⇨ トラッパー | ヒプノティスト ⇨ ルックアウト | ジャニター ⇨ フォレンジック\%nl\%マイナー ⇨ エンジニア | スカベンジャー ⇨ ソナー\%nl\%アンダーテイカー ⇨ アルトルイスト | ウォーロック ⇨ ベテラン</string>
+  <!-- Imitator Options -->
+  <string name="TouOptionImitatorImitateNeutrals">ニュートラルの対応役職を模倣する</string>
+  <string name="TouOptionImitatorImitateImpostors">インポスターの対応役職を模倣する</string>
+  <string name="TouOptionImitatorImitateBasicCrewmate">基本のクルーメイトを模倣する</string>
+  <string name="TouOptionImitatorGuessAs">イミテーターとしての推測方法</string>
+  <string name="TouOptionImitatorGuessEnumCached">イミテーター</string>
+  <string name="TouOptionImitatorGuessEnumActive">模倣中のロール</string>
+  <string name="TouOptionImitatorGuessEnumActiveOrCached">イミテーターまたは模倣中のロール</string>
+  <!-- Investigator - Crewmate Investigative -->
+  <!-- Investigator Wiki / Description -->
+  <string name="TouRoleInvestigator">インベスティゲーター</string>
+  <string name="TouRoleInvestigatorIntroBlurb">足跡を辿って悪人を見つけ出せ</string>
+  <string name="TouRoleInvestigatorTabDescription">全員の足跡が見えます。</string>
+  <string name="TouRoleInvestigatorWikiDescription">インベスティゲーターはクルーメイト・調査の役職で、ゲームを通してプレイヤーの足跡を見ることができます。透明化（スウープ）中のプレイヤーの足跡は見えません。</string>
+  <!-- Investigator Options -->
+  <string name="TouOptionInvestigatorFootprintSize">足跡のサイズ</string>
+  <string name="TouOptionInvestigatorFootprintInterval">足跡の間隔</string>
+  <string name="TouOptionInvestigatorFootprintDuration">足跡の持続時間</string>
+  <string name="TouOptionInvestigatorShowAnonymousFootprints">匿名足跡を表示</string>
+  <string name="TouOptionInvestigatorShowFootprintVent">ベントの足跡を表示</string>
+  <!-- Jailor - Crewmate Power -->
+  <!-- Jailor Wiki / Abilities -->
+  <string name="TouRoleJailor">ジェイラー</string>
+  <string name="TouRoleJailorIntroBlurb">\%color=#FF0000FF\%悪人\%/color\% を投獄して処刑せよ</string>
+  <string name="TouRoleJailorTabDescription">クルーを投獄して個別に会話し、\%nl\%悪人であれば処刑せよ</string>
+  <string name="TouRoleJailorTabDescriptionEvil">クルーを投獄して個別に会話し、\%nl\%望むなら処刑せよ</string>
+  <string name="TouRoleJailorWikiDescription">ジェイラーはクルーメイト・パワーの役職で、他のプレイヤーを投獄できます。会議中に、投獄したプレイヤーを処刑することを選択できます。（イミテーターの場合は不可）</string>
+  <string name="TouRoleJailorJail">投獄</string>
+  <string name="TouRoleJailorJailWikiDescription">プレイヤーを投獄します。会議中、誰が投獄されているかが全員に見えます。個別のチャットボックスを切り替えて、拘束したプレイヤーと密談できます。</string>
+  <string name="TouRoleJailorExecute">処刑</string>
+  <string name="TouRoleJailorExecuteWiki">処刑（会議）</string>
+  <string name="TouRoleJailorExecuteWikiDescription">拘束中のプレイヤーを処刑します。そのプレイヤーがクルーメイトだった場合、ジェイラーは投獄能力を失います。</string>
+  <!-- Jailor Options -->
+  <string name="TouOptionJailorJailCooldown">投獄のクールダウン</string>
+  <string name="TouOptionJailorMaxExecutes">最大処刑回数</string>
+  <string name="TouOptionJailorJailInARow">同じ人を2回連続で投獄可能</string>
+  <string name="TouOptionJailorJaileePublicChat">投獄されたプレイヤーも全体チャットを使用可能</string>
+  <!-- Jailor Feedback -->
+  <string name="TouRoleJailorMessageTitle">ジェイラーのフィードバック</string>
+  <string name="TouRoleJailorJailorFeedback">報告ボタンの上のチャットボックスで、投獄されたプレイヤーと会話できます。</string>
+  <string name="TouRoleJailorCannotExecute">\%player\% を処刑できません！無敵状態か祝福されています！</string>
+  <string name="TouRoleJailorExecutedCrew">\%player\% はクルーメイトでした！もう誰も投獄できません！</string>
+  <string name="TouRoleJailorExecutedEvil">\%player\% を処刑しました！</string>
+  <string name="TouRoleJailorEvilTabInfo">あなたはクルーメイトを処刑できます。</string>
+  <!-- Lookout - Crewmate Investigative -->
+  <!-- Lookout Wiki / Abilities -->
+  <string name="TouRoleLookout">ルックアウト</string>
+  <string name="TouRoleLookoutIntroBlurb">目を凝して監視せよ</string>
+  <string name="TouRoleLookoutTabDescription">クルーメイトを監視し、どのロールが接触したかを確認します</string>
+  <string name="TouRoleLookoutWikiDescription">ルックアウトはクルーメイト・調査の役職で、ラウンド中に他のプレイヤーを監視できます。会議中に、監視したプレイヤーに接触したすべてのロールを確認できます。</string>
+  <string name="TouRoleLookoutWatch">監視</string>
+  <string name="TouRoleLookoutWatchWikiDescription">1人または複数のプレイヤーを監視します。次の会議で、監視対象に接触したプレイヤーを知ることができます。</string>
+  <string name="TouRoleLookoutWatchNotif">次の会議で、どのロールが \%player\% に接触したかがわかります。</string>
+  <!-- Lookout Feedback -->
+  <string name="TouRoleLookoutFeedbackTitle">ルックアウトのフィードバック</string>
+  <string name="TouRoleLookoutNoInteractionFeedback">\%player\% に接触したプレイヤーはいません</string>
+  <string name="TouRoleLookoutInteractionFeedback">\%player\% への接触が確認されたロール:</string>
+  <!-- Lookout Options -->
+  <string name="TouOptionLookoutWatchCooldown">監視のクールダウン</string>
+  <string name="TouOptionLookoutMaxWatches">初期監視可能人数</string>
+  <string name="TouOptionLookoutLoResetOnNewRound">各ラウンド終了時に監視をリセットする</string>
+  <string name="TouOptionLookoutTaskUses">タスク完了で追加の使用回数を得る</string>
+  <!-- Mayor - Crewmate Power -->
+  <!-- Mayor Wiki / Description -->
+  <string name="TouRoleMayor">メイヤー</string>
+  <string name="TouRoleMayorIntroBlurb">名乗りを上げてクルーを救え</string>
+  <string name="TouRoleMayorTabDescription">クルーを勝利に導きましょう！</string>
+  <string name="TouRoleMayorTabDescriptionEgo">悪人を勝利に導きましょう！</string>
+  <string name="TouRoleMayorTabDescriptionPostor">インポスターを勝利に導きましょう！</string>
+  <string name="TouRoleMayorUnrevealedTabText">いつでも好きな時に名乗り出ることができます。</string>
+  <string name="TouRoleMayorWikiDescription">メイヤーはクルーメイト・パワーの役職で、投票権が3票になり、全員に正体が明かされます。会議での外見も変わります。</string>
+  <!-- Medic - Crewmate Protective -->
+  <!-- Medic Wiki / Abilities -->
+  <string name="TouRoleMedic">メディック</string>
+  <string name="TouRoleMedicIntroBlurb">クルーメイトを守るシールドを張れ</string>
+  <string name="TouRoleMedicTabDescription">クルーメイトをシールドで守り、攻撃から防衛します</string>
+  <string name="TouRoleMedicTabProtecting">シールド付与中: \%player\%</string>
+  <string name="TouRoleMedicWikiDescription">メディックはクルーメイト・保護の役職で、プレイヤーにシールドを付与できます。</string>
+  <string name="TouRoleMedicShield">シールド</string>
+  <string name="TouRoleMedicShieldWikiDescription">プレイヤーにシールドを付与し、他のプレイヤーからのキルを防ぎます</string>
+  <!-- Medic Options -->
+  <string name="TouOptionMedicShowShieldedPlayer">シールドされたプレイヤーを表示する</string>
+  <string name="TouOptionMedicWhoGetsMurderAttemptIndicator">殺害試行インジケーターを受け取るプレイヤー</string>
+  <string name="TouOptionMedicCanGiveShieldAwayNextRound">次のラウンドでシールドを再付与可能</string>
+  <string name="TouOptionMedicMaxAmountOfShieldUses">最大シールド使用回数</string>
+  <string name="TouOptionMedicShieldBreaksOnMurderAttempt">殺害試行時にシールドが壊れる</string>
+  <string name="TouOptionMedicShowReportsInChat">チャットにレポートを表示する</string>
+  <string name="TouOptionMedicTimeWhereMedicWillHaveName">名前が表示されるまでの時間</string>
+  <string name="TouOptionMedicTimeWhereMedicWillHaveColorType">色のタイプが表示されるまでの時間</string>
+  <string name="TouOptionMedicShieldEnumMedic">メディック</string>
+  <string name="TouOptionMedicShieldEnumShielded">シールド対象</string>
+  <string name="TouOptionMedicShieldEnumShieldedAndMedic">シールド対象 + メディック</string>
+  <string name="TouOptionMedicShieldEnumEveryone">全員</string>
+  <string name="TouOptionMedicShieldEnumNobody">なし</string>
+  <!-- Medic Feedback -->
+  <string name="TouRoleMedicMessageTitle">メディックの死体レポート</string>
+  <string name="TouRoleMedicBodyError">死体から情報を得られませんでした。\%nl\% \%time\% 秒前に死亡。</string>
+  <string name="TouRoleMedicBodyOld">死体が古すぎて情報を得られません。\%nl\% \%time\% 秒前に死亡。</string>
+  <string name="TouRoleMedicBodySuicide">自殺のようです！\%nl\% \%time\% 秒前に死亡。</string>
+  <string name="TouRoleMedicBodyKillerName">キラーは \%player\% のようです！\%nl\% \%time\% 秒前にキル。</string>
+  <string name="TouRoleMedicBodyKillerDarkColor">キラーは暗い色のプレイヤーのようです！\%nl\% \%time\% 秒前にキル。</string>
+  <string name="TouRoleMedicBodyKillerLightColor">キラーは明るい色のプレイヤーのようです！\%nl\% \%time\% 秒前にキル。</string>
+  <!-- Medium - Crewmate Support -->
+  <!-- Medium Wiki / Abilities -->
+  <string name="TouRoleMedium">ミディアム</string>
+  <string name="TouRoleMediumIntroBlurb">ゴーストと一体になれ</string>
+  <string name="TouRoleMediumTabDescription">瞑想して一時的に肉体を離れます。\%nl\%その間、肉体は無防備な状態です。</string>
+  <string name="TouRoleMediumWikiDescription">ミディアムはクルーメイト・調査の役職で、一時的に精神を解放できます。壁を通り抜けたりゴーストを見ることができますが、肉体は無防備になります。</string>
+  <string name="TouRoleMediumMediate">瞑想</string>
+  <string name="TouRoleMediumMediateWikiDescription">一定時間、肉体を離れて精神を投影し手がかりを探します。時間が経過すると肉体に戻り、ゴーストは見えなくなります。</string>
+  <!-- Medium Options -->
+  <string name="TouOptionMediumMediateCooldown">瞑想のクールダウン</string>
+  <string name="TouOptionMediumReworkToggle">瞑想で一時的に精神体を作成する</string>
+  <string name="TouOptionMediumMediateDuration">瞑想の持続時間</string>
+  <string name="TouOptionMediumMediateEarlyCancel">瞑想を途中でキャンセル可能</string>
+  <string name="TouOptionMediumMediatingSpeed">瞑想中の精神体の移動速度</string>
+  <string name="TouOptionMediumLivingSeeSpiritTimer">生存者に精神体が見えるようになるまでの時間</string>
+  <string name="TouOptionMediumAppearanceVisibility">ミディアムが識別できる対象</string>
+  <string name="TouOptionMediumAppearanceEnumLiving">生存者</string>
+  <string name="TouOptionMediumAppearanceEnumDead">ゴースト</string>
+  <string name="TouOptionMediumAppearanceEnumBoth">生存者 + ゴースト</string>
+  <string name="TouOptionMediumAppearanceEnumNone">なし</string>
+  <string name="TouOptionMediumArrowVisibility">矢印の表示</string>
+  <string name="TouOptionMediumArrowEnumShowMedium">ミディアム（本体）</string>
+  <string name="TouOptionMediumArrowEnumShowMediated">ミディアム（精神体）</string>
+  <string name="TouOptionMediumArrowEnumBoth">本体 + 精神体</string>
+  <string name="TouOptionMediumArrowEnumNone">無効</string>
+  <string name="TouOptionMediumWhoisRevealed">誰が明かされるか</string>
+  <string name="TouOptionMediumGhostEnumOldestDead">最も古い死者</string>
+  <string name="TouOptionMediumGhostEnumNewestDead">最新の死者</string>
+  <string name="TouOptionMediumGhostEnumRandomDead">ランダムな死者</string>
+  <string name="TouOptionMediumGhostEnumAllDead">すべての死者</string>
+  <!-- Mirrorcaster - Crewmate Protective -->
+  <!-- Mirrorcaster Wiki / Abilities -->
+  <string name="TouRoleMirrorcaster">ミラーキャスター</string>
+  <string name="TouRoleMirrorcasterIntroBlurb">攻撃を他者に反射せよ</string>
+  <string name="TouRoleMirrorcasterTabDescription">マジックミラーでプレイヤーを保護します。\%nl\%直接攻撃を受けた場合、\%nl\%その攻撃を他のプレイヤーに放ちます！</string>
+  <string name="TouRoleMirrorcasterTabProtecting">保護中: \%player\%</string>
+  <string name="TouRoleMirrorcasterWikiDescription">ミラーキャスターはクルーメイト・保護の役職で、プレイヤーにマジックミラーをかけて保護できます。直接攻撃を受けると通知を受け、その攻撃を他者に放つことができます。</string>
+  <string name="TouRoleMirrorcasterMagicMirror">マジックミラー</string>
+  <string name="TouRoleMirrorcasterMagicMirrorProtecting">保護</string>
+  <string name="TouRoleMirrorcasterMagicMirrorWikiDescription">プレイヤーにミラーを設置します。直接攻撃されると通知を受け、攻撃を他者に放てるようになります。アーソニスト、ベテラン、ペスティレンス、ボマー（爆弾時）などはマジックミラーを無視します。</string>
+  <string name="TouRoleMirrorcasterUnleash">解放</string>
+  <string name="TouRoleMirrorcasterUnleashWikiDescription">マジックミラーが砕けたら、その力を使って他のプレイヤーに攻撃を放ちましょう！</string>
+  <string name="TouRoleMirrorcasterAlreadyDiedNotif">保護しようとしたプレイヤーは既に死亡していました！</string>
+  <string name="TouRoleMirrorcasterTargetDiedNotif">\%player\% は間接的な攻撃で死亡しました。ミラーでは防げませんでした。</string>
+  <string name="TouRoleMirrorcasterTargetDidNotDieNotif">\%player\% は攻撃されませんでした。</string>
+  <!-- Mirrorcaster Options -->
+  <string name="TouOptionMirrorcasterWhoGetsMurderAttemptIndicator">殺害試行インジケーターを受け取るプレイヤー</string>
+  <string name="TouOptionMirrorcasterNotifEnumMirrorcaster">ミラーキャスター</string>
+  <string name="TouOptionMirrorcasterNotifEnumMirrorcasterAndKiller">ミラーキャスター + キラー</string>
+  <string name="TouOptionMirrorcasterMagicMirrorCooldown">マジックミラーのクールダウン</string>
+  <string name="TouOptionMirrorcasterMagicMirrorDuration">マジックミラーの持続時間</string>
+  <string name="TouOptionMirrorcasterUnleashCooldown">解放のクールダウン</string>
+  <string name="TouOptionMirrorcasterAttackInformationGiven">攻撃時に受け取る情報</string>
+  <string name="TouOptionMirrorcasterInfoEnumRole">役職</string>
+  <string name="TouOptionMirrorcasterInfoEnumSubalignment">サブ属性</string>
+  <string name="TouOptionMirrorcasterInfoEnumFaction">陣営</string>
+  <string name="TouOptionMirrorcasterInfoEnumNothing">なし</string>
+  <string name="TouOptionMirrorcasterAccumulateMultipleUnleashes">複数の解放を蓄積する</string>
+  <string name="TouOptionMirrorcasterMaxNumberOfMagicMirrors">最大マジックミラー数</string>
+  <!-- Mirrorcaster Feedback -->
+  <string name="TouRoleMirrorcasterAttackedMessageWithType">\%player\% が \%attackerRole\% に攻撃されました！攻撃を他者に放つことができます！</string>
+  <string name="TouRoleMirrorcasterAttackedMessageWithoutType">\%player\% が攻撃されました！攻撃を他者に放つことができます！</string>
+  <string name="TouRoleMirrorcasterAttackedMessageWithFaction">\%player\% が \%faction\% に攻撃されました！攻撃を他者に放つことができます！</string>
+  <string name="TouRoleMirrorcasterAttackedMessageWithSubalignment">\%player\% が \%subalignment\% に攻撃されました！攻撃を他者に放つことができます！</string>
+  <!-- Monarch - Crewmate Power -->
+  <!-- Monarch Wiki / Description -->
+  <string name="TouRoleMonarch">モナーク</string>
+  <string name="TouRoleMonarchIntroBlurb">クルーメイトをナイトに任命して票を増やせ</string>
+  <string name="TouRoleMonarchTabDescription">クルーをナイトにして会議を有利に進めましょう。\%nl\%ただし悪人をナイトにしないよう注意してください。</string>
+  <string name="TouRoleMonarchTabDescriptionEgo">悪人をナイトにして会議で彼らを助けましょう。</string>
+  <string name="TouRoleMonarchTabVoteInfo">ナイトに任命されたプレイヤーはそれぞれ \%amount\% 票を追加で得ます。</string>
+  <string name="TouRoleMonarchTabDefenseInfoEgo">生存しているナイトがあなたを保護します。</string>
+  <string name="TouRoleMonarchTabDefenseInfo">生存しているクルーのナイトがあなたを保護します。</string>
+  <string name="TouRoleMonarchTabDeathInfo">ナイトに任命されたプレイヤーが死亡すると通知を受けます。</string>
+  <string name="TouRoleMonarchWikiDescription">モナークはクルーメイト・パワーの役職で、他のプレイヤーに追加の投票権を付与できます。</string>
+  <string name="TouRoleMonarchKnight">ナイト</string>
+  <string name="TouRoleMonarchKnightDescription">プレイヤーをナイトに任命し、 \%amount\% 票を付与します</string>
+  <string name="TouRoleMonarchChangeFlash">フラッシュ変更</string>
+  <string name="TouRoleMonarchChangeFlashDescription">設定可能な場合、モナークは自身の防御時のフラッシュを変更できます。クレリック、メディック、マーセナリー、ウォーデンのように光るか、光らないように設定できます！</string>
+  <string name="TouRoleMonarchKnightTargetDied">任命する前に \%player\% が死亡しました。</string>
+  <string name="TouRoleMonarchKnightSuccess">\%player\% をナイトに任命しました！</string>
+  <string name="TouRoleMonarchKnightedFeedback">\%role\% によってナイトに任命されました。投票権を \%votes\% 票獲得しました！</string>
+  <string name="TouRoleMonarchKnightFallenFeedback">あなたのナイト \%player\% が倒れました...</string>
+  <!-- Mystic - Crewmate Investigative -->
+  <!-- Mystic Wiki / Description -->
+  <string name="TouRoleMystic">ミスティック</string>
+  <string name="TouRoleMysticIntroBlurb">いつ、どこでキルが起きたかを知る</string>
+  <string name="TouRoleMysticTabDescription">キルが発生したタイミングと場所を把握します</string>
+  <string name="TouRoleMysticWikiDescription">ミスティックはクルーメイト・調査の役職で、誰かが死亡した際にアラートを受け取ります。</string>
+  <!-- Mystic Options -->
+  <string name="TouOptionMysticDeadBodyArrowDuration">死体矢印の持続時間</string>
+  <string name="TouOptionMysticHnsPopUp">死亡時のポップアップを表示</string>
+  <!-- Oracle - Crewmate Protective -->
+  <!-- Oracle Wiki / Abilities -->
+  <string name="TouRoleOracle">オラクル</string>
+  <string name="TouRoleOracleIntroBlurb">クルーメイトに罪を告白させろ</string>
+  <string name="TouRoleOracleTabDescription">クルーに祝福を与えて会議中の死を防ぎ、\%nl\%会議で彼らに告白させます</string>
+  <string name="TouRoleOracleWikiDescription">オラクルはクルーメイト・保護の役職で、他のプレイヤーに告白させたり（オラクル死亡時に \%revealAccuracy\%% の精度で陣営を明かす）、会議アビリティからプレイヤーを守ったりできます。</string>
+  <string name="TouRoleOracleBless">祝福</string>
+  <string name="TouRoleOracleBlessWikiDescription">プレイヤーを祝福し、会議中の一切の害から守ります。</string>
+  <string name="TouRoleOracleConfess">告白</string>
+  <string name="TouRoleOracleConfessWikiDescription">会議でプレイヤーに告白させます。告白者を含む3人の候補の中から悪人が示されます。また、オラクル死亡時に \%revealAccuracy\%% の精度で全員にそのプレイヤーの陣営を明かします。</string>
+  <!-- Oracle Options -->
+  <string name="TouOptionOracleConfessCooldown">告白のクールダウン</string>
+  <string name="TouOptionOracleBlessCooldown">祝福のクールダウン</string>
+  <string name="TouOptionOracleRevealAccuracy">公開の精度</string>
+  <string name="TouOptionOracleNeutralBenignShowEvil">ニュートラル良性を悪として表示する</string>
+  <string name="TouOptionOracleNeutralEvilShowEvil">ニュートラル悪性を悪として表示する</string>
+  <string name="TouOptionOracleNeutralKillingShowEvil">ニュートラルキラーを悪として表示する</string>
+  <string name="TouOptionOracleNeutralOutlierShowEvil">ニュートラル異端を悪として表示する</string>
+  <string name="TouOptionOracleNeutralsThatShowEvil">悪として表示されるニュートラル</string>
+  <string name="TouOptionOracleNeutBadBenign">良性</string>
+  <string name="TouOptionOracleNeutBadEvil">悪性</string>
+  <string name="TouOptionOracleNeutBadKilling">キル</string>
+  <string name="TouOptionOracleNeutBadOutlier">異端</string>
+  <string name="TouOptionOracleNeutBadNone">なし</string>
+  <!-- Oracle Feedback -->
+  <string name="TouRoleOracleConfessionTitle">オラクルの告白</string>
+  <string name="TouRoleOracleConfessorDied">告白者が生存できなかったため、告白を聞けませんでした</string>
+  <string name="TouRoleOracleTooFew">生存者が少なすぎて告白を受け取れません</string>
+  <string name="TouRoleOracleNoMoreEvil">\%player\% は、もうこれ以上悪のプレイヤーはいないと告白しました！</string>
+  <string name="TouRoleOracleThreePlayers">\%player1\% は、自身か \%player2\% 、 \%player3\% のいずれかが悪であると告白しました！</string>
+  <string name="TouRoleOracleBlessingMessageSelf">あなたの祝福が \%player\% を死から救いました！</string>
+  <string name="TouRoleOracleBlessingMessageOthers">\%player\% は \%color=#FFBF00BF\%オラクル\%/color\% に祝福されていたため生き残りました！</string>
+  <!-- Plumber - Crewmate Support -->
+  <!-- Plumber Wiki / Abilities -->
+  <string name="TouRolePlumber">プラマー</string>
+  <string name="TouRolePlumberIntroBlurb">船内の厄介なベント使用者を追い出せ</string>
+  <string name="TouRolePlumberTabDescription">ベントをフラッシュして潜んでいる者を追い出し、\%nl\%ベントを封鎖して次のラウンドでの使用を阻止します</string>
+  <string name="TouRolePlumberExtraTabText">封鎖の持続期間: \%roundCount\% ラウンド</string>
+  <string name="TouRolePlumberExtraTabTextForever">封鎖は永続します</string>
+  <string name="TouRolePlumberVentListTabText">ベント一覧</string>
+  <string name="TouRolePlumberUnbuiltBarricadeTabText">準備中...</string>
+  <string name="TouRolePlumberVentLabelTabText">\%roomName\% のベント</string>
+  <string name="TouRolePlumberVentRoundsTabText">残り \%roundsRemaining\% ラウンド</string>
+  <string name="TouNotifPlumberBlock">このベントは次のラウンド開始時に封鎖されます。</string>
+  <string name="TouRolePlumberWikiDescription">プラマーはクルーメイト・サポートの役職で、ベントを封鎖したり、潜んでいる者をフラッシュして追い出すことができます。</string>
+  <string name="TouRolePlumberFlush">フラッシュ</string>
+  <string name="TouRolePlumberFlushWikiDescription">ベントをフラッシュしてすべてのベントを開閉させ、中にいる全員を強制的に追い出します。プラマーには追い出された全員を指す矢印が1秒間表示されます。</string>
+  <string name="TouRolePlumberBlock">封鎖</string>
+  <string name="TouRolePlumberBlockWikiDescription">ベントを封鎖し、次のラウンドの間、プレイヤーがそのベントを使用できないようにします。</string>
+  <string name="TouRolePlumberBlockNotif">このベントは次のラウンド開始時に封鎖されます。</string>
+  <!-- Plumber Options -->
+  <string name="TouOptionPlumberFlushCooldown">フラッシュのクールダウン</string>
+  <string name="TouOptionPlumberBlockCooldown">封鎖のクールダウン</string>
+  <string name="TouOptionPlumberMaxNumberOfBarricades">初期封鎖可能数</string>
+  <string name="TouOptionPlumberAmountOfRoundsBarricadesLast">封鎖の持続ラウンド数</string>
+  <string name="TouOptionPlumberGetMoreFromTasks">タスク完了で追加の封鎖回数を得る</string>
+  <!-- Politician - Crewmate Power -->
+  <!-- Politician Wiki / Abilities -->
+  <string name="TouRolePolitician">ポリティシャン</string>
+  <string name="TouRolePoliticianIntroBlurb">キャンペーンを行ってメイヤーを目指せ！</string>
+  <string name="TouRolePoliticianTabDescription">メイヤーになるためにクルーへのキャンペーンを行いましょう！\%nl\%正体を明かすには、少なくとも半数の潔白なプレイヤーへの働きかけが必要です</string>
+  <string name="TouRolePoliticianEgotistTabInfo">正体を明かした際、悪人はあなたの真の動機を知ることになります。</string>
+  <string name="TouRolePoliticianWikiDescription">ポリティシャンはクルーメイト・パワーの役職で、少なくとも半数のクルーメイトにキャンペーンを行った後、自身がメイヤーであることをクルーに明かすことができます。</string>
+  <string name="TouRolePoliticianCampaign">キャンペーン</string>
+  <string name="TouRolePoliticianCampaignWikiDescription">プレイヤーに投票用紙を渡します。相手がクルーメイトである場合のみ、あなたの目標に貢献します。</string>
+  <string name="TouRolePoliticianReveal">名乗り出る</string>
+  <string name="TouRolePoliticianRevealWiki">名乗り出る（会議）</string>
+  <string name="TouRolePoliticianRevealWikiDescription">名乗り出た際、半数以上のクルーメイトにキャンペーンを行っている（または他のクルーメイトがいない）場合、メイヤーになります！そうでなければ失敗します。</string>
+  <string name="TouRolePoliticianRevealWikiDescriptionPunished">名乗り出た際、半数以上のクルーメイトにキャンペーンを行っている（または他のクルーメイトがいない）場合、メイヤーになります！失敗した場合は次のラウンドでキャンペーンを行えません。</string>
+  <!-- Politician Options -->
+  <string name="TouOptionPoliticianCampaignCooldown">キャンペーンのクールダウン</string>
+  <string name="TouOptionPoliticianPreventCampaignOnFailedReveal">名乗り出し失敗時にキャンペーンを制限する</string>
+  <!-- Politician Feedback -->
+  <string name="TouRolePoliticianFailedRevealCanCampaign">もっと多くのクルーメイトにキャンペーンを行う必要があります！この会議ではもう名乗り出られません。</string>
+  <string name="TouRolePoliticianFailedRevealCannotCampaign">もっと多くのクルーメイトにキャンペーンを行う必要があります！また、次のラウンドではキャンペーンを行えません。</string>
+  <string name="TouRolePoliticianFeedbackText">ポリティシャンのフィードバック</string>
+  <!-- Prosecutor - Crewmate Power -->
+  <!-- Prosecutor Wiki / Abilities -->
+  <string name="TouRoleProsecutor">プロセキューター</string>
+  <string name="TouRoleProsecutorIntroBlurb">任意のプレイヤーを追放せよ</string>
+  <string name="TouRoleProsecutorTabDescription">誰でも好きなプレイヤーを追放することを選択できます</string>
+  <string name="TouRoleProsecutorCanProsecuteCrew">\%b\%クルーを告発可能です。\%/b\%</string>
+  <string name="TouRoleProsecutorProsecutionsRemaining">残り告発回数: \%count\%</string>
+  <string name="TouRoleProsecutorWikiDescription">プロセキューターはクルーメイト・パワーの役職で、任意のプレイヤーに5票を投じて追放させることができます。また、匿名であっても誰が誰に投票したかを見ることができます。</string>
+  <string name="TouRoleProsecutorProsecute">告発</string>
+  <string name="TouRoleProsecutorProsecuteWiki">告発（会議）</string>
+  <string name="TouRoleProsecutorProsecuteWikiDescription">任意のプレイヤーを告発し、他のすべての票を無視してそのプレイヤーに5票を投じ、追放させます。</string>
+  <!-- Prosecutor Options -->
+  <string name="TouOptionProsecutorDiesWhenCrewmateExiled">クルーメイトを追放させた場合に死亡する</string>
+  <string name="TouOptionProsecutorMaxProsecutions">最大告発回数</string>
+  <!-- Seer - Crewmate Investigative -->
+  <!-- Seer Wiki / Abilities -->
+  <string name="TouRoleSeer">シアー</string>
+  <string name="TouRoleSeerIntroBlurb">他者の同盟を明らかにせよ</string>
+  <string name="TouRoleSeerAltIntroBlurb">2人のプレイヤーの属性を比較せよ</string>
+  <string name="TouRoleSeerTabDescription">他のプレイヤーの陣営を明かし、悪人を見つけ出します。</string>
+  <string name="TouRoleSeerAltTabDescription">2人のプレイヤーを比較して、\%nl\%彼らが味方か敵かを確認します！</string>
+  <string name="TouRoleSeerWikiDescription">シアーはクルーメイト・調査の役職で、他のプレイヤーの陣営を明かすことができます。</string>
+  <string name="TouRoleSeerAltWikiDescription">シアーはクルーメイト・調査の役職で、2人のプレイヤーを比較して属性が一致するか対立するかを確認できます。</string>
+  <string name="TouRoleSeerReveal">公開</string>
+  <string name="TouRoleSeerRevealWikiDescription">プレイヤーの陣営を公開します</string>
+  <string name="TouRoleSeerIntuit">直感</string>
+  <string name="TouRoleSeerGaze">凝視</string>
+  <string name="TouRoleSeerCompare">直感 \%and\% 凝視 </string>
+  <string name="TouRoleSeerCompareWikiDescription">「直感」と「凝視」を別々のプレイヤーに使用して、2人の属性を比較します。彼らが敵同士である場合、その旨が通知されます。</string>
+  <string name="TouRoleSeerGazeNotif">現在 \%player\% を凝視しています。必要に応じて変更可能です。</string>
+  <string name="TouRoleSeerIntuitNotif">現在 \%player\% を直感しています。必要に応じて変更可能です。</string>
+  <string name="TouRoleSeerCompareErrorAmountNotif">凝視と直感の2つのターゲットを選ぶ必要があります。</string>
+  <string name="TouRoleSeerCompareErrorSelfNotif">自分自身を比較対象にすることはできません！</string>
+  <string name="TouRoleSeerCompareEnemiesNotif">\%gazed\% と \%intuited\% は敵同士のようです！</string>
+  <string name="TouRoleSeerCompareFriendsNotif">\%gazed\% と \%intuited\% は味方同士のようです！</string>
+  <string name="TouRoleSeerTabHeader">過去の比較:</string>
+  <string name="TouRoleSeerTabComparison">\%gazed\% vs \%intuited\% (ラウンド \%num\%)</string>
+  <!-- Seer Options -->
+  <string name="TouOptionSeerSalemMode">属性チェックの代わりにプレイヤーを比較する（セーラムモード）</string>
+  <string name="TouOptionSeerCooldown">公開/比較のクールダウン</string>
+  <string name="TouOptionSeerUses">公開/比較の最大使用回数</string>
+  <string name="TouOptionSeerNeutralBenignFriendly">ニュートラル良性を全員に対して味方として表示する</string>
+  <string name="TouOptionSeerNeutralEvilFriendly">ニュートラル悪性を全員に対して味方として表示する</string>
+  <string name="TouOptionSeerNeutralOutlierFriendly">ニュートラル異端を全員に対して味方として表示する</string>
+  <string name="TouOptionSeerCrewmateKillingRolesAreRed">クルーメイトのキル役職を赤で表示する</string>
+  <string name="TouOptionSeerNeutralBenignRolesAreRed">ニュートラル良性役職を赤で表示する</string>
+  <string name="TouOptionSeerNeutralEvilRolesAreRed">ニュートラル悪性役職を赤で表示する</string>
+  <string name="TouOptionSeerNeutralKillingRolesAreRed">ニュートラルキラー役職を赤で表示する</string>
+  <string name="TouOptionSeerNeutralOutlierRolesAreRed">ニュートラル異端役職を赤で表示する</string>
+  <string name="TouOptionSeerTraitorSwapsColors">トレイター（裏切り者）の色を入れ替える</string>
+  <!-- Sentry - Crewmate Support -->
+  <string name="TouRoleSentry">セントリー</string>
+  <string name="TouRoleSentryIntroBlurb">カメラを配置してマップを監視せよ</string>
+  <string name="TouRoleSentryTabDescription">セキュリティカメラで見ることができるカメラを配置します。</string>
+  <string name="TouRoleSentryWikiDescription">セントリーはクルーメイト・サポートの役職で、セキュリティカメラと同じように機能するカメラをマップ上の好きな場所に配置できます。</string>
+  <string name="TouRoleSentryPlaceCamera">配置</string>
+  <string name="TouRoleSentryPlaceCameraWikiDescription">現在地にカメラを配置します。カメラが有効になるタイミングは設定によります。</string>
+  <string name="TouRoleSentryPortableCamera">監視</string>
+  <string name="TouRoleSentryPortableCameraWikiDescription">バッテリー制限はありますが、どこからでもセキュリティカメラにアクセスできます。監視中はバッテリーを消費し、充電はできません。通信サボタージュ中は使用不可になります。</string>
+  <string name="TouRoleSentryPortableCameraUnlocked">ポータブルカメラがアンロックされました！</string>
+  <string name="TouRoleSentryPortableAvailableImmediately">ポータブルカメラは即座に使用可能です。</string>
+  <string name="TouRoleSentryPortableAvailableAfterTasks">ポータブルカメラはタスク完了後に使用可能です。</string>
+  <string name="TouRoleSentryCamerasHeader">カメラ</string>
+  <string name="TouRoleSentrySentryOnly">(セントリー専用)</string>
+  <string name="TouRoleSentryPlacing">(配置中...)</string>
+  <string name="TouRoleSentryMaxCamerasReached">最大配置数に達しました (%count%/%max%)。</string>
+  <!-- Sentry Options -->
+  <string name="TouOptionSentryPlacementCooldown">配置のクールダウン</string>
+  <string name="TouOptionSentryDeployedCamerasVisibility">配置したカメラの可視性</string>
+  <string name="TouOptionSentryCamerasVisibleAfter">カメラが有効になる条件</string>
+  <string name="TouOptionSentryCanMoveWhilePlacingCameras">カメラ配置中に移動可能</string>
+  <string name="TouOptionSentryPortableCamerasMode">即時ポータブルカメラ（またはタスク完了後）</string>
+  <string name="TouOptionSentryInitialCameras">初期カメラ数</string>
+  <string name="TouOptionSentryCameraRoundsLast">カメラの持続ラウンド数</string>
+  <string name="TouOptionSentryTasksPerCamera">追加カメラに必要なタスク数</string>
+  <string name="TouOptionSentryMaxCamerasPlaced">最大同時配置カメラ数</string>
+  <string name="TouOptionSentryPortableCamsBattery">ポータブルカメラのバッテリー</string>
+  <string name="TouOptionSentryPortableCamsBatteryPerTask">タスク完了ごとのバッテリー回復量</string>
+  <string name="TouOptionSentryBlindspots">ブラインドスポット</string>
+  <string name="TouOptionSentryBlindspot1Room">ブラインドスポット 1 部屋</string>
+  <string name="TouOptionSentryBlindspot2Room">ブラインドスポット 2 部屋</string>
+  <string name="TouOptionSentryBlindspot3Room">ブラインドスポット 3 部屋</string>
+  <string name="TouOptionSentryBlindspot4Room">ブラインドスポット 4 部屋</string>
+  <string name="TouOptionSentryBlindspot5Room">ブラインドスポット 5 部屋</string>
+  <string name="TouOptionSentryBlindspot6Room">ブラインドスポット 6 部屋</string>
+  <string name="TouOptionSentryBlindspot7Room">ブラインドスポット 7 部屋</string>
+  <string name="TouOptionSentryBlindspot8Room">ブラインドスポット 8 部屋</string>
+  <string name="TouOptionSentryBlindspot9Room">ブラインドスポット 9 部屋</string>
+  <string name="TouOptionSentryBlindspot10Room">ブラインドスポット 10 部屋</string>
+  <!-- SystemTypes (for Sentry blindspot room picker) -->
+  <string name="TouSystemType_Hallway">通路</string>
+  <string name="TouSystemType_Storage">ストレージ</string>
+  <string name="TouSystemType_Cafeteria">カフェテリア</string>
+  <string name="TouSystemType_Reactor">リアクター</string>
+  <string name="TouSystemType_UpperEngine">アッパーエンジン</string>
+  <string name="TouSystemType_Nav">ナビゲーション</string>
+  <string name="TouSystemType_Admin">アドミン</string>
+  <string name="TouSystemType_Electrical">電気室</string>
+  <string name="TouSystemType_LifeSupp">酸素室</string>
+  <string name="TouSystemType_Shields">シールド</string>
+  <string name="TouSystemType_MedBay">医務室</string>
+  <string name="TouSystemType_Security">セキュリティ</string>
+  <string name="TouSystemType_Weapons">通信室</string>
+  <string name="TouSystemType_LowerEngine">ロワーエンジン</string>
+  <string name="TouSystemType_Comms">通信室</string>
+  <string name="TouSystemType_ShipTasks">船内タスク</string>
+  <string name="TouSystemType_Doors">ドア</string>
+  <string name="TouSystemType_Sabotage">サボタージュ</string>
+  <string name="TouSystemType_Decontamination">除染室</string>
+  <string name="TouSystemType_Launchpad">発射場</string>
+  <string name="TouSystemType_LockerRoom">ロッカールーム</string>
+  <string name="TouSystemType_Laboratory">研究室</string>
+  <string name="TouSystemType_Balcony">バルコニー</string>
+  <string name="TouSystemType_Office">オフィス</string>
+  <string name="TouSystemType_Greenhouse">温室</string>
+  <string name="TouSystemType_Dropship">ドロップシップ</string>
+  <string name="TouSystemType_Decontamination2">除染室</string>
+  <string name="TouSystemType_Outside">外</string>
+  <string name="TouSystemType_Specimens">標本室</string>
+  <string name="TouSystemType_BoilerRoom">ボイラー室</string>
+  <string name="TouSystemType_VaultRoom">金庫室</string>
+  <string name="TouSystemType_Cockpit">コックピット</string>
+  <string name="TouSystemType_Armory">武器庫</string>
+  <string name="TouSystemType_Kitchen">キッチン</string>
+  <string name="TouSystemType_ViewingDeck">展望デッキ</string>
+  <string name="TouSystemType_HallOfPortraits">肖像画の廊下</string>
+  <string name="TouSystemType_CargoBay">貨物室</string>
+  <string name="TouSystemType_Ventilation">換気室</string>
+  <string name="TouSystemType_Showers">シャワー室</string>
+  <string name="TouSystemType_Engine">エンジンルーム</string>
+  <string name="TouSystemType_Brig">監獄</string>
+  <string name="TouSystemType_MeetingRoom">会議室</string>
+  <string name="TouSystemType_Records">記録室</string>
+  <string name="TouSystemType_Lounge">ラウンジ</string>
+  <string name="TouSystemType_GapRoom">ギャップルーム</string>
+  <string name="TouSystemType_MainHall">メインホール</string>
+  <string name="TouSystemType_Medical">医務室</string>
+  <string name="TouSystemType_Decontamination3">除染室</string>
+  <string name="TouSystemType_Zipline">ジップライン</string>
+  <string name="TouSystemType_MiningPit">採掘場</string>
+  <string name="TouSystemType_FishingDock">釣り場</string>
+  <string name="TouSystemType_RecRoom">娯楽室</string>
+  <string name="TouSystemType_Lookout">展望室</string>
+  <string name="TouSystemType_Beach">ビーチ</string>
+  <string name="TouSystemType_Highlands">ハイランド</string>
+  <string name="TouSystemType_Jungle">ジャングル</string>
+  <string name="TouSystemType_SleepingQuarters">寝室</string>
+  <string name="TouSystemType_MushroomMixupSabotage">マッシュルームミックスアップ</string>
+  <string name="TouSystemType_HeliSabotage">ヘリサボタージュ</string>
 
+  <!-- Sheriff - Crewmate Killing -->
+  <!-- Sheriff Wiki / Abilities -->
+  <string name="TouRoleSheriff">シェリフ</string>
+  <string name="TouRoleSheriffIntroBlurb">\%color=#FF0000FF\%悪人\%/color\% を射殺せよ</string>
+  <string name="TouRoleSheriffTabDescription">クルーを殺さずにインポスターを排除しましょう</string>
+  <string name="TouRoleSheriffTabDescriptionEgo">クルーを敗北させるために、誰でも好きな相手を殺害しましょう</string>
+  <string name="TouRoleSheriffWikiDescription">シェリフはクルーメイト・キルの役職で、プレイヤーを撃って殺害を試みることができます。誤射で死亡しなかった場合、射撃能力を失います。</string>
+  <string name="TouRoleSheriffShoot">射撃</string>
+  <string name="TouRoleSheriffShootWikiDescription">プレイヤーを射撃します。相手がインポスターや指定された陣営以外だった場合は誤射となります。</string>
+  <!-- Sheriff Misfire Text -->
+  <string name="TouRoleSheriffTabMisfired">もう撃つことはできません。</string>
+  <string name="TouRoleSheriffTabMisfireKillsBoth">誤射するとあなたとターゲットの両方が死亡します。</string>
+  <string name="TouRoleSheriffTabMisfireKillsSheriff">誤射すると自殺することになります。</string>
+  <string name="TouRoleSheriffTabMisfireKillsTarget">誤射すると能力を失う代わりに、ターゲットが死亡します。</string>
+  <string name="TouRoleSheriffTabMisfireKillsNobody">誤射すると以降の射撃ができなくなります。</string>
+  <!-- Sheriff Feedback -->
+  <string name="TouRoleSheriffMisfireFeedback">射撃能力を失いました！</string>
+  <!-- Sheriff Options -->
+  <string name="TouOptionSheriffKillCooldown">キルクールダウン</string>
+  <string name="TouOptionSheriffCanSelfReport">セルフ通報可能</string>
+  <string name="TouOptionSheriffAllowShootinginFirstRound">第1ラウンドでの射撃を許可</string>
+  <string name="TouOptionSheriffCanShootNeutralBenignRoles">ニュートラル良性を射撃可能</string>
+  <string name="TouOptionSheriffCanShootNeutralEvilRoles">ニュートラル悪性を射撃可能</string>
+  <string name="TouOptionSheriffCanShootNeutralKillingRoles">ニュートラルキラーを射撃可能</string>
+  <string name="TouOptionSheriffCanShootNeutralOutlierRoles">ニュートラル異端を射撃可能</string>
+  <string name="TouOptionSheriffValidNeutralShots">有効なニュートラル射撃</string>
+  <string name="TouOptionSheriffNeutShootBenign">良性</string>
+  <string name="TouOptionSheriffNeutShootEvil">悪性</string>
+  <string name="TouOptionSheriffNeutShootKilling">キル</string>
+  <string name="TouOptionSheriffNeutShootOutlier">異端</string>
+  <string name="TouOptionSheriffNeutShootNone">なし</string>
+  <string name="TouOptionSheriffMisfireKills">誤射時の死亡対象</string>
+  <string name="TouOptionSheriffKillEnumSheriff">自分</string>
+  <string name="TouOptionSheriffKillEnumTarget">ターゲット</string>
+  <string name="TouOptionSheriffKillEnumBoth">自分 + ターゲット</string>
+  <string name="TouOptionSheriffKillEnumNobody">なし</string>
+  <!-- Snitch - Crewmate Investigative -->
+  <!-- Snitch Wiki / Description -->
+  <string name="TouRoleSnitch">スニッチ</string>
+  <string name="TouRoleSnitchIntroBlurb">\%color=#FF0000FF\%インポスター\%/color\% を見つけ出せ！</string>
+  <string name="TouRoleSnitchTabDescription">すべてのタスクを完了してインポスターを見つけましょう。</string>
+  <string name="TouRoleSnitchTabDescriptionCompletedTasks">インポスターを見つけましょう！</string>
+  <string name="TouRoleSnitchTabDescriptionEgo">すべてのタスクを完了してインポスターを見つけ、\%and\% 彼らを助けましょう。</string>
+  <string name="TouRoleSnitchTabDescriptionCompletedTasksEgo">インポスターを助けましょう！</string>
+  <string name="TouRoleSnitchWikiDescription">スニッチはクルーメイト・調査の役職で、すべてのタスクを完了することで自身にインポスターの正体を明かすことができます。完了時、インポスターは赤い名前と矢印で表示されます。</string>
+  <string name="TouRoleSnitchSelfRevealedEgoFeedback">インポスターにあなたの居場所と、あなたがエゴティストであることが知られました！</string>
+  <string name="TouRoleSnitchSelfRevealedFeedback">インポスターにあなたの居場所が知られました！</string>
+  <string name="TouRoleSnitchImpRevealedEgoFeedback">スニッチはエゴティストです。彼らはクルーを打倒する手助けをしてくれます！</string>
+  <string name="TouRoleSnitchImpRevealedFeedback">スニッチが正体を暴こうと近づいています！</string>
+  <string name="TouRoleSnitchSelfCompletedEgoFeedback">インポスターを暴きました。彼らはあなたの勝利を助けてくれます！</string>
+  <string name="TouRoleSnitchSelfCompletedFeedback">インポスターを暴きました！</string>
+  <string name="TouRoleSnitchImpCompletedEgoFeedback">スニッチがエゴティストとしてあなたを助けられるようになりました！</string>
+  <string name="TouRoleSnitchImpCompletedFeedback">スニッチに正体がバレました！</string>
+  <!-- Snitch Options -->
+  <string name="TouOptionSnitchRevealsNeutralKillers">ニュートラルキラーも公開する</string>
+  <string name="TouOptionSnitchSeesTraitor">トレイター（裏切り者）を表示する</string>
+  <string name="TouOptionSnitchSeesImpostorsInMeetings">会議中にインポスターを表示する</string>
+  <string name="TouOptionSnitchTasksRemainingWhenRevealed">正体がバレるまでの残りタスク数</string>
+  <!-- Spy - Crewmate Investigative -->
+  <!-- Spy Wiki / Description -->
+  <string name="TouRoleSpy">スパイ</string>
+  <string name="TouRoleSpyIntroBlurb">嗅ぎ回って暴き出せ</string>
+  <string name="TouRoleSpyTabDescription">アドミン端末でより詳細な情報を得られます</string>
+  <string name="TouRoleSpyWikiDescription">スパイはクルーメイト・調査の役職で、アドミン端末で追加情報を得ることができます。各部屋の人数だけでなく、誰がどの部屋にいるかまで見ることができます。</string>
+  <!-- Spy Options -->
+  <string name="TouOptionSpyWhoSeesDeadBodiesOnAdmin">アドミンで死体が見えるプレイヤー</string>
+  <string name="TouOptionSpyDeadEnumNobody">なし</string>
+  <string name="TouOptionSpyDeadEnumSpy">スパイ</string>
+  <string name="TouOptionSpyDeadEnumEveryoneButSpy">スパイ以外の全員</string>
+  <string name="TouOptionSpyDeadEnumEveryone">全員</string>
+  <string name="TouOptionSpyAllowPortableAdminTableFor">ポータブルアドミンを許可する対象</string>
+  <string name="TouOptionSpyPortableEnumRole">役職</string>
+  <string name="TouOptionSpyPortableEnumModifier">モディファイア</string>
+  <string name="TouOptionSpyPortableEnumBoth">役職 + モディファイア</string>
+  <string name="TouOptionSpyPortableEnumNone">無効</string>
+  <string name="TouOptionSpyMoveWhileUsingPortableAdmin">ポータブルアドミン使用中に移動可能</string>
+  <string name="TouOptionSpyStartingCharge">初期チャージ</string>
+  <string name="TouOptionSpyBatteryChargedEachRound">各ラウンドごとのチャージ量</string>
+  <string name="TouOptionSpyBatteryChargedPerTask">タスク完了ごとのチャージ量</string>
+  <string name="TouOptionSpyPortableAdminDisplayCooldown">ポータブルアドミンの表示クールダウン</string>
+  <string name="TouOptionSpyPortableAdminDisplayDuration">ポータブルアドミンの表示時間</string>
+  <!-- Swapper - Crewmate Power -->
+  <!-- Swapper Wiki / Abilities -->
+  <string name="TouRoleSwapper">スワッパー</string>
+  <string name="TouRoleSwapperIntroBlurb">票を入れ替えてクルーを救え！</string>
+  <string name="TouRoleSwapperTabDescription">会議中に2人のプレイヤーの票を入れ替えます</string>
+  <string name="TouRoleSwapperWikiDescription">スワッパーはクルーメイト・パワーの役職で、会議で2人のプレイヤーの票を入れ替えることができます。投票エリアが視覚的に入れ替わり、実際の票も交換されます。最も票を集めたプレイヤーと別のプレイヤーを入れ替えた場合、後者が追放されます。</string>
+  <string name="TouRoleSwapperSwap">入れ替え</string>
+  <string name="TouRoleSwapperSwapWiki">入れ替え（会議）</string>
+  <string name="TouRoleSwapperSwapWikiDescription">票を入れ替える2人のプレイヤーを選択します。会議の終了時にそれらが入れ替わります！</string>
+  <!-- Swapper Options -->
+  <string name="TouOptionSwapperCanCallButton">ボタンの使用可能</string>
+  <!-- Time Lord - Crewmate Power -->
+  <!-- Time Lord Wiki / Abilities -->
+  <string name="TouRoleTimeLord">タイムロード</string>
+  <string name="TouRoleTimeLordIntroBlurb">時間を巻き戻せ</string>
+  <string name="TouRoleTimeLordTabDescription">「リワインド」を使って、全員を数秒前の位置に戻します。</string>
+  <string name="TouRoleTimeLordWikiDescription">タイムロードはクルーメイト・パワーの役職で、時間を巻き戻し、短時間の間すべてのプレイヤーに過去の足跡を辿らせることができます。</string>
+  <string name="TouRoleTimeLordRewind">リワインド</string>
+  <string name="TouRoleTimeLordRewinding">リワインド中</string>
+  <string name="TouRoleTimeLordRewindWikiDescription">全員の時間を巻き戻します。プレイヤーは一定時間、直前の経路を強制的に戻されます。その間に発生した死はすべて取り消されます。</string>
+  <string name="TouRoleTimeLordRewindNotif">時間が巻き戻されています！</string>
+  <string name="TouRoleTimeLordRevivedNotif">タイムロードのおかげで蘇生されました！</string>
+  <!-- Time Lord Options -->
+  <string name="TouOptionTimeLordRewindCooldown">リワインドのクールダウン</string>
+  <string name="TouOptionTimeLordRewindHistory">巻き戻す時間の長さ</string>
+  <string name="TouOptionTimeLordMaxUses">初期使用回数</string>
+  <string name="TouOptionTimeLordUsesPerTasks">追加のリワインドに必要なタスク数</string>
+  <string name="TouOptionTimeLordCanUseVitals">バイタルを使用可能</string>
+  <string name="TouOptionTimeLordReviveOnRewind">リワインドで蘇生する</string>
+  <string name="TouOptionTimeLordUndoTasksOnRewind">リワインドでタスクの進行を戻す</string>
+  <string name="TouOptionTimeLordUncleanBodiesOnRewind">リワインドで消えた死体を戻す</string>
+  <string name="TouOptionTimeLordNotifyOnRevive">蘇生時にタイムロードに通知する</string>
+  <!-- Sonar - Crewmate Investigative -->
+  <!-- Sonar Wiki / Abilities -->
+  <string name="TouRoleSonar">ソナー</string>
+  <string name="TouRoleSonarIntroBlurb">全員の動きを感知せよ</string>
+  <string name="TouRoleSonarTabDescription">不審なプレイヤーを追跡して行き先を確認します</string>
+  <string name="TouRoleSonarWikiDescription">ソナーはクルーメイト・調査の役職で、他のプレイヤーを追跡してマップ上の大まかな位置を把握できます。追跡対象を指す色付きの矢印が表示されます。</string>
+  <string name="TouRoleSonarTrack">追跡</string>
+  <string name="TouRoleSonarTrackWikiDescription">プレイヤーを追跡して行き先を確認します。対象の現在地を指す矢印が表示され、定期的に更新されます。対象が死亡すると消えます。設定によっては会議後にリセットされます。</string>
+  <!-- Sonar Options -->
+  <string name="TouOptionSonarTrackCooldown">追跡のクールダウン</string>
+  <string name="TouOptionSonarMaxNumberOfTracks">初期追跡可能数</string>
+  <string name="TouOptionSonarArrowUpdateInterval">矢印の更新間隔</string>
+  <string name="TouOptionSonarArrowsMakeSoundOnDeath">死亡時にトラッカーが音を出す</string>
+  <string name="TouOptionSonarArrowsResetAfterEachRound">各ラウンド終了時にトラッカーをリセットする</string>
+  <string name="TouOptionSonarTaskUses">タスク完了で追加の使用回数を得る</string>
+  <!-- Transporter - Crewmate Support -->
+  <!-- Transporter Wiki / Abilities -->
+  <string name="TouRoleTransporter">トランスポーター</string>
+  <string name="TouRoleTransporterIntroBlurb">2人のプレイヤーを選んで場所を入れ替えよ</string>
+  <string name="TouRoleTransporterTabDescription">2人のプレイヤーを選んでお互いの場所を入れ替えます</string>
+  <string name="TouRoleTransporterWikiDescription">トランスポーターはクルーメイト・サポートの役職で、生存・死亡を問わず2人のプレイヤーを転送して場所を入れ替えることができます。</string>
+  <string name="TouRoleTransporterTransport">転送</string>
+  <string name="TouRoleTransporterTransportWikiDescription">2人のプレイヤーの位置を入れ替えます。ベントから引きずり出すことも可能です。赤く光った場合は、ハシゴやジップラインを使用中など、対象が無効であることを示します。</string>
+  <string name="TouRoleTransporterTransportNotif">転送されました！</string>
+  <!-- Transporter Options -->
+  <string name="TouOptionTransporterTransportCooldown">転送のクールダウン</string>
+  <string name="TouOptionTransporterMaxUses">初期使用回数</string>
+  <string name="TouOptionTransporterMoveWithMenu">メニュー操作中に移動可能（キーボードのみ）</string>
+  <string name="TouOptionTransporterCanUseVitals">バイタルを使用可能</string>
+  <string name="TouOptionTransporterGetUsesFromTasks">タスク完了で追加の使用回数を得る</string>
+  <!-- Transporter Feedback -->
+  <string name="TouRoleTransporterYouWereTransported">転送されました！</string>
+  <!-- Trapper - Crewmate Investigative -->
+  <!-- Trapper Wiki / Abilities -->
+  <string name="TouRoleTrapper">トラッパー</string>
+  <string name="TouRoleTrapperIntroBlurb">どのロールが潜んでいるか特定せよ</string>
+  <string name="TouRoleTrapperTabDescription">マップ上にトラップを仕掛け、中に入ったプレイヤーのロールを明かします</string>
+  <string name="TouRoleTrapperWikiDescription">トラッパーはクルーメイト・調査の役職で、マップ上にトラップを仕掛けることができます。トラップ内に一定時間留まったプレイヤーや通過した人数が十分な場合、次の会議でそれらの役職がランダムな順序で表示されます。</string>
+  <string name="TouRoleTrapperTrap">トラップ</string>
+  <string name="TouRoleTrapperTrapWikiDescription">トラップを設置します。設定によってはゲーム中残り続けるか、会議ごとにリセットされます。</string>
+  <!-- Trapper Options -->
+  <string name="TouOptionTrapperTrapCooldown">トラップのクールダウン</string>
+  <string name="TouOptionTrapperMinAmountOfTimeInTrap">記録に必要な最小滞在時間</string>
+  <string name="TouOptionTrapperMaxNumberOfTraps">初期トラップ数</string>
+  <string name="TouOptionTrapperTrapSize">トラップのサイズ</string>
+  <string name="TouOptionTrapperTrapsRemovedAfterRound">各ラウンド終了時にトラップをリセットする</string>
+  <string name="TouOptionTrapperGetUsesFromTasks">タスク完了で追加のトラップ回数を得る</string>
+  <string name="TouOptionTrapperMinimumNumberOfRoles">トラップ発動に必要な最小ロール数</string>
+  <!-- Trapper Feedback -->
+  <string name="TouRoleTrapperMessageTitle">トラッパーレポート</string>
+  <string name="TouRoleTrapperNoPlayers">トラップに入ったプレイヤーはいませんでした</string>
+  <string name="TouRoleTrapperNotEnoughPLayers">トラップを発動させるのに十分な人数が通りませんでした</string>
+  <string name="TouRoleTrapperRolesCaught">トラップにかかった役職:</string>
+  <!-- Veteran - Crewmate Killing -->
+  <!-- Veteran Wiki / Abilities -->
+  <string name="TouRoleVeteran">ベテラン</string>
+  <string name="TouRoleVeteranIntroBlurb">接触してきた者を返り討ちにせよ</string>
+  <string name="TouRoleVeteranTabDescription">警戒態勢に入り、接触してきた者を返り討ちにします。</string>
+  <string name="TouRoleVeteranWikiDescription">ベテランはクルーメイト・キルの役職で、警戒態勢に入っている間に自分に接触（アビリティを使用）したプレイヤーを返り討ちにできます。</string>
+  <string name="TouRoleVeteranAlert">警戒</string>
+  <string name="TouRoleVeteranAlerting">警戒中</string>
+  <string name="TouRoleVeteranAlertWikiDescription">警戒中、自分に接触したプレイヤーは即座に死亡します。ただし、ペスティレンスやシールド持ちのプレイヤーは攻撃を無効化します。</string>
+  <string name="TouRoleVeteranMessageTitle">ベテランの警告</string>
+  <string name="TouRoleVeteranAttackMessage">この会議の前に、警戒状態で攻撃を受けました！</string>
+  <!-- Veteran Options -->
+  <string name="TouOptionVeteranAlertCooldown">警戒のクールダウン</string>
+  <string name="TouOptionVeteranAlertDuration">警戒の持続時間</string>
+  <string name="TouOptionVeteranMaxNumberofAlerts">初期警戒回数</string>
+  <string name="TouOptionVeteranCanBeKilledOnAlert">警戒中でもキルされる可能性がある</string>
+  <string name="TouOptionVeteranGetMoreUsesFromCompletingTasks">タスク完了で追加の警戒回数を得る</string>
+  <string name="TouOptionVeteranKnowWhenAttackedInMeeting">攻撃されたことを会議中に知ることができる</string>
+
+  <!-- Vigilante - Crewmate Killing -->
+  <!-- Vigilante Wiki / Description -->
+  <string name="TouRoleVigilante">ビジランテ</string>
+  <string name="TouRoleVigilanteIntroBlurb">\%color=#FF0000FF\%悪人\%/color\% を見破って射殺せよ！</string>
+  <string name="TouRoleVigilanteTabDescription">会議中にインポスターの役職を推測してキルしましょう！</string>
+  <string name="TouRoleVigilanteEvilTabInfo">クルーメイトも推測対象にできます。</string>
+  <string name="TouRoleVigilanteNoSafeShots">誤射耐性はもうありません。</string>
+  <string name="TouRoleVigilanteSafeShotsLeft">残り誤射耐性回数: \%count\%</string>
+  <string name="TouRoleVigilanteMultiShotFeedback">マルチショットによりこの会議での死亡を防ぎました！残り誤射耐性回数: \%count\%</string>
+  <string name="TouRoleVigilanteWikiDescription">ビジランテはクルーメイト・キルの役職で、会議中にプレイヤーの役職を推測できます。正解すれば相手が死亡し、不正解なら自分が死亡します。</string>
+  <!-- Vigilante Options -->
+  <string name="TouOptionVigilanteNumberOfGuesses">推測回数</string>
+  <string name="TouOptionVigilanteCanGuessMoreThanOncePerMeeting">1回の会議で複数回推測可能</string>
+  <string name="TouOptionVigilanteCanGuessNeutralBenignRoles">ニュートラル良性を推測可能</string>
+  <string name="TouOptionVigilanteCanGuessNeutralEvilRoles">ニュートラル悪性を推測可能</string>
+  <string name="TouOptionVigilanteCanGuessNeutralKillingRoles">ニュートラルキラーを推測可能</string>
+  <string name="TouOptionVigilanteCanGuessNeutralOutlierRoles">ニュートラル異端を推測可能</string>
+  <string name="TouOptionVigilanteGuessableNeutrals">推測可能なニュートラル</string>
+  <string name="TouOptionVigilanteGuessableBenign">良性</string>
+  <string name="TouOptionVigilanteGuessableEvil">悪性</string>
+  <string name="TouOptionVigilanteGuessableKilling">キル</string>
+  <string name="TouOptionVigilanteGuessableOutlier">異端</string>
+  <string name="TouOptionVigilanteGuessableNone">なし</string>
+  <string name="TouOptionVigilanteCanGuessKillerModifiers">キラーモディファイアを推測可能</string>
+  <string name="TouOptionVigilanteCanGuessAlliances">同盟モディファイアを推測可能</string>
+  <string name="TouOptionVigilanteSafeShotsAvailable">誤射耐性の利用可能回数</string>
+  <!-- Warden - Crewmate Protective -->
+  <!-- Warden Wiki / Abilities -->
+  <string name="TouRoleWarden">ウォーデン</string>
+  <string name="TouRoleWardenIntroBlurb">クルーメイトを要塞化せよ</string>
+  <string name="TouRoleWardenTabDescription">クルーを要塞化して他者からの接触を防ぎます</string>
+  <string name="TouRoleWardenTabProtecting">要塞化中: \%player\%</string>
+  <string name="TouRoleWardenWikiDescription">ウォーデンはクルーメイト・保護の役職で、プレイヤーを要塞化して接触を防ぐことができます。</string>
+  <string name="TouRoleWardenFortify">要塞化</string>
+  <string name="TouRoleWardenFortifyWikiDescription">プレイヤーを要塞化して接触を防ぎます。要塞化されたプレイヤーに誰かが接触しようとすると、能力は発動せず、ウォーデンと対象の両方に紫色のフラッシュで通知されます。</string>
+  <!-- Warden Options -->
+  <string name="TouOptionWardenShowFortifyPlayer">要塞化されたプレイヤーを表示する</string>
+  <string name="TouOptionWardenFortEnumSelf">要塞化対象</string>
+  <string name="TouOptionWardenFortEnumWarden">ウォーデン</string>
+  <string name="TouOptionWardenFortEnumSelfAndWarden">要塞化対象 + ウォーデン</string>
+  <string name="TouOptionWardenFortEnumEveryone">全員</string>
+  <!-- Impostor Roles -->
+  <!-- Ambassador Wiki / Abilities -->
+  <string name="TouRoleAmbassador">アンバサダー</string>
+  <string name="TouRoleAmbassadorIntroBlurb">\%color=#FF0000FF\%インポスター\%/color\% を勝利に導け</string>
+  <string name="TouRoleAmbassadorTabDescription">自分や仲間のインポスターを別の役職に再訓練します\%nl\%\%b\%インポスターキルはパワー役職になれません\%/b\%\%nl\%\%b\%インポスター隠蔽/サポートはキル/パワー役職になれません\%/b\%</string>
+  <string name="TouRoleAmbassadorWikiDescription">アンバサダーはインポスター・パワーの役職で、インポスターを他のインポスター役職に再訓練できます。</string>
+  <string name="TouRoleAmbassadorRetrain">再訓練</string>
+  <string name="TouRoleAmbassadorRetrainWiki">再訓練（会議）</string>
+  <string name="TouRoleAmbassadorRetrainWikiDescription">自分または他のインポスターを、その属性内の役職に再訓練します。インポスターキル役職はパワー以外の役職に、隠蔽/サポート役職は隠蔽またはサポート役職に変更可能です。</string>
+  <string name="TouRoleAmbassadorRetrainsAvailable">残り再訓練回数: \%retrainsLeft\% / \%retrainsTotal\%</string>
+  <string name="TouRoleAmbassadorRetrainWaiting">第 \%roundToWait\% ラウンドで再訓練可能</string>
+  <string name="TouRoleAmbassadorRetrainCooldown">ラウンドクールダウン: \%roundsLeft\% / \%roundsTotal\%</string>
+  <string name="TouRoleAmbassadorChooseRole">再訓練する役職を選択してください。</string>
+  <string name="TouRoleAmbassadorRandomImpostorOption">ランダムインポスター</string>
+  <string name="TouRoleAmbassadorConfirmPromptTitle">アンバサダーの再訓練</string>
+  <string name="TouRoleAmbassadorConfirmPromptText">本当に \%newRole\% に再訓練しますか？\%nl\%この変更は永続的です。</string>
+  <string name="TouRoleAmbassadorConfirmPromptDeny">拒否</string>
+  <string name="TouRoleAmbassadorConfirmPromptAccept">承認</string>
+  <string name="TouRoleAmbassadorRetrainedPlayerTag">再訓練済み</string>
+  <!-- Ambassador Options -->
+  <string name="TouOptionAmbassadorMaxRetrainsAvailable">最大再訓練回数</string>
+  <string name="TouOptionAmbassadorRetrainRequiresConfirmation">再訓練に確認を必要とする</string>
+  <string name="TouOptionAmbassadorKillsNeededByAmbassadorOrTeammateToRetrain">再訓練に必要なキル数（自分または仲間）</string>
+  <string name="TouOptionAmbassadorRoundInWhichRetrainingIsPossible">再訓練が可能になるラウンド</string>
+  <string name="TouOptionAmbassadorRoundsNeededToRetrainAgain">次回の再訓練までに必要なラウンド数</string>
+  <!-- Ambassador Feedback -->
+  <string name="TouRoleAmbassadorDecidedToRetrainYou">アンバサダーがあなたを \%newRole\% に再訓練することを決定しました</string>
+  <string name="TouRoleAmbassadorDecidedToRetrainSelf">アンバサダーが自身を \%newRole\% に再訓練することを決定しました</string>
+  <string name="TouRoleAmbassadorDecidedToRetrainYourself">あなたは自身を \%newRole\% に再訓練することを決定しました</string>
+  <string name="TouRoleAmbassadorDecidedToRetrain">アンバサダーが \%player\% を \%newRole\% に再訓練することを決定しました</string>
+  <string name="TouRoleAmbassadorRetrainCancelled">\%player\% のアンバサダー再訓練はキャンセルされました</string>
+  <string name="TouRoleAmbassadorYouDeniedRetrain">\%newRole\% への再訓練を拒否しました！</string>
+  <string name="TouRoleAmbassadorPlayerHasDenied">\%player\% が \%newRole\% への再訓練を拒否しました！</string>
+  <string name="TouRoleAmbassadorYouHaveAccepted">\%newRole\% への再訓練を承認しました！</string>
+  <string name="TouRoleAmbassadorPlayerHasBeenRetrained">\%player\% は \%newRole\% に再訓練されました！</string>
+  <string name="TouRoleAmbassadorNeedKills">あなた、または再訓練しようとしているインポスターが少なくとも \%requiredKills\% キルしている必要があります。</string>
+  <!-- Ambusher Wiki / Abilities -->
+  <string name="TouRoleAmbusher">アンブッシャー</string>
+  <string name="TouRoleAmbusherIntroBlurb">クルーメイトを闇へ連れ去れ</string>
+  <string name="TouRoleAmbusherTabDescription">プレイヤーを追跡し、そのプレイヤーに最も近い者を待ち伏せします。\%nl\%待ち伏せに成功すると、その死体を闇へと連れ去ります。</string>
+  <string name="TouRoleAmbusherTabPursuingPlayer">追跡中: \%player\%</string>
+  <string name="TouRoleAmbusherWikiDescription">アンブッシャーはインポスター・キルの役職で、プレイヤーを追跡できます。追跡対象に最も近いプレイヤーを待ち伏せしてキルすることができ、キルに成功すると死体と共に闇へと瞬間移動（テレポート）します。</string>
+  <string name="TouRoleAmbusherPursue">追跡</string>
+  <string name="TouRoleAmbusherPursueWikiDescription">プレイヤーを追跡し、後でその近くのプレイヤーを待ち伏せできるようにします。</string>
+  <string name="TouRoleAmbusherAmbush">待ち伏せ</string>
+  <string name="TouRoleAmbusherAmbushWikiDescription">追跡対象に最も近いプレイヤーを待ち伏せしてキルします。</string>
+  <!-- Ambusher Options -->
+  <string name="TouOptionAmbusherAmbushUsesPerGame">1ゲームあたりの待ち伏せ回数</string>
+  <string name="TouOptionAmbusherAmbushCooldown">待ち伏せのクールダウン</string>
+  <string name="TouOptionAmbusherPursueArrowUpdateInterval">追跡矢印の更新間隔</string>
+  <string name="TouOptionAmbusherStopPursuingPlayerOnAmbush">待ち伏せ時に追跡を停止する</string>
+  <string name="TouOptionAmbusherCanVent">アンブッシャーはベント可能</string>
+  <!-- Blackmailer Wiki / Abilities -->
+  <string name="TouRoleBlackmailer">ブラックメイラー</string>
+  <string name="TouRoleBlackmailerIntroBlurb">会議中にクルーメイトを黙らせろ</string>
+  <string name="TouRoleBlackmailerTabDescription">次の会議でクルーメイトを沈黙させます</string>
+  <string name="TouRoleBlackmailerWikiDescription">ブラックメイラーはインポスター・サポートの役職で、次の会議でプレイヤーが発言できないように（\%symbol\% でマーク）することができます。</string>
+  <string name="TouRoleBlackmailerBlackmail">脅迫</string>
+  <string name="TouRoleBlackmailerBlackmailWikiDescription">次の会議でプレイヤーを沈黙させます。対象は発言できなくなります。また、生存人数がブラックメイラーの設定以下になるまで投票もできなくなります。設定が有効な場合のみ、他のプレイヤーからも脅迫されていることがわかります。</string>
+  <!-- Blackmailer Options -->
+  <string name="TouOptionBlackmailerNumberOfBlackmailUsesPerGame">1ゲームあたりの脅迫回数</string>
+  <string name="TouOptionBlackmailerBlackmailCooldown">脅迫のクールダウン</string>
+  <string name="TouOptionBlackmailerMaxPlayersAliveUntilVoting">投票可能になる生存人数</string>
+  <string name="TouOptionBlackmailerBlackmailSamePersonTwiceInARow">同じ人を2回連続で脅迫可能</string>
+  <string name="TouOptionBlackmailerOnlyTargetSeesBlackmail">ターゲットのみが脅迫を認識できる</string>
+  <string name="TouOptionBlackmailerCanKillWithTeammate">仲間と一緒にキル可能</string>
+  <!-- Bomber Wiki / Abilities -->
+  <string name="TouRoleBomber">ボマー</string>
+  <string name="TouRoleBomberIntroBlurb">爆弾を投下してクルーメイトを一網打尽にせよ</string>
+  <string name="TouRoleBomberTabDescription">爆弾を設置し、爆発時に複数のクルーメイトを一度にキルします</string>
+  <string name="TouRoleBomberWikiDescription">ボマーはインポスター・キルの役職で、マップ上に爆弾を設置できます。爆弾は \%detonateDelay\% 秒後に爆発します。</string>
+  <string name="TouRoleBomberPlace">設置</string>
+  <string name="TouRoleBomberDetonating">爆発待機中</string>
+  <string name="TouRoleBomberPlaceWikiDescription">爆弾を設置します。キル範囲が表示され、最大 \%maxKills\% 人をキルできます。</string>
+  <!-- Bomber Options -->
+  <string name="TouOptionBomberBombUsesPerGame">1ゲームあたりの爆弾使用回数</string>
+  <string name="TouOptionBomberDetonateDelay">爆発までの遅延</string>
+  <string name="TouOptionBomberDetonateRadius">爆発半径</string>
+  <string name="TouOptionBomberMAxKillsInDetonation">1回の爆発での最大キル数</string>
+  <string name="TouOptionBomberAllImpostorsSeeBomb">すべてのインポスターに爆弾を表示</string>
+  <string name="TouOptionBomberAllowBombinginFirstRound">第1ラウンドでの爆弾設置を許可</string>
+  <string name="TouOptionBomberCanVent">ボマーはベント可能</string>
+  <!-- Eclipsal Wiki / Abilities -->
+  <string name="TouRoleEclipsal">エクリプサル</string>
+  <string name="TouRoleEclipsalIntroBlurb">光を遮れ</string>
+  <string name="TouRoleEclipsalTabDescription">プレイヤーを盲目にして他者を見えなくします</string>
+  <string name="TouRoleEclipsalWikiDescription">エクリプサルはインポスター・隠蔽の役職で、近くにいるすべてのクルーメイトやニュートラルの視界を遮ることができます。</string>
+  <string name="TouRoleEclipsalBlind">盲目化</string>
+  <string name="TouRoleEclipsalUnblinding">盲目解除中</string>
+  <string name="TouRoleEclipsalBlindWikiDescription">プレイヤーを盲目にすると、画面がフォグ・オブ・ウォー（霧）で覆われ、マップしか見えなくなり、通報もできなくなります。一定時間経過すると視界が元に戻ります。</string>
+  <!-- Eclipsal Options -->
+  <string name="TouOptionEclipsalBlindCooldown">盲目化のクールダウン</string>
+  <string name="TouOptionEclipsalBlindDuration">盲目化の持続時間</string>
+  <string name="TouOptionEclipsalBlindRadius">盲目化の範囲</string>
+  <!-- Escapist Wiki / Abilities -->
+  <string name="TouRoleEscapist">エスケイピスト</string>
+  <string name="TouRoleEscapistIntroBlurb">キル後に鮮やかに立ち去れ</string>
+  <string name="TouRoleEscapistTabDescription">場所をマークし、いつでもその場所に\%nl\%戻ることで犯行現場から逃走します</string>
+  <string name="TouRoleEscapistWikiDescription">エスケイピストはインポスター・隠蔽の役職で、場所をマークし、後でその場所に瞬間移動（テレポート）することができます。</string>
+  <string name="TouRoleEscapistMark">マーク</string>
+  <string name="TouRoleEscapistMarkWikiDescription">後で戻るための場所をマークします。</string>
+  <string name="TouRoleEscapistRecall">帰還</string>
+  <string name="TouRoleEscapistRecallWikiDescription">マークした場所に帰還します。</string>
+  <!-- Escapist Options -->
+  <string name="TouOptionEscapistRecallUsesPerGame">1ゲームあたりの帰還回数</string>
+  <string name="TouOptionEscapistRecallCooldown">帰還のクールダウン</string>
+  <string name="TouOptionEscapistEscapistCanVent">エスケイピストはベント可能</string>
+  <!-- Grenadier Wiki / Abilities -->
+  <string name="TouRoleGrenadier">グレネーダー</string>
+  <string name="TouRoleGrenadierIntroBlurb">クルーメイトの視界を妨害せよ</string>
+  <string name="TouRoleGrenadierTabDescription">クルーにフラッシュバンを浴びせて密かにキルしましょう</string>
+  <string name="TouRoleGrenadierWikiDescription">グレネーダーはインポスター・隠蔽の役職で、他のすべてのプレイヤーを盲目にするグレネードを投げることができます</string>
+  <string name="TouRoleGrenadierFlash">フラッシュ</string>
+  <string name="TouRoleGrenadierFlashWikiDescription">グレネードを投げて、範囲内の全プレイヤーをフラッシュ（目眩まし）状態にします。</string>
+  <string name="TouRoleGrenadierFlashNotif">周囲の全プレイヤーにフラッシュバンを浴びせました！</string>
+  <!-- Grenadier Options -->
+  <string name="TouOptionGrenadierFlashUsesPerGame">1ゲームあたりのフラッシュ回数</string>
+  <string name="TouOptionGrenadierFlashGrenadeCooldown">フラッシュのクールダウン</string>
+  <string name="TouOptionGrenadierFlashGrenadeDuration">フラッシュの持続時間</string>
+  <string name="TouOptionGrenadierFlashRadius">フラッシュの半径</string>
+  <string name="TouOptionGrenadierGrenadierCanVent">グレネーダーはベント可能</string>
+
+  <string name="TouRoleHerbalist">ハーバリスト</string>
+  <string name="TouRoleHerbalistIntroBlurb">植物とハーブの導きに従え</string>
+  <string name="TouRoleHerbalistTabDescription">自然に関する深い知識を他者に使いましょう。\%nl\%キルクールダウンは他のアビリティとは独立しています。</string>
+  <string name="TouRoleHerbalistWikiDescription">ハーバリストはインポスター・パワーの役職で、インポスターを助けたり他者の認識を狂わせたりする、共通のクールダウンを持つ複数のアビリティを持っています。</string>
+  <string name="TouRoleHerbalistExpose">暴露</string>
+  <string name="TouRoleHerbalistExposeWikiDescription">プレイヤーをすべてのインポスターに暴露し、その役職を明かします。ただし暴露されたプレイヤーは推測できなくなります。</string>
+  <string name="TouRoleHerbalistConfuse">混乱</string>
+  <string name="TouRoleHerbalistConfuseWikiDescription">菌類の胞子でプレイヤーを混乱させ、プレイヤーの識別を妨げます。</string>
+  <string name="TouRoleHerbalistProtect">保護</string>
+  <string name="TouRoleHerbalistProtectWikiDescription">クレリックのように、他のインポスターを含むプレイヤーを一時的に保護します。</string>
+
+  <!-- Hypnotist Wiki / Abilities -->
+  <string name="TouRoleHypnotist">ヒプノティスト</string>
+  <string name="TouRoleHypnotistIntroBlurb">クルーメイトを催眠にかけろ</string>
+  <string name="TouRoleHypnotistTabDescription">クルーを催眠にかけ、集団ヒステリーで\%nl\%プレイヤーの区別がつかないようにします</string>
+  <string name="TouRoleHypnotistWikiDescription">ヒプノティストはインポスター・サポートの役職で、プレイヤーを催眠にかけることができます。会議中に「集団ヒステリー」を発動すると、催眠状態のプレイヤー（\%symbol\% でマーク）は次のラウンドで他のプレイヤーの見え方が変わります。</string>
+  <string name="TouRoleHypnotistHypnotize">催眠</string>
+  <string name="TouRoleHypnotistHypnotizeWikiDescription">プレイヤーを催眠状態にします。集団ヒステリー発動中、対象は通常とは異なる見え方でゲームをプレイすることになります。</string>
+  <string name="TouRoleHypnotistMassHysteria">ヒステリー</string>
+  <string name="TouRoleHypnotistMassHysteriaWiki">集団ヒステリー（会議）</string>
+  <string name="TouRoleHypnotistMassHysteriaWikiDescription">催眠状態の全プレイヤーの画面で、次のラウンドの間プレイヤーの外見を変化させます。</string>
+  <!-- Hypnotist Options -->
+  <string name="TouOptionHypnotistHypnotizeCooldown">催眠のクールダウン</string>
+  <string name="TouOptionHypnotistHypnotistCanKillWithTeammate">仲間と一緒にキル可能</string>
+  <!-- Janitor Wiki / Abilities -->
+  <string name="TouRoleJanitor">ジャニター</string>
+  <string name="TouRoleJanitorIntroBlurb">船内を清掃せよ</string>
+  <string name="TouRoleJanitorTabDescription">死体を清掃してキルや犯行現場を隠蔽します</string>
+  <string name="TouRoleJanitorWikiDescription">ジャニターはインポスター・サポートの役職で、死体を清掃（消去）することができます。</string>
+  <string name="TouRoleJanitorClean">清掃</string>
+  <string name="TouRoleJanitorCleaning">清掃中</string>
+  <string name="TouRoleJanitorCleanWikiDescription">死体を清掃して消し去り、通報できないようにします。</string>
+  <!-- Janitor Options -->
+  <string name="TouOptionJanitorCleanUsesPerGame">1ゲームあたりの清掃回数</string>
+  <string name="TouOptionJanitorCleanCooldown">清掃のクールダウン</string>
+  <string name="TouOptionJanitorCleanDelay">清掃の遅延</string>
+  <string name="TouOptionJanitorResetKillAndCleanCooldownsTogether">キルと清掃のクールダウンを同時にリセット</string>
+  <string name="TouOptionJanitorJanitorCanKillWithTeammate">仲間と一緒にキル可能</string>
+  <!-- Miner Wiki / Abilities -->
+  <string name="TouRoleMiner">マイナー</string>
+  <string name="TouRoleMinerIntroBlurb">上から下まで、そこがベントだ</string>
+  <string name="TouRoleMinerTabDescription">マップ上の好きな場所に相互接続されたベントを設置します</string>
+  <string name="TouRoleMinerWikiDescription">マイナーはインポスター・サポートの役職で、ベントを作成できます。</string>
+  <string name="TouRoleMinerMine">採掘</string>
+  <string name="TouRoleMinerMineWikiDescription">現在地にベントを設置します。これらのベントは既存のマップベントとは繋がらず、マイナーが設置したベント同士でのみ繋がります。</string>
+  <!-- Miner Options -->
+  <string name="TouOptionMinerNumberOfVentsPerGame">1ゲームあたりの設置可能ベント数</string>
+  <string name="TouOptionMinerMineCooldown">採掘のクールダウン</string>
+  <string name="TouOptionMinerMineVisibility">設置ベントの可視性</string>
+  <string name="TouOptionMinerMineDelay">設置の遅延</string>
+  <string name="TouOptionMinerDelayEnumImmediate">即時</string>
+  <string name="TouOptionMinerDelayEnumAfterUse">使用後</string>
+  <string name="TouOptionMinerCanKillWithTeammate">仲間と一緒にキル可能</string>
+  <!-- Morphling Wiki / Abilities -->
+  <string name="TouRoleMorphling">モーフリング</string>
+  <string name="TouRoleMorphlingIntroBlurb">クルーメイトに変身せよ</string>
+  <string name="TouRoleMorphlingTabDescription">プレイヤーからサンプルを採取し、その姿に変装しましょう。\%nl\%サンプルは各ラウンドの開始時にリセットされます。</string>
+  <string name="TouRoleMorphlingTabMorphed">変身中: \%player\%</string>
+  <string name="TouRoleMorphlingWikiDescription">モーフリングはインポスター・隠蔽の役職で、プレイヤーからサンプルを採取し、そのプレイヤーの姿に変身できます。</string>
+  <string name="TouRoleMorphlingSample">採取</string>
+  <string name="TouRoleMorphlingSampleWikiDescription">後で変身するためにプレイヤーのDNAサンプルを採取します。</string>
+  <string name="TouRoleMorphlingMorph">変身</string>
+  <string name="TouRoleMorphlingUnmorph">変身解除</string>
+  <string name="TouRoleMorphlingMorphWikiDescription">採取したプレイヤーの姿に変身します。途中で解除することも可能です。</string>
+  <string name="TouRoleMorphlingSampleNotif">\%player\% からサンプルを採取しました。サンプルはこのラウンド終了後にリセットされます。</string>
+  <!-- Morphling Options -->
+  <string name="TouOptionMorphlingSamplesPerGame">1ゲームあたりの採取回数</string>
+  <string name="TouOptionMorphlingMorphUsesPerRound">1ラウンドあたりの変身回数</string>
+  <string name="TouOptionMorphlingMorphCooldown">変身のクールダウン</string>
+  <string name="TouOptionMorphlingMorphDuration">変身の持続時間</string>
+  <string name="TouOptionMorphlingCanVent">モーフリングはベント可能</string>
+  <!-- Parasite Wiki / Abilities -->
+  <string name="TouRoleParasite">パラサイト</string>
+  <string name="TouRoleParasiteIntroBlurb">プレイヤーを乗っ取って操作せよ</string>
+  <string name="TouRoleParasiteTabDescription">犠牲者を乗っ取って移動を操作します。\%nl\%もう一度ボタンを押すか、時間経過で殺害します。</string>
+  <string name="TouRoleParasiteWikiDescription">パラサイトは近くの非インポスターを乗っ取って移動を制御できます。デフォルトでは、乗っ取られている間、犠牲者はパラサイトと同じ姿になり、アビリティを使用できなくなります。PiPカメラで監視し、いつでもキルするか、タイマー終了で自動的にキルされます。</string>
+  <string name="TouRoleParasiteOvertake">乗っ取り</string>
+  <string name="TouRoleParasiteOvertakeWikiDescription">近くの非インポスターを乗っ取って移動を制御します。デフォルトでは、WASDで自分を動かし、矢印キーで相手を操作します。「独立して移動可能」が無効な場合、自分は動けずWASDで相手を操作します。</string>
+  <string name="TouRoleParasiteDecay">殺害</string>
+  <string name="TouRoleParasiteDecayWikiDescription">現在乗っ取っている犠牲者を即座に殺害します。</string>
+  <!-- Parasite Options -->
+  <string name="TouOptionParasiteOvertakeCooldown">乗っ取りのクールダウン</string>
+  <string name="TouOptionParasiteOvertakeKillCooldown">キルのクールダウン</string>
+  <string name="TouOptionParasiteControlDuration">操作の持続時間</string>
+  <string name="TouOptionParasiteSaveVictimIfParasiteDies">パラサイト死亡時に犠牲者を助ける</string>
+  <string name="TouOptionParasiteSaveVictimIfMeetingCalled">会議招集時に犠牲者を助ける</string>
+  <string name="TouOptionParasiteCanVent">パラサイトはベント可能</string>
+  <string name="TouOptionParasiteCanMoveIndependently">パラサイトは独立して移動可能</string>
+  <string name="TouOptionParasiteOvertakenLooksLikeParasite">犠牲者はパラサイトと同じ姿になる</string>
+  <!-- Scavenger Wiki / Description -->
+  <string name="TouRoleScavenger">スカベンジャー</string>
+  <string name="TouRoleScavengerIntroBlurb">獲物を狩れ</string>
+  <string name="TouRoleScavengerTabDescription">指定されたターゲットをキルしてクールダウンを短縮しましょう。\%nl\%失敗するとペナルティを受けます。</string>
+  <string name="TouRoleScavengerWikiDescription">スカベンジャーはインポスター・キルの役職で、ラウンド開始時やキルするたびに新しいターゲットが割り当てられます。ターゲットをキルするとクールダウンが短縮されますが、それ以外をキルするとクールダウンが大幅に増加します。</string>
+  <string name="TouRoleScavengerYourNextTarget">が次のターゲットです。</string>
+  <string name="TouRoleScavengerTabTimer">スカベンジ残り時間: \%timeLeft\%</string>
+  <string name="TouRoleScavengerTabTarget">現在のターゲット: \%player\%</string>
+  <!-- Scavenger Options -->
+  <string name="TouOptionScavengerScavengeDuration">スカベンジの制限時間</string>
+  <string name="TouOptionScavengerScavengeDurationIncreasePerKill">キルごとの制限時間増加量</string>
+  <string name="TouOptionScavengerScavengeKillCooldownOnCorrectKill">正解キル時のクールダウン</string>
+  <string name="TouOptionScavengerKillCooldownMultiplierOnIncorrectKill">不正解キル時のクールダウン倍率</string>
+  <!-- Puppeteer Wiki / Abilities -->
+  <string name="TouRolePuppeteer">パペッティア</string>
+  <string name="TouRolePuppeteerIntroBlurb">他者の手を操れ</string>
+  <string name="TouRolePuppeteerTabDescription">クルーメイトを意のままに操りましょう！</string>
+  <string name="TouRolePuppeteerWikiDescription">パペッティアはインポスター・パワーの役職で、他のプレイヤーを操って代わりにキルをさせることができます。操作されたプレイヤーは、仲間のクルーを殺すのをただ見ていることしかできません。</string>
+  <string name="TouRolePuppeteerControl">操作</string>
+  <string name="TouRolePuppeteerKill">操作キル</string>
+  <string name="TouRolePuppeteerControlWikiDescription">メニューを使用して、好きな相手を操作します。この状態のプレイヤーは、自身の本来の役職に関わらずインポスターとしてキルを行います。</string>
+  <string name="TouRolePuppeteerControlNotifBasic">\%role\% に操作されています！</string>
+  <string name="TouRolePuppeteerControlNotif1">自分の感覚が失われました。\%role\% に操作されています！</string>
+  <string name="TouRolePuppeteerControlNotif2">神秘的な力があなたを支配しています。\%role\% に操作されています！</string>
+  <string name="TouRolePuppeteerControlNotif3">肌が粟立つような感覚です。\%role\% に操作されています！</string>
+  <string name="TouRolePuppeteerControlFinishNotif">\%role\% の操作から解放されました！</string>
+  <!-- Puppeteer Options -->
+  <string name="TouOptionPuppeteerControlUses">初期操作回数</string>
+  <string name="TouOptionPuppeteerControlPerKill">追加の操作に必要なキル数</string>
+  <string name="TouOptionPuppeteerVictimSeesControlDirection">パペッティアの居場所のヒント表示時間（犠牲者用）</string>
+  <string name="TouOptionPuppeteerControlCooldown">操作のクールダウン</string>
+  <string name="TouOptionPuppeteerControlDuration">操作の持続時間</string>
+  <string name="TouOptionPuppeteerCanVent">パペッティアはベント可能</string>
+  <!-- Spellslinger Wiki / Abilities -->
+  <string name="TouRoleSpellslinger">スペルスリンガー</string>
+  <string name="TouRoleSpellslingerIntroBlurb">クルーに呪いをかけ、ヘックス爆弾を起動せよ</string>
+  <string name="TouRoleSpellslingerTabDescription">すべての非インポスターに呪いをかけ、ヘックス爆弾を爆発させます</string>
+  <string name="TouRoleSpellslingerTabHexCounter">残り呪い対象人数: \%count\%</string>
+  <string name="TouRoleSpellslingerTabHexFinished">全員に呪いをかけました。</string>
+  <string name="TouRoleSpellslingerTabHexedInfo">呪い済みのプレイヤー:</string>
+  <string name="TouRoleSpellslingerWikiDescription">スペルスリンガーはインポスター・パワーの役職で、プレイヤーに呪いをかけ爆発の準備を整えることができます。すべての非インポスターに呪いをかけると、一定時間後にヘックス爆弾を爆発させて勝利できます。</string>
+  <string name="TouRoleSpellslingerHex">呪い</string>
+  <string name="TouRoleSpellslingerHexWikiDescription">プレイヤーに呪いをかけ、爆発の準備をさせます。</string>
+  <string name="TouRoleSpellslingerHexBomb">ヘックス爆弾</string>
+  <string name="TouRoleSpellslingerHexBombWikiDescription">ヘックス爆弾のカウントダウンを開始します。爆発時に生存していればインポスターの勝利です！</string>
+  <string name="TouRoleSpellslingerMessageTitle">スペルスリンガーの警告</string>
+  <string name="TouRoleSpellslingerGlobalWarning">\%role\% がヘックス爆弾を放とうとしています！タイマーが切れる前に見つけ出してください！会議終了後残り \%time\% 秒です。</string>
+  <string name="TouRoleSpellslingerWarningNotif">\%role\% が \%time\% 秒後にヘックス爆弾を爆発させます！</string>
+  <!-- Spellslinger Options -->
+  <string name="TouOptionSpellslingerHexCooldown">呪いのクールダウン</string>
+  <string name="TouOptionSpellslingerMaxHexes">最大呪い数</string>
+  <string name="TouOptionSpellslingerHexBombDuration">ヘックス爆弾のカウントダウン時間</string>
+  <!-- Swooper Wiki / Abilities -->
+  <string name="TouRoleSwooper">スウーパー</string>
+  <string name="TouRoleSwooperIntroBlurb">一時的に姿を消せ</string>
+  <string name="TouRoleSwooperTabDescription">透明になって影から密かにキルしましょう</string>
+  <string name="TouRoleSwooperWikiDescription">スウーパーはインポスター・隠蔽の役職で、一時的に透明になることができます。</string>
+  <string name="TouRoleSwooperSwoop">透明化</string>
+  <string name="TouRoleSwooperSwoopWikiDescription">インポスター以外の全プレイヤーから見えなくなります。</string>
+  <string name="TouRoleSwooperUnswoop">透明化解除</string>
+  <string name="TouRoleSwooperUnswoopWikiDescription">透明化を途中でキャンセルするか、時間経過で再び姿を現します。</string>
+  <!-- Swooper Options -->
+  <string name="TouOptionSwooperSwoopUsesPerRound">1ラウンドあたりの透明化回数</string>
+  <string name="TouOptionSwooperSwoopCooldown">透明化のクールダウン</string>
+  <string name="TouOptionSwooperSwoopDuration">透明化の持続時間</string>
+  <string name="TouOptionSwooperCanVent">スウーパーはベント可能</string>
+  <!-- Traitor Wiki / Abilities -->
+  <string name="TouRoleTraitor">トレイター</string>
+  <string name="TouRoleTraitorIntroBlurb">クルーメイトを裏切れ！</string>
+  <string name="TouRoleTraitorTabDescription">新たなインポスター役職としてクルーメイトを裏切りましょう！</string>
+  <string name="TouRoleTraitorWikiDescription">トレイターはインポスター・パワーの役職で、条件が満たされた場合に会議後にスポーンします。トレイターは最初はクルーメイトであり、後に特定の役職に変更されます。</string>
+  <string name="TouRoleTraitorChangeRole">役職変更</string>
+  <string name="TouRoleTraitorChangeRoleWikiDescription">提供された役職カードの中から選ぶか、ランダムに賭けることで役職を変更できます。一度選ぶと、死亡するまでその役職になります。ただし、推測される際は「トレイター」として扱われます。</string>
+  <string name="TouRoleTraitorRoleSelectTitle">役職を選択してください。</string>
+  <string name="TouRoleTraitorRandomImpostorCard">ランダム\%nl\%インポスター</string>
+  <!-- Traitor Options -->
+  <string name="TouOptionTraitorMinimumPeopleAlive">スポーンに必要な最小生存人数</string>
+  <string name="TouOptionTraitorTraitorWontSpawnIfNKIsAlive">NK（第三陣営）生存時はスポーンしない</string>
+  <string name="TouOptionTraitorDisableExistingImpostorRoles">既存のインポスター役職を無効にする</string>
+  <string name="TouOptionTraitorGuessAs">トレイターとしての推測方法</string>
+  <string name="TouOptionTraitorGuessEnumCached">トレイター</string>
+  <string name="TouOptionTraitorGuessEnumActive">新役職</string>
+  <string name="TouOptionTraitorGuessEnumActiveOrCached">トレイターまたは新役職</string>
+  <!-- Undertaker Wiki / Abilities -->
+  <string name="TouRoleUndertaker">アンダーテイカー</string>
+  <string name="TouRoleUndertakerIntroBlurb">死体を運んで隠し通せ</string>
+  <string name="TouRoleUndertakerTabDescription">死体を運び、通報されないように隠蔽します</string>
+  <string name="TouRoleUndertakerWikiDescription">アンダーテイカーはインポスター・サポートの役職で、マップ上の死体を運ぶことができます。</string>
+  <string name="TouRoleUndertakerDrag">運搬</string>
+  <string name="TouRoleUndertakerDragWikiDescription">死体を運びます。設定によっては死体を抱えたままベントに入ることも可能です。</string>
+  <string name="TouRoleUndertakerDrop">降ろす</string>
+  <string name="TouRoleUndertakerDropWikiDescription">運んでいる死体をその場に置きます。</string>
+  <!-- Undertaker Options -->
+  <string name="TouOptionUndertakerDragCooldown">運搬のクールダウン</string>
+  <string name="TouOptionUndertakerDragSpeed">運搬時の移動速度</string>
+  <string name="TouOptionUndertakerDraggingSpeedIsAffectedbyBodySize">運搬速度が死体の大きさに影響される</string>
+  <string name="TouOptionUndertakerCanVent">アンダーテイカーはベント可能</string>
+  <string name="TouOptionUndertakerCanVentWithBody">死体を運んだままベント可能</string>
+  <string name="TouOptionUndertakerUndertakerCanKillWithTeammate">仲間と一緒にキル可能</string>
+  <!-- Venerer Wiki / Abilities -->
+  <string name="TouRoleVenerer">ヴェネラー</string>
+  <string name="TouRoleVenererIntroBlurb">キルを重ねて能力を強化せよ</string>
+  <string name="TouRoleVenererTabDescription">プレイヤーをキルして能力を解放しましょう。\%nl\%カモフラージュ、スプリント、鈍足化が可能です。</string>
+  <string name="TouRoleVenererWikiDescription">ヴェネラーはインポスター・隠蔽の役職で、キルすることで新しい能力を獲得し、捕まるのを防ぎます！獲得した能力はスタックされ、即座に発動します。</string>
+  <string name="TouRoleVenererCamouflage">カモフラージュ</string>
+  <string name="TouRoleVenererCamouflageWikiDescription">第1段階の能力。\%nl\%全員から灰色のキャラクターに見えるようになり、キル後に密かに逃げることができます。</string>
+  <string name="TouRoleVenererSprint">スプリント</string>
+  <string name="TouRoleVenererSprintWikiDescription">第2段階の能力。\%nl\%カモフラージュ中に爆速で移動できるようになります。</string>
+  <string name="TouRoleVenererFreeze">フリーズ</string>
+  <string name="TouRoleVenererFreezeWikiDescription">最終段階の能力。\%nl\%高速移動とカモフラージュに加え、周囲のプレイヤーを鈍足にします。</string>
+  <!-- Venerer Options -->
+  <string name="TouOptionVenererAbilityCooldown">能力のクールダウン</string>
+  <string name="TouOptionVenererAbilityDuration">能力の持続時間</string>
+  <string name="TouOptionVenererSprintSpeed">スプリント速度</string>
+  <string name="TouOptionVenererMinimumFreezeSpeed">鈍足時の最小速度</string>
+  <string name="TouOptionVenererFreezeRadius">鈍足化の半径</string>
+  <!-- Warlock Wiki / Abilities -->
+  <string name="TouRoleWarlock">ウォーロック</string>
+  <string name="TouRoleWarlockIntroBlurb">キルボタンをチャージして連続キルせよ</string>
+  <string name="TouRoleWarlockTabDescription">攻撃を100\%チャージして、短時間にクルーを連続キルしましょう</string>
+  <string name="TouRoleWarlockWikiDescription">ウォーロックはインポスター・キルの役職で、攻撃をチャージしてクルーを素早く一掃できます。</string>
+  <string name="TouRoleWarlockBurstKill">バーストキル</string>
+  <string name="TouRoleWarlockBurstActive">バースト発動可能</string>
+  <string name="TouRoleWarlockKillWikiDescription">通常のキルボタンが「クールダウン中」「未チャージ」「チャージ済み」の3段階に置き換わります。チャージ中にキルするとチャージがリセットされます。チャージ完了後は、短時間で複数のプレイヤーをキルできます。</string>
+  <!-- Warlock Options -->
+  <string name="TouOptionWarlockTimeItTakesToFullyCharge">フルチャージに必要な時間</string>
+  <string name="TouOptionWarlockTimeMultiplierAddedPerKillForNextCharge">キルごとの次回復チャージ倍率増加量</string>
+  <string name="TouOptionWarlockTimeItTakesToUseFullCharge">フルチャージ使用にかかる時間</string>
+  <!-- Neutral Roles -->
+
+  <!-- Amnesiac -->
+  <!-- Amnesiac Wiki / Abilities -->
+  <string name="TouRoleAmnesiac">アムネジアック</string>
+  <string name="TouRoleAmnesiacIntroBlurb">死亡したプレイヤーの役職を思い出せ</string>
+  <string name="TouRoleAmnesiacTabDescription">死体を見つけてその役職を思い出し、その役職になりましょう。</string>
+  <string name="TouRoleAmnesiacWikiDescription">アムネジアックはニュートラル・良性の役職で、死体の役職を思い出すことで新しい役職を獲得します。思い出した役職を使って勝利を目指してください。</string>
+  <string name="TouRoleAmnesiacRemember">想起</string>
+  <string name="TouRoleAmnesiacRememberWikiDescription">死体の役職を思い出します。特殊な役職の場合は、その陣営の基本役職になります。</string>
+  <string name="TouRoleAmnesiacRememberNotif">あなたは \%player\% のようであったことを思い出し、 \%role\% になりました</string>
+  <string name="TouRoleAmnesiacRememberFailNotif">\%player\% は \%role\% だったので、その役職を引き継ぐことはできません。</string>
+  <string name="TouRoleAmnesiacRememberFailTargetNotif">\%player\% はあなたをターゲットとする役職だったため、引き継ぐことはできません。</string>
+  <!-- Amnesiac Options -->
+  <string name="TouOptionAmnesiacInheritFactionModifier">陣営モディファイアを引き継ぐ</string>
+  <string name="TouOptionAmnesiacShowArrows">死体を指す矢印を表示する</string>
+  <string name="TouOptionAmnesiacArrowDelay">死亡から矢印が表示されるまでの時間</string>
+  <!-- Arsonist -->
+  <!-- Arsonist Wiki / Abilities -->
+  <string name="TouRoleArsonist">アーソニスト</string>
+  <string name="TouRoleArsonistIntroBlurb">プレイヤーにオイルを塗り、火を放て</string>
+  <string name="TouRoleArsonistTabDescription">プレイヤーにオイルを塗り、点火して近くの全オイル塗布対象を殺害します。</string>
+  <string name="TouRoleArsonistTabDescriptionLegacy">プレイヤーにオイルを塗り、最も近い者に点火して全オイル塗布対象を殺害します。</string>
+  <string name="TouRoleArsonistTabDousedInfo">オイル塗布済みのプレイヤー:</string>
+  <string name="TouRoleArsonistWikiDescription">アーソニストはニュートラル・キルの役職で、最後のキラーとして生き残ることで勝利します。</string>
+  <string name="TouRoleArsonistWikiAddition">プレイヤーにオイルを塗り、近づいて点火することができます。</string>
+  <string name="TouRoleArsonistWikiAdditionLegacy">プレイヤーにオイルを塗り、1人に点火することでマップ上の全オイル塗布済みプレイヤーを燃やすことができます。</string>
+  <string name="TouRoleArsonistDouse">オイル塗布</string>
+  <string name="TouRoleArsonistDouseWikiDescription">プレイヤーにガソリンを塗ります。</string>
+  <string name="TouRoleArsonistIgnite">点火</string>
+  <string name="TouRoleArsonistIgniteWikiDescription">範囲内にいるオイル塗布済みの全プレイヤーを殺害します。</string>
+  <string name="TouRoleArsonistIgniteWikiDescriptionLegacy">近くの1人に点火することで、マップ上のオイル塗布済みプレイヤー全員を殺害します。</string>
+  <!-- Arsonist Options -->
+  <string name="TouOptionArsonistDouseCooldown">オイル塗布のクールダウン</string>
+  <string name="TouOptionArsonistDouseUses">一度に塗布可能な人数</string>
+  <string name="TouOptionArsonistDouseInteractions">アビリティ使用時に自動でオイル塗布</string>
+  <string name="TouOptionArsonistLegacyMode">レガシーモード（範囲制限なし）</string>
+  <string name="TouOptionArsonistIgniteRadius">点火の半径</string>
+  <string name="TouOptionArsonistCanVent">アーソニストはベント可能</string>
+  <string name="TouOptionArsonistImpVision">インポスター視界を持つ</string>
+  <!-- Doomsayer -->
+  <!-- Doomsayer Wiki / Abilities -->
+  <string name="TouRoleDoomsayer">ドゥームセイヤー</string>
+  <string name="TouRoleDoomsayerIntroBlurb">プレイヤーの役職を推測して勝利せよ！</string>
+  <string name="TouRoleDoomsayerTabDescription">\%guessCount\% 人のプレイヤーの役職を推測して勝利しましょう。</string>
+  <string name="TouRoleDoomsayerWikiDescription">ドゥームセイヤーはニュートラル・悪性の役職で、 \%guessCount\% 人の役職を当てることで勝利します。</string>
+  <string name="TouRoleDoomsayerWikiDescriptionIfCanObserve">ドゥームセイヤーはニュートラル・悪性の役職で、 \%guessCount\% 人の役職を当てることで勝利します。プレイヤーを「観察」して次の会議でヒントを得ることができます。</string>
+  <string name="TouRoleDoomsayerObserve">観察</string>
+  <string name="TouRoleDoomsayerObserveWikiDescription">プレイヤーを観察し、次の会議でその役職に関するヒントを得ます。</string>
+  <string name="TouRoleDoomsayerObserveNotif">次の会議で \%player\% に関するレポートを受け取ります。役職を絞り込むのに役立ちます。</string>
+  <string name="TouRoleDoomsayerWonSelf">\%role\% として十分な人数の推測に成功し、勝利しました！</string>
+  <string name="TouRoleDoomsayerWonOther">\%role\% の \%player\% は十分な人数の推測に成功し、勝利しました！</string>
+  <!-- Doomsayer Options -->
+  <string name="TouOptionDoomsayerCooldown">観察のクールダウン</string>
+  <string name="TouOptionDoomsayerNecessaryGuessed">勝利に必要な推測成功数</string>
+  <string name="TouOptionDoomsayerGuessCrewInvestigative">クルー調査役職を推測可能</string>
+  <string name="TouOptionDoomsayerGuessesAllAtOnce">すべての役職を一度に推測する</string>
+  <string name="TouOptionDoomsayerCantObserve">観察を無効にする</string>
+  <string name="TouOptionDoomsayerOnlyKillLast">最後の犠牲者のみキルする</string>
+  <string name="TouOptionDoomsayerWin">ドゥームセイヤー勝利時の挙動</string>
+  <string name="TouOptionDoomsayerWinEnumEndsGame">ゲーム終了</string>
+  <string name="TouOptionDoomsayerWinEnumLeaves">勝利して退出</string>
+  <string name="TouOptionDoomsayerWinEnumNothing">何もしない</string>
+  <string name="TouOptionDoomsayerContinuesGame">退出後もゲームを続行する</string>
+  <!-- Doomsayer Misguess -->
+  <string name="TouRoleDoomsayerMisguessOne">推測が1つだけ間違っていました！</string>
+  <string name="TouRoleDoomsayerMisguessMultiple">\%misguessCount\% 個の推測が間違っていました。</string>
+  <!-- Doomsayer Feedback -->
+  <string name="TouRoleDoomsayerMessageTitle">ドゥームセイヤーレポート</string>
+  <string name="TouRoleDoomsayerRoleHintPerception">\%player\% は現実の認識が歪んでいるようです</string>
+  <string name="TouRoleDoomsayerRoleHintInsight">\%player\% は個別の情報を洞察する力を持っているようです</string>
+  <string name="TouRoleDoomsayerRoleHintDeath">\%player\% は死体に対して異常な執着を持っているようです</string>
+  <string name="TouRoleDoomsayerRoleHintHunter">\%player\% は獲物を狩るための訓練を積んでいるようです</string>
+  <string name="TouRoleDoomsayerRoleHintFearmonger">\%player\% は集団の中に恐怖を振りまいているようです</string>
+  <string name="TouRoleDoomsayerRoleHintProtective">\%player\% は自身や他者を守るために潜んでいるようです</string>
+  <string name="TouRoleDoomsayerRoleHintTrickster">\%player\% は何か企みを持っているようです</string>
+  <string name="TouRoleDoomsayerRoleHintRelentless">\%player\% は容赦ない攻撃を繰り出す能力があるようです</string>
+  <string name="TouRoleDoomsayerRoleHintDefault">\%player\% はこの町の住人ではないようです</string>
+  <!-- Executioner -->
+  <!-- Executioner Wiki / Description -->
+  <string name="TouRoleExecutioner">エクセキューショナー</string>
+  <string name="TouRoleExecutionerTabDescription">\%target\% を追放させて勝利しましょう。</string>
+  <string name="TouRoleExecutionerMissingTargetDescription">ターゲットを追放させて勝利しましょう。</string>
+  <string name="TouRoleExecutionerWikiDescription">エクセキューショナーはニュートラル・悪性の役職で、ターゲット（\%symbol\% でマーク）を会議で追放させることで勝利します。</string>
+  <string name="TouRoleExecutionerTorment">苦悶</string>
+  <string name="TouRoleExecutionerWonSelf">ターゲットが追放されたため、 \%role\% として勝利しました！</string>
+  <string name="TouRoleExecutionerWonOther">ターゲットが追放されたため、 \%role\% の \%player\% が勝利しました！</string>
+  <string name="TouRoleExecutionerTormentFeedback">1ラウンドの間、好きなプレイヤーを苦悶させて死に追いやることができます。慎重に選んでください。</string>
+  <!-- Executioner Options -->
+  <string name="TouOptionExecutionerBecomesTargetDeath">ターゲット死亡時の変化先</string>
+  <string name="TouOptionExecutionerCanButton">ボタンを使用可能</string>
+  <string name="TouOptionExecutionerWin">エクセキューショナー勝利時の挙動</string>
+  <string name="TouOptionExecutionerWinEnumEndsGame">ゲーム終了</string>
+  <string name="TouOptionExecutionerWinEnumTorments">退出して苦悶させる</string>
+  <string name="TouOptionExecutionerWinEnumNothing">何もしない</string>
+  <!-- Glitch -->
+  <!-- Glitch Wiki / Abilities -->
+  <string name="TouRoleGlitch">グリッチ</string>
+  <string name="TouRoleGlitchIntroBlurb">殺害、模倣、ハック... データ消失</string>
+  <string name="TouRoleGlitchTabDescription">プレイヤーをハックしてアビリティを一時停止させ、\%nl\%他人に模倣して罪を着せましょう。</string>
+  <string name="TouRoleGlitchWikiDescription">グリッチはニュートラル・キルの役職で、最後のキラーとして生き残ることで勝利します。他人に模倣したり、プレイヤーをハックしたりできます。</string>
+  <string name="TouRoleGlitchMimic">模倣</string>
+  <string name="TouRoleGlitchUnmimic">模倣解除</string>
+  <string name="TouRoleGlitchMimicWikiDescription">他のプレイヤーの外見を完全に模倣します。</string>
+  <string name="TouRoleGlitchHack">ハック</string>
+  <string name="TouRoleGlitchHackWikiDescription">プレイヤーのアビリティを無効化します。</string>
+  <string name="TouRoleGlitchHackNotif">\%player\% がアビリティを使用しようとすると、一時的に無効化されます。</string>
+  <!-- Glitch Options -->
+  <string name="TouOptionGlitchKillCooldown">キルクールダウン</string>
+  <string name="TouOptionGlitchMimicCooldown">模倣のクールダウン</string>
+  <string name="TouOptionGlitchMimicDuration">模倣の持続時間</string>
+  <string name="TouOptionGlitchMoveInMimicMenu">メニュー操作中に移動可能（キーボードのみ）</string>
+  <!-- Translation note: KB = Keyboard -->
+  <string name="TouOptionGlitchHackCooldown">ハックのクールダウン</string>
+  <string name="TouOptionGlitchHackDuration">ハックの持続時間</string>
+  <string name="TouOptionGlitchCan Vent">グリッチはベント可能</string>
+  <!-- Fairy -->
+  <!-- Fairy Wiki / Abilities -->
+  <string name="TouRoleFairy">フェアリー</string>
+  <string name="TouRoleFairyTabDescription">命をかけて \%target\% を守りましょう！</string>
+  <string name="TouRoleFairyIfNoTarget">命をかけてターゲットを守りましょう！</string>
+  <string name="TouRoleFairyWikiDescription">フェアリーはニュートラル・良性の役職で、ターゲット（\%symbol\% でマーク）が殺害されたり追放されたりしないように守る必要があります。</string>
+  <string name="TouRoleFairyProtect">保護</string>
+  <string name="TouRoleFairyProtectWikiDescription">ターゲットを殺害から守ります。</string>
+  <!-- Fairy Options -->
+  <string name="TouOptionFairyCooldown">保護のクールダウン</string>
+  <string name="TouOptionFairyDuration">保護の持続時間</string>
+  <string name="TouOptionFairyMaxProtects">最大保護回数</string>
+  <string name="TouOptionFairyShowProtected">保護されているプレイヤーを表示する</string>
+  <string name="TouOptionFairyProtectionEnumFairy">フェアリー</string>
+  <string name="TouOptionFairyProtectionEnumFairyAndTarget">フェアリー + ターゲット</string>
+  <string name="TouOptionFairyProtectionEnumEveryone">全員</string>
+  <string name="TouOptionFairyOnDeathFairyBecomes">ターゲット死亡時の変化先</string>
+  <string name="TouOptionFairyTargetKnowsFairyExists">ターゲットはフェアリーの存在を知っている</string>
+  <string name="TouOptionFairyFairyKnowsRole">フェアリーはターゲットの役職を知っている</string>
+  <string name="TouOptionFairyEvilOdds">ターゲットが悪性である確率</string>
+  <!-- Inquisitor -->
+  <!-- Inquisitor Wiki / Abilities -->
+  <string name="TouRoleInquisitor">インクイジター</string>
+  <string name="TouRoleInquisitorIntroBlurb">異端者を討伐せよ！</string>
+  <string name="TouRoleInquisitorTabDescription">異端者を自ら討伐するか、死に至らしめましょう。\%nl\%すべての異端者が死亡すれば勝利です。\%nl\%会議終了時に全員死亡していれば、\%nl\%勝利を宣言して退出します</string>
+  <string name="TouRoleInquisitorTabAddition">異端者の役職:</string>
+  <string name="TouRoleInquisitorWikiDescription">インクイジターはニュートラル・異端の役職で、ターゲット（異端者）が死亡すると勝利します。提供される情報は相手の役職のみで、死者に対して \%symbol\% でマークされるプレイヤーを特定し、あらゆる手段で排除する必要があります。</string>
+  <!-- Inquisitor Feedback -->
+  <string name="TouRoleInquisitorInquireNotif">次の会議で \%player\% が異端者かどうかがわかります。</string>
+  <string name="TouRoleInquisitorMessageTitle">インクイジターレポート</string>
+  <string name="TouRoleInquisitorInquiredHeretic">調査の結果、 \%player\% は異端者であることが判明しました！</string>
+  <string name="TouRoleInquisitorInquiredNonHeretic">調査の結果、 \%player\% は異端者ではないことが判明しました！</string>
+  <string name="TouRoleInquisitorVictoryMessage">すべての異端者が滅びたため、 \%role\% の \%player\% が勝利しました！</string>
+  <string name="TouRoleInquisitorVictoryMessageSelf">すべての異端者が滅びたため、 \%role\% として勝利しました！</string>
+  <string name="TouRoleInquisitorInquire">調査</string>
+  <string name="TouRoleInquisitorInquireWikiDescription">プレイヤーを調査し、会議中にそのプレイヤーがターゲットかどうかを確認します。</string>
+  <string name="TouRoleInquisitorVanquish">討伐</string>
+  <string name="TouRoleInquisitorVanquishWikiDescription">プレイヤーを討伐（殺害）します。相手が異端者であれば通知され、引き続き討伐を行えます。しかし、異端者でなかった場合は以降の討伐能力を失います。</string>
+  <!-- Inquisitor Options -->
+  <string name="TouOptionInquisitorVanquishCooldown">討伐のクールダウン</string>
+  <string name="TouOptionInquisitorRoundOneVanquish">第1ラウンドでの討伐を許可</string>
+  <string name="TouOptionInquisitorContinuesGame">残り3人になってもゲームを続行する</string>
+  <string name="TouOptionInquisitorCantInquire">調査を無効にする</string>
+  <string name="TouOptionInquisitorInquireCooldown">調査のクールダウン</string>
+  <string name="TouOptionInquisitorMaxInquiries">最大調査回数</string>
+  <string name="TouOptionInquisitorHereticAmount">必要な異端者の数</string>
+  <!-- Chef -->
+  <!-- Chef Wiki / Abilities -->
+  <string name="TouRoleChef">シェフ</string>
+  <string name="TouRoleChefIntroBlurb">作りたてをどうぞ</string>
+  <string name="TouRoleChefTabDescription">調理した死体をクルーメイトに食べさせましょう。\%nl\%ノルマを達成すれば、勝利して退出します！</string>
+  <string name="TouRoleChefTabCounter">提供済み: \%bodiesFed\% / \%bodiesTotal\%</string>
+  <string name="TouRoleChefWikiDescription">シェフはニュートラル・異端の役職で、クルーに十分な数の死体を提供すれば、他のどの陣営とも共に勝利できます。</string>
+  <!-- Chef Feedback -->
+  <string name="TouRoleChefMessageTitle">シェフのフィードバック</string>
+  <string name="TouRoleChefCustomerMessage">シェフから死体料理を提供されました！</string>
+  <string name="TouRoleChefVictoryMessage">十分な人数に食事を提供したため、 \%role\% の \%player\% が勝利しました！</string>
+  <string name="TouRoleChefVictoryMessageSelf">十分な人数に食事を提供したため、 \%role\% として勝利しました！</string>
+  <string name="TouRoleChefCook">調理</string>
+  <string name="TouRoleChefCookWikiDescription">死体を調理して保存します。</string>
+  <string name="TouRoleChefServe">提供</string>
+  <string name="TouRoleChefServeWikiDescription">手持ちの中で最も古い料理を、空腹の誰かに提供します。</string>
+  <!-- Chef Options -->
+  <string name="TouOptionChefServeCooldown">提供のクールダウン</string>
+  <string name="TouOptionChefCookCooldown">調理のクールダウン</string>
+  <string name="TouOptionChefLinkedCooldowns">調理と提供のクールダウンを同時にリセット</string>
+  <string name="TouOptionChefServingAmount">必要な提供数</string>
+  <string name="TouOptionChefServingSideEffects">副作用の持続時間</string>
+  <string name="TouOptionChefArrowsToBodies">死体を指す矢印を表示する</string>
+  <string name="TouOptionChefArrowDelay">死体矢印が表示されるまでの遅延</string>
+  <string name="TouOptionChefArrowDuration">死体矢印の持続時間</string>
+  <!-- Jester -->
+  <!-- Jester Wiki / Description -->
+  <string name="TouRoleJester">ジェスター</string>
+  <string name="TouRoleJesterIntroBlurb">自分を追放させろ！</string>
+  <string name="TouRoleJesterTabDescription">できるだけ怪しまれて、追放されましょう！</string>
+  <string name="TouRoleJesterWikiDescription">ジェスターはニュートラル・悪性の役職で、自分自身が追放されることで勝利します。</string>
+  <string name="TouRoleJesterHaunt">呪い</string>
+  <!-- Jester Messages -->
+  <string name="TouNotifJesterWinOwner">追放されたため、ジェスターとして勝利しました！</string>
+  <string name="TouNotifJesterHauntOwner">1ラウンドの間、好きなプレイヤーを呪い殺すことができます。慎重に選んでください</string>
+  <string name="TouNotifJesterWinGlobal">ジェスターの \%player\% が追放されたため、勝利しました！</string>
+  <!-- Jester Options -->
+  <string name="TouOptionJesterCanButton">ボタンを使用可能</string>
+  <string name="TouOptionJesterCanVent">ベントに隠れることが可能</string>
+  <string name="TouOptionJesterImpVision">インポスター視界を持つ</string>
+  <string name="TouOptionJesterScatterEnabled">散開メカニクスを有効にする</string>
+  <string name="TouOptionJesterScatterTimer">散開タイマー</string>
+  <string name="TouOptionJesterAfterWin">勝利後の挙動</string>
+  <string name="TouOptionJesterWinEnumEndsGame">ゲーム終了</string>
+  <string name="TouOptionJesterWinEnumHaunts">呪いを発動</string>
+  <string name="TouOptionJesterWinEnumNothing">何もしない</string>
+  <!-- Juggernaut -->
+  <!-- Juggernaut Wiki / Description -->
+  <string name="TouRoleJuggernaut">ジャガーノート</string>
+  <string name="TouRoleJuggernautIntroBlurb">キルするたびにクールダウンを短縮せよ</string>
+  <string name="TouRoleJuggernautTabDescription">キルを重ねるごとにキルクールダウンが減少します。</string>
+  <string name="TouRoleJuggernautTabKillCounter">キル数: \%count\%</string>
+  <string name="TouRoleJuggernautWikiDescription">ジャガーノートはニュートラル・キルの役職で、最後のキラーとして生き残ることで勝利します。キルするたびにクールダウンが短くなります。</string>
+  <!-- Juggernaut Options -->
+  <string name="TouOptionJuggernautInitialCooldown">初期キルクールダウン</string>
+  <string name="TouOptionJuggernautCooldownReduction">キルごとのクールダウン減少量</string>
+  <string name="TouOptionJuggernautCanVent">ジャガーノートはベント可能</string>
+  <!-- Mercenary -->
+  <!-- Mercenary Wiki / Abilities -->
+  <string name="TouRoleMercenary">マーセナリー</string>
+  <string name="TouRoleMercenaryIntroBlurb">賄賂を贈って誰とでも勝利せよ</string>
+  <string name="TouRoleMercenaryTabDescription">プレイヤーを護衛して報酬（金）を得て、\%nl\%勝者に賄賂を贈りましょう！</string>
+  <string name="TouRoleMercenaryTabGoldCounter">所持金: \%count\%</string>
+  <string name="TouRoleMercenaryTabBribedInfo">賄賂を贈った相手:</string>
+  <string name="TouRoleMercenaryWikiDescription">マーセナリーはニュートラル・良性の役職で、プレイヤーに賄賂を贈ることで、複数の勝利条件を得ることができます。</string>
+  <string name="TouRoleMercenaryGuard">護衛</string>
+  <string name="TouRoleMercenaryGuardWikiDescription">ターゲットに使用されたアビリティを肩代わりします。これにより賄賂のための金が得られます。賄賂を贈った相手が勝利すれば、マーセナリーも共に勝利します。</string>
+  <string name="TouRoleMercenaryBribe">賄賂</string>
+  <string name="TouRoleMercenaryBribeWikiDescription">金を使ってプレイヤーに賄賂を贈り、そのプレイヤーの勝利条件を共有します。</string>
+  <string name="TouRoleMercenaryGuardGuardNotif">\%player\% が何らかのアビリティを受けると、報酬として金が支払われます。</string>
+  <!-- Mercenary Options -->
+  <string name="TouOptionMercenaryCooldown">賄賂のクールダウン</string>
+  <string name="TouOptionMercenaryMaxGuards">最大護衛回数</string>
+  <string name="TouOptionMercenaryBribeCost">賄賂の費用</string>
+  <string name="TouOptionMercenaryProtectiveGuard">護衛で攻撃を阻止する</string>
+  <string name="TouOptionMercenaryProtectiveGuardGold">攻撃阻止時に得られる報酬額</string>
+  <!-- Pestilence -->
+  <!-- Pestilence Wiki / Description -->
+  <string name="TouRolePestilence">ペスティレンス</string>
+  <string name="TouRolePestilenceIntroBlurb">黙示録の四騎士！</string>
+  <string name="TouRolePestilenceTabDescription">行く手を阻む者すべてを殺害しましょう！</string>
+  <string name="TouRolePestilenceYouAreText">あなたは</string>
+  <string name="TouRolePestilenceWikiDescription">ペスティレンスはニュートラル・キルの役職で、追放や推測ミス以外のあらゆる死に対して無敵です。最後のキラーとして生き残ることで勝利します。</string>
+  <string name="TouRolePestilenceMessageTitle">ペスティレンスの警告</string>
+  <string name="TouRolePestilenceAnnounceMessage">死の疫病がクルーを飲み込みました。\%nl\%黙示録の四騎士、 \%role\% が現れました！</string>
+  <!-- Spectre -->
+  <!-- Spectre Wiki / Description -->
+  <string name="TouRoleSpectre">スペクター</string>
+  <string name="TouRoleSpectreIntroBlurb">二度目のチャンスを活かして勝利せよ</string>
+  <string name="TouRoleSpectreTabDescription">見つからずにすべてのタスクを完了しましょう！</string>
+  <string name="TouRoleSpectreWikiDescription">スペクターはニュートラルのゴースト役職で、生存しているプレイヤーにクリックされる前にタスクを完了することで勝利します。</string>
+  <string name="TouRoleSpectreSpook">驚かす</string>
+  <!-- Spectre Options -->
+  <string name="TouOptionSpectreTasksLeftClickable">クリック可能になるまでの残りタスク数</string>
+  <string name="TouOptionSpectreWin">スペクター勝利時の挙動</string>
+  <string name="TouOptionSpectreWinEnumEndsGame">ゲーム終了</string>
+  <string name="TouOptionSpectreWinEnumSpooks">驚かせる</string>
+  <string name="TouOptionSpectreWinEnumNothing">何もしない</string>
+  <!-- Plaguebearer -->
+  <!-- Plaguebearer Wiki / Abilities -->
+  <string name="TouRolePlaguebearer">プレーグベアラー</string>
+  <string name="TouRolePlaguebearerIntroBlurb">疫病を広めて \%color=#4D4D4DFF\%ペスティレンス\%/color\% になれ</string>
+  <string name="TouRolePlaguebearerTabDescription">全員を感染させて \%color=#4D4D4DFF\%ペスティレンス\%/color\% になりましょう</string>
+  <string name="TouRolePlaguebearerTabInfectCounter">残り感染対象人数: \%count\%</string>
+  <string name="TouRolePlaguebearerTabInfectedInfo">感染済みのプレイヤー:</string>
+  <string name="TouRolePlaguebearerWikiDescription">プレーグベアラーはニュートラル・キルの役職で、他の全プレイヤーを感染させてペスティレンスに変身することを目指します。</string>
+  <string name="TouRolePlaguebearerInfect">感染</string>
+  <string name="TouRolePlaguebearerInfectWikiDescription">プレイヤーを感染させます。感染したプレイヤーや死体に接触したり、それらから接触されたプレイヤーにも感染が広がります。</string>
+
+  <!-- Plaguebearer options -->
+  <string name="TouOptionPlaguebearerInstantPesti">即座にペスティレンスになる確率</string>
+  <string name="TouOptionPlaguebearerInfectCooldown">感染のクールダウン</string>
+  <string name="TouOptionPlaguebearerAnnounceTransformation">変身をアナウンスする</string>
+  <string name="TouOptionPlaguebearerPestilenceKillCooldown">ペスティレンスのキルクールダウン</string>
+  <string name="TouOptionPlaguebearerPestilenceCanVent">ペスティレンスはベント可能</string>
+  <!-- Soul Collector -->
+  <!-- Soul Collector Wiki / Abilities -->
+  <string name="TouRoleSoulCollector">ソウルコレクター</string>
+  <string name="TouRoleSoulCollectorIntroBlurb">クルーメイトから魂を刈り取れ</string>
+  <string name="TouRoleSoulCollectorTabDescription">他者の魂を刈り取り、残像を残しましょう</string>
+  <string name="TouRoleSoulCollectorWikiDescription">ソウルコレクターはニュートラル・キルの役職で、プレイヤーの魂を奪います。死体を残す代わりに、刈り取られたプレイヤーと同じ姿をした魂の抜けたデコイ（立ち止まったままの偽物）を残します。</string>
+  <string name="TouRoleSoulCollectorReap">刈り取り</string>
+  <string name="TouRoleSoulCollectorReapWikiDescription">キルボタンと同様に機能しますが、死体を作る代わりに、生きているように見える偽プレイヤーをその場に残します。</string>
+  <string name="TouRoleSoulCollectorReapNotif">\%player\% の魂を刈り取りました。魂のない肉体がその場に残ります。</string>
+  <!-- Soul Collector Options -->
+  <string name="TouOptionSoulCollectorReapCooldown">刈り取りのクールダウン</string>
+  <string name="TouOptionSoulCollectorCanVent">ソウルコレクターはベント可能</string>
+  <!-- Survivor -->
+  <!-- Survivor Wiki / Abilities -->
+  <string name="TouRoleSurvivor">サバイバー</string>
+  <string name="TouRoleSurvivorIntroBlurb">何としても生き延びろ</string>
+  <string name="TouRoleSurvivorTabDescription">最後まで生き残り、残った陣営と共に勝利しましょう</string>
+  <string name="TouRoleSurvivorWikiDescription">サバイバーはニュートラル・良性の役職で、ゲーム終了まで生き残ることだけが目的です。</string>
+
+  <string name="TouRoleSurvivorSafeguard">防衛</string>
+  <string name="TouRoleSurvivorSafeguardWikiDescription">攻撃から身を守るベストを着用します。</string>
+  <!-- Survivor Options -->
+  <string name="TouOptionSurvivorVestCooldown">ベストのクールダウン</string>
+  <string name="TouOptionSurvivorVestDuration">ベストの持続時間</string>
+  <string name="TouOptionSurvivorMaxVests">最大ベスト着用回数</string>
+  <string name="TouOptionSurvivorScatterEnabled">サバイバーの散開メカニクスを有効にする</string>
+  <string name="TouOptionSurvivorScatterTimer">サバイバーの散開タイマー</string>
+  <!-- Vampire -->
+  <!-- Vampire Wiki / Abilities -->
+  <string name="TouRoleVampire">ヴァンパイア</string>
+  <string name="TouRoleVampireIntroBlurb">クルーを仲間に変え、残りを抹殺せよ</string>
+  <string name="TouRoleVampireTabDescription">他のプレイヤーを噛んで仲間にするか、殺害します</string>
+  <string name="TouRoleVampireWikiDescription">ヴァンパイアはニュートラル・キルの役職で、最後のキラーとして生き残ることで勝利します。他者をヴァンパイアに変えるか、殺害することができます。</string>
+  <string name="TouRoleVampireBite">噛み付く</string>
+  <string name="TouRoleVampireBiteWikiDescription">プレイヤーを噛みます。対象が転換可能で、かつ最大人数に達していない場合はヴァンパイアに変えます。そうでなければ対象は死亡します。</string>
+  <!-- Vampire Options -->
+  <string name="TouOptionVampireBiteCooldown">噛み付きのクールダウン</string>
+  <string name="TouOptionVampireMaxVamps">1ゲームあたりの最大ヴァンパイア数</string>
+  <string name="TouOptionVampireImpostorVision">ヴァンパイアはインポスター視界を持つ</string>
+  <string name="TouOptionVampireNewVampsAssassinate">新しいヴァンパイアはアサシン能力を持つ</string>
+  <string name="TouOptionVampireValidNeutralConversions">有効なニュートラル転換</string>
+  <string name="TouOptionVampireNeutConvertBenign">良性</string>
+  <string name="TouOptionVampireNeutConvertEvil">悪性</string>
+  <string name="TouOptionVampireNeutConvertOutlier">異端</string>
+  <string name="TouOptionVampireNeutConvertNone">なし</string>
+  <string name="TouOptionVampireConvertNeutralBenign">ニュートラル良性を転換可能</string>
+  <string name="TouOptionVampireConvertNeutralEvil">ニュートラル悪性を転換可能</string>
+  <string name="TouOptionVampireConvertNeutralOutlier">ニュートラル異端を転換可能</string>
+  <string name="TouOptionVampireConvertLovers">恋人を転換可能</string>
+  <string name="TouOptionVampireNewVampiresConvert">新しいヴァンパイアも転換可能</string>
+  <string name="TouOptionVampireCanVent">ヴァンパイアはベント可能</string>
+  <!-- Werewolf -->
+  <!-- Werewolf Wiki / Abilities -->
+  <string name="TouRoleWerewolf">ウェアウルフ</string>
+  <string name="TouRoleWerewolfIntroBlurb">狂乱して全員を抹殺せよ</string>
+  <string name="TouRoleWerewolfTabDescription">狂乱して素早くキルし、視界を広げ、\%nl\%一時的にベントを利用しましょう</string>
+  <string name="TouRoleWerewolfWikiDescription">ウェアウルフはニュートラル・キルの役職で、最後のキラーとして生き残ることで勝利します。狂乱（ランページ）状態になることでキル能力を得ます。</string>
+  <string name="TouRoleWerewolfRampage">狂乱</string>
+  <string name="TouRoleWerewolfRampageWikiDescription">狂乱状態になり、キル能力とインポスター視界を得ます。狂乱中はキルクールダウンが大幅に短縮されます。</string>
+  <!-- Werewolf Options -->
+  <string name="TouOptionWerewolfRampageCooldown">狂乱のクールダウン</string>
+  <string name="TouOptionWerewolfRampageDuration">狂乱の持続時間</string>
+  <string name="TouOptionWerewolfKillCooldown">狂乱中のキルクールダウン</string>
+  <string name="TouOptionWerewolfCanVent">狂乱中にベント可能</string>
+  <!-- Alliance Modifiers -->
+
+  <!-- Crewpostor - Crewmate Alliance -->
+  <!-- Crewpostor Wiki / Description -->
+  <string name="TouModifierCrewpostor">クルーポスター</string>
+  <string name="TouModifierCrewpostorIntroBlurb">\%color=#FF0000FF\%インポスター\%/color\% を手助けせよ</string>
+  <string name="TouModifierCrewpostorTabDescription">インポスターとしてクルーメイトを裏切りましょう。</string>
+  <string name="TouModifierCrewpostorWikiDescription">クルーポスターはクルーメイト同盟のモディファイアで、クルーメイトでありながらインポスター陣営のために働くことを強制されます。インポスターが全滅した場合、トレイターになります。</string>
+  <string name="TouModifierCrewpostorIntroMessage">あなたは \%modifier\% です。インポスターと共にのみ勝利でき、彼らが全滅すると \%role\% になります。</string>
+  <!-- Egotist - Crewmate Alliance -->
+  <!-- Egotist Wiki / Description -->
+  <string name="TouModifierEgotist">エゴティスト</string>
+  <string name="TouModifierEgotistIntroBlurb">自尊心を満たすためにクルーを裏切れ</string>
+  <string name="TouModifierEgotistTabDescription">クルーに逆らい、キラーと共に勝利しましょう。</string>
+  <string name="TouModifierEgotistWikiDescription">エゴティストはクルーメイト同盟のモディファイア（\%symbol\% でマーク）です。エゴティストは、死んでいてもクルーメイトが敗北した場合にのみ勝利します。会議終了時にクルーメイトが一人もいなくなった場合、勝利して退出しますが、ゲームは継続します。</string>
+  <string name="TouModifierEgotistIntroMessage">あなたは \%modifier\% です。クルーメイトが敗北した場合にのみ勝利できます。</string>
+  <string name="TouModifierEgotistVictoryMessage">\%modifier\% の \%player\% は、クルーメイトが全滅したため勝利しました！</string>
+  <string name="TouModifierEgotistVictoryMessageSelf">\%modifier\% として、クルーメイトが全滅したため勝利しました！</string>
+  <string name="TouModifierEgotistSpeedChangeMessage">\%modifier\% のアドレナリンが高まっています。プレイヤーの速度が \%newSpeed\% 倍になりました！</string>
+  <string name="TouModifierEgotistCooldownChangeMessage">\%modifier\% のアドレナリンが高まっています。クールダウンが \%newOffset\% 秒短縮されました！</string>
+  <string name="TouModifierEgotistCooldownSpeedChangeMessage">\%modifier\% のアドレナリンが高まっています。クールダウンが \%newOffset\% 秒短縮され、速度が \%newSpeed\% 倍になりました！</string>
+  <string name="TouModifierEgotistDeadMessage">\%modifier\% が死亡したため、アドレナリンが消え失せました！</string>
+  <!-- Lover - Universal Alliance -->
+  <!-- Lover Wiki / Description -->
+  <string name="TouModifierLover">恋人</string>
+  <string name="TouModifierLoverInfo">あなたは \%player\% と恋に落ちいています。</string>
+  <string name="TouModifierLoverWikiDescription">恋人として、ラウンド中に相方の恋人（\%symbol\% でマーク）とチャットができ、最後の3人に残れば恋人と共に勝利できます。</string>
+  <string name="TouModifierLoverIntroMessage">あなたは \%player\% との \%modifier\% です。相方とチャットし、最後の3人に残って共に勝利を目指してください。</string>
+  <!-- Lover Options -->
+  <string name="TouOptionLoverDieAndRevive">両方の恋人が同時に死亡・蘇生する</string>
+  <string name="TouOptionLoverAnotherKiller">別のキラーと恋に落ちる確率</string>
+  <string name="TouOptionLoverCanBeNeutral">ニュートラル役職も恋人になれる</string>
+  <string name="TouOptionLoverKillFactionTeammates">恋人は同じ陣営の仲間をキルできる</string>
+  <string name="TouOptionLoverKillOneAnother">恋人同士でキルし合える</string>
+  <!-- Couldn't find an actual file for, im probably just dumb -->
+  <string name="TouModifierLovers">恋人たち</string>
+  <!-- Universal Modifiers -->
+
+  <!-- Button Barry -->
+  <!-- Button Barry Wiki / Abilities -->
+  <string name="TouModifierButtonBarry">ボタン・バリー</string>
+  <string name="TouModifierButtonBarryTabDescription">マップ上のどこからでも\%nl\%会議を招集できます。</string>
+  <string name="TouModifierButtonBarryWikiDescription">マップ上のどこからでもボタンを押せます。</string>
+  <string name="TouModifierButtonBarryButton">ボタン</string>
+  <string name="TouModifierButtonBarryButtonWikiDescription">マップのどこからでも緊急会議を招集できます。1ゲームにつき \%barryUses\% 回使用可能です。</string>
+  <!-- Button Barry Options -->
+  <string name="TouOptionButtonBarryButtonCooldown">ボタンのクールダウン</string>
+  <string name="TouOptionButtonBarryMaxUses">最大使用回数</string>
+  <string name="TouOptionButtonBarryIgnoreSabotage">サボタージュを無視する</string>
+  <string name="TouOptionButtonBarryAllowFirstRound">第1ラウンドでの使用を許可</string>
+  <!-- Flash -->
+  <!-- Flash Wiki / Description -->
+  <string name="TouModifierFlash">フラッシュ</string>
+  <string name="TouModifierFlashTabDescription">移動速度が \%flashSpeed\% 倍になります。</string>
+  <string name="TouModifierFlashWikiDescription">通常のプレイヤーよりも \%flashSpeed\% 倍速く移動できます。</string>
+  <!-- Flash Options -->
+  <string name="TouOptionFlashSpeed">フラッシュの速度</string>
+  <!-- Giant -->
+  <!-- Giant Wiki / Description -->
+  <string name="TouModifierGiant">ジャイアント</string>
+  <string name="TouModifierGiantTabDescription">平均的なプレイヤーよりも大きく、移動速度が \%giantSpeed\% 倍に低下します</string>
+  <string name="TouModifierGiantWikiDescription">通常のプレイヤーよりも大きく、移動速度も通常の \%giantSpeed\% 倍遅くなります。</string>
+  <!-- Giant Options -->
+  <string name="TouOptionGiantSpeed">ジャイアントの速度</string>
+  <!-- Immovable -->
+  <!-- Immovable Wiki / Description -->
+  <string name="TouModifierImmovable">不動</string>
+  <string name="TouModifierImmovableTabDescription">会議エリアへのテレポート、および分散や転送のアビリティを無効化します。</string>
+  <string name="TouModifierImmovableWikiDescription">アビリティや会議によって移動させられることがありません。</string>
+  <!-- Mini -->
+  <!-- Mini Wiki / Description -->
+  <string name="TouModifierMini">ミニ</string>
+  <string name="TouModifierMiniTabDescription">通常のプレイヤーよりも小さく、移動速度が \%miniSpeed\% 倍になります。</string>
+  <string name="TouModifierMiniWikiDescription">平均的なプレイヤーよりも小さく、 \%miniSpeed\% 倍速く移動できます。</string>
+  <!-- Mini Options -->
+  <string name="TouOptionMiniSpeed">ミニの速度</string>
+  <!-- Radar -->
+  <!-- Radar Wiki / Description -->
+  <string name="TouModifierRadar">レーダー</string>
+  <string name="TouModifierRadarTabDescription">最も近いプレイヤーを指す矢印を表示します。</string>
+  <string name="TouModifierRadarWikiDescription">最も近いプレイヤーを指す矢印が表示されます。</string>
+  <!-- Satellite -->
+  <!-- Satellite Wiki / Abilities -->
+  <string name="TouModifierSatellite">サテライト</string>
+  <string name="TouModifierSatelliteTabDescription">信号を放送して死体の位置を把握できます。</string>
+  <string name="TouModifierSatelliteWikiDescription">マップ上の死体を確認できます。1ゲームにつき \%maxUses\% 回使用可能です。</string>
+  <string name="TouModifierSatelliteBroadcast">放送</string>
+  <string name="TouModifierSatelliteBroadcastWikiDescription">マップ上の死体を確認できます。1ゲームにつき \%maxUses\% 回使用可能です。</string>
+  <string name="TouModifierSatelliteFailedNotif">マップ上に死体は見つかりませんでした。</string>
+  <string name="TouModifierSatelliteSingleNotif">マップ上に死体が1つ見つかりました。</string>
+  <string name="TouModifierSatellitePluralNotif">マップ上に \%count\% 個の死体が見つかりました。</string>
+  <!-- Satellite Options -->
+  <string name="TouOptionSatelliteCooldown">ボタンのクールダウン</string>
+  <string name="TouOptionSatelliteMaxUses">最大使用回数</string>
+  <string name="TouOptionSatelliteOnePerRound">1ラウンドにつき1回まで</string>
+  <string name="TouOptionSatelliteAllowFirst">第1ラウンドでの使用を許可</string>
+  <!-- Shy -->
+  <!-- Shy Wiki / Description -->
+  <string name="TouModifierShy">シャイ</string>
+  <string name="TouModifierShyTabDescription">一定時間静止すると\%nl\%透明になります。</string>
+  <string name="TouModifierShyWikiDescription">周囲に溶け込み、静止している間は透明になります。</string>
+  <!-- Shy Options -->
+  <string name="TouOptionShyDelay">透明化までの待機時間</string>
+  <string name="TouOptionShyDuration">透明化にかかる時間</string>
+  <string name="TouOptionFinalOpacity">最終的な不透明度</string>
+  <!-- Sixth Sense -->
+  <!-- Sixth Sense Wiki / Description -->
+  <string name="TouModifierSixthSense">シックスセンス</string>
+  <string name="TouModifierSixthSenseTabDescription">誰かが自分に接触したことを感知します。</string>
+  <string name="TouModifierSixthSenseWikiDescription">誰かが自分にアビリティを使用したことがわかるようになります。</string>
+  <!-- Sleuth -->
+  <!-- Sleuth Wiki / Description -->
+  <string name="TouModifierSleuth">スルース</string>
+  <string name="TouModifierSleuthTabDescription">通報した死体の役職を把握できます。</string>
+  <string name="TouModifierSleuthWikiDescription">通報した死体の役職が表示されます。</string>
+  <!-- Tiebreaker -->
+  <!-- Tiebreaker Wiki / Description -->
+  <string name="TouModifierTiebreaker">タイブレーカー</string>
+  <string name="TouModifierTiebreakerTabDescription">同票の場合、あなたの1票で決着がつきます。</string>
+  <string name="TouModifierTiebreakerWikiDescription">同票の際に決選投票権を持ちます。</string>
+  <!-- Impostor Modifiers -->
+  <!-- Disperser -->
+  <!-- Disperser Wiki / Abilities -->
+  <string name="TouModifierDisperser">ディスパーサー</string>
+  <string name="TouModifierDisperserIntroBlurb">プレイヤーをマップ上のベントに分散させることができます。</string>
+  <string name="TouModifierDisperserTabDescription">クルーを散り散りにさせます。</string>
+  <string name="TouModifierDisperserWikiDescription">不動（Immovable）でない全プレイヤーをランダムなベントに分散させます。ディスパーサーは他のボタン系モディファイアと併用できません。</string>
+  <string name="TouModifierDisperserDisperse">分散</string>
+  <string name="TouModifierDisperserDisperseWikiDescription">マップ上のプレイヤーをランダムなベントに分散させます。1ゲームにつき1回のみ使用可能です。</string>
+
+  <!-- Saboteur -->
+  <!-- Saboteur Wiki / Description -->
+  <string name="TouModifierSaboteur">サボタージュマスター</string>
+  <string name="TouModifierSaboteurIntroBlurb">サボタージュのクールダウンが短縮されます。</string>
+  <string name="TouModifierSaboteurTabDescription">サボタージュのクールダウンが短くなります。</string>
+  <string name="TouModifierSaboteurWikiDescription">サボタージュ時のクールダウンが短縮されます。</string>
+  <!-- Telepath -->
+  <!-- Telepath Wiki / Description -->
+  <string name="TouModifierTelepath">テレパス</string>
+  <string name="TouModifierTelepathIntroBlurbNoDeath">仲間のキルと死亡が通知されます。</string>
+  <string name="TouModifierTelepathIntroBlurb">仲間のキルが通知されます。</string>
+  <string name="TouModifierTelepathDescriptionBasic">仲間がキルしたことを知る</string>
+  <string name="TouModifierTelepathDescriptionIfKnowWhen">仲間がいつ、どこでキルしたかを知る</string>
+  <string name="TouModifierTelepathDescriptionAddIfKnowDeath">、仲間が死亡したことを知る</string>
+  <string name="TouModifierTelepathDescriptionAddIfKnowDeathLoc">、仲間がいつ、どこで死亡したかを知る。</string>
+  <string name="TouModifierTelepathKillNotif">仲間の \%player\% がキルしました。</string>
+  <string name="TouModifierTelepathDeathNotif">仲間の \%player\% が殺害されました！</string>
+  <string name="TouModifierTelepathGuessNotif">仲間の \%player\% が \%victim\% を \%role\% と推測しました！</string>
+  <string name="TouModifierTelepathMisguessNotif">仲間の \%player\% が \%victim\% を \%role\% と推測しようとしましたが、失敗しました！</string>
+  <!-- Telepath Options -->
+  <string name="TouOptionTelepathKnowKill">仲間のキル場所を知る</string>
+  <string name="TouOptionTelepathKnowDeath">仲間の死亡時に通知する</string>
+  <string name="TouOptionTelepathKnowDeathLoc">仲間の死亡場所を知る</string>
+  <string name="TouOptionTelepathArrowDuration">死体矢印の持続時間</string>
+  <string name="TouOptionTelepathKnowGoodGuess">仲間の推測成功時に通知する</string>
+  <string name="TouOptionTelepathKnowBadGuess">仲間の推測失敗時に通知する</string>
+  <!-- Underdog -->
+  <!-- Underdog Wiki / Description -->
+  <string name="TouModifierUnderdog">アンダードッグ</string>
+  <string name="TouModifierUnderdogIntroBlurb">一人になるとキルクールダウンが短縮されます。</string>
+  <string name="TouModifierUnderdogTabDescription">一人の時にキルクールダウンが短くなります。</string>
+  <string name="TouModifierUnderdogWikiDescription">自分一人だけになった場合、または仲間が死亡した場合にキルクールダウンが短縮されます。</string>
+  <!-- Underdog Options -->
+  <string name="TouOptionUnderdogBonus">キルクールダウンのボーナス</string>
+  <string name="TouOptionIncreasedWhen2">インポスターが2人以上の時のクールダウン増加</string>
+  <!-- Assailant (NKs/Imp) Modifiers -->
+  <string name="TouModifierAssassin">アサシン</string>
+  <!-- Double Shot -->
+  <!-- Double Shot Wiki / Description -->
+  <string name="TouModifierDoubleShot">ダブルショット</string>
+  <string name="TouModifierDoubleShotIntroBlurb">推測に失敗しても一度だけやり直せます。</string>
+  <string name="TouModifierDoubleShotWikiDescription">会議での推測に失敗しても、一度だけチャンスが与えられます。</string>
+  <string name="TouModifierDoubleShotTabDescription">アサシン（暗殺）の際に追加のチャンスがあります。</string>
+  <!-- Crewmate Modifiers -->
+
+  <!-- Aftermath -->
+  <!-- Aftermath Wiki / Description -->
+  <string name="TouModifierAftermath">アフターマス</string>
+  <string name="TouModifierAftermathIntroBlurb">死亡時にキラーのアビリティを強制発動させます。</string>
+  <string name="TouModifierAftermathTabDescription">キラーにアビリティを強制的に使わせます！</string>
+  <string name="TouModifierAftermathWikiDescription">死亡後、キラーは自身の死体または自分自身に対してアビリティを強制的に使用させられます。</string>
+  <string name="TouModifierAftermathTriggeredNotif">\%player\% は \%modifier\% でした。アビリティが強制発動しました。</string>
+  <!-- Bait -->
+  <!-- Bait Wiki / Description -->
+  <string name="TouModifierBait">ベイト</string>
+  <string name="TouModifierBaitIntroBlurb">キラーに自分の死体を通報させます。</string>
+  <string name="TouModifierBaitTabDescription">キラーにセルフ通報を強制します。</string>
+  <string name="TouModifierBaitWikiDescription">死亡後、キラーはあなたの死体を強制的にセルフ通報させられます。</string>
+  <string name="TouModifierBaitTriggeredNotif">\%player\% は \%modifier\% でした。セルフ通報が強制されました。</string>
+  <!-- Bait Options -->
+  <string name="TouOptionBaitMinDelay">通報強制までの最小遅延時間</string>
+  <string name="TouOptionBaitMaxDelay">通報強制までの最大遅延時間</string>
+  <!-- Celebrity -->
+  <!-- Celebrity Wiki / Description -->
+  <string name="TouModifierCelebrity">セレブリティ</string>
+  <string name="TouModifierCelebrityIntroBlurb">会議で自分の死に関する情報を公開します。</string>
+  <string name="TouModifierCelebrityTabDescription">死亡時に死因をアナウンスします。</string>
+  <string name="TouModifierCelebrityWikiDescription">死亡後、会議中に殺害された場所やどの役職に殺されたかなどの詳細が明かされます。</string>
+  <string name="TouModifierCelebrityPopup">セレブリティの \%player\% が死亡しました！(詳細はチャットを確認)</string>
+  <string name="TouRoleCelebrityMessageTitle">セレブリティレポート</string>
+  <string name="TouModifierCelebrityDetailsSelf">\%modifier\% の \%player\% が死亡しました！\%nl\%場所: \%room\%\%nl\%死因: 自殺\%nl\%時間: \%timeAgo\% 秒前。</string>
+  <string name="TouModifierCelebrityDetailsKilled">\%modifier\% の \%player\% が \%killed\% されました！\%nl\%場所: \%room\%\%nl\%死因: \%role\% による殺害\%nl\%時間: \%timeAgo\% 秒前。</string>
+  <!-- Circumvent -->
+  <!-- Circumvent Wiki / Description -->
+  <string name="TouModifierCircumvent">サーカムヴェント</string>
+  <string name="TouModifierCircumventIntroBlurb">ベントの使用が制限されます。</string>
+  <string name="TouModifierCircumventIntroBlurbNone">ベントを使用できません。</string>
+  <string name="TouModifierCircumventTabDescriptionNone">ベント不可。</string>
+  <string name="TouModifierCircumventTabDescription">残りベント回数: \%amount\%</string>
+  <string name="TouModifierCircumventWikiDescription">マップ上でのベント使用能力が大幅に弱体化されるか、完全に使用不可になります。</string>
+  <!-- DeadlyQuota -->
+  <!-- DeadlyQuota Wiki / Description -->
+  <string name="TouModifierDeadlyQuota">デッドリークォータ</string>
+  <string name="TouModifierDeadlyQuotaIntroBlurb">少なくとも1人はキルしなければなりません。</string>
+  <string name="TouModifierDeadlyQuotaIntroBlurbPlural">少なくとも \%amount\% 人はキルしなければなりません。</string>
+  <string name="TouModifierDeadlyQuotaTabDescription">ノルマを達成しなければ敗北です！\%nl\%キル数: \%amount\% / \%total\%</string>
+  <string name="TouModifierDeadlyQuotaWikiDescription">ノルマを達成できなかった場合、敗北となります。ゲーム開始時に設定された人数をキルする必要があります。</string>
+  <string name="TouModifierDeadlyQuotaWarningNotif">まだノルマに着手していません。インポスターが勝利しても、ゲーム終了時までに \%amount\% 人のノルマを達成していない場合、あなたは敗北します。</string>
+  <!-- Diseased -->
+  <!-- Diseased Wiki / Description -->
+  <string name="TouModifierDiseased">ディジーズド</string>
+  <string name="TouModifierDiseasedIntroBlurb">死亡時にキラーのクールダウンを延長させます。</string>
+  <string name="TouModifierDiseasedTabDescription">キラーのキルクールダウンを増加させます。</string>
+  <string name="TouModifierDiseasedWikiDescription">殺害した者のキルクールダウンが \%cooldownMultiplier\% 倍になります。</string>
+  <string name="TouModifierDiseasedTriggeredNotif">\%player\% は \%modifier\% でした。キルクールダウンが \%cooldownMultiplier\% 倍に延長されました。</string>
+  <!-- Diseased Options-->
+  <string name="TouOptionDiseasedCooldownModifier">延長倍率</string>
+  <!-- Frosty -->
+  <!-- Frosty Wiki / Description -->
+  <string name="TouModifierFrosty">フロスティ</string>
+  <string name="TouModifierFrostyIntroBlurb">死亡時にキラーを鈍足にします。</string>
+  <string name="TouModifierFrostyTabDescription">キラーを短時間鈍足にします。</string>
+  <string name="TouModifierFrostyWikiDescription">あなたが死亡した後、キラーは鈍足になります！</string>
+  <string name="TouModifierFrostyTriggeredNotif">\%player\% は \%modifier\% でした。これによりあなたは \%time\% 秒間鈍足になります。</string>
+  <!-- Frosty Options -->
+  <string name="TouOptionFrostyChillDuration">鈍足の持続時間</string>
+  <string name="TouOptionFrostyChillStartSpeed">鈍足時の開始速度</string>
+  <!-- Investigator -->
+  <!-- Investigator Wiki / Description -->
+  <string name="TouModifierInvestigatorIntroBlurb">他人の足跡が見えます。</string>
+  <string name="TouModifierInvestigatorTabDescription">全員の足跡が見えます。</string>
+  <string name="TouModifierInvestigatorWikiDescription">インベスティゲーターはゲーム中、プレイヤーの足跡を見ることができます。透明化（スウープ）中の足跡は見えません。</string>
+  <!-- Multitasker -->
+  <!-- Multitasker Wiki / Description -->
+  <string name="TouModifierMultitasker">マルチタスカー</string>
+  <string name="TouModifierMultitaskerIntroBlurb">タスク画面を透過します。</string>
+  <string name="TouModifierMultitaskerTabDescription">タスク画面が透過します。</string>
+  <string name="TouModifierMultitaskerWikiDescription">すべてのメニューが透けて見えるため、メニューの背後を確認できます！</string>
+  <!-- Noisemaker -->
+  <!-- Noisemaker Wiki / Description -->
+  <string name="TouModifierNoisemaker">ノイズメーカー</string>
+  <string name="TouModifierNoisemakerIntroBlurb">死亡時に全プレイヤーに居場所を知らせます。</string>
+  <string name="TouModifierNoisemakerTabDescription">死亡時、マップ上の全プレイヤーに \%noiseTime\% 秒間アラートを送ります。</string>
+  <string name="TouModifierNoisemakerWikiDescription">死亡後、マップ上の全員に赤い死体インジケーターが表示されます。</string>
+  <!-- Noisemaker Options -->
+  <string name="TouOptionNoisemakerImpAlert">インポスターに通知する</string>
+  <string name="TouOptionNoisemakerNeutAlert">ニュートラルに通知する</string>
+  <string name="TouOptionNoisemakerCommsPreventsAlert">通信サボタージュで通知を阻止する</string>
+  <string name="TouOptionNoisemakerOnlyWithBody">死体が存在する場合のみ発動する</string>
+  <string name="TouOptionNoisemakerAlertDuration">通知の持続時間</string>
+  <!-- Operative -->
+  <!-- Operative Wiki / Description -->
+  <string name="TouModifierOperative">オペレーティブ</string>
+  <string name="TouModifierOperativeIntroBlurb">移動しながらセキュリティシステムを利用できます。</string>
+  <string name="TouModifierOperativeTabDescription">どこからでもカメラを利用できます。</string>
+  <string name="TouModifierOperativeWikiDescription">バッテリー制限はありますが、いつでもカメラを使用できます。</string>
+  <!-- Operative Options -->
+  <string name="TouOptionOperativeMiraDoorlog">Miraのドアログ使用中に移動可能</string>
+  <string name="TouOptionOperativeStartingCharge">初期チャージ</string>
+  <string name="TouOptionOperativeChargedEachRound">各ラウンドごとのチャージ量</string>
+  <string name="TouOptionOperativeChargedPerTask">タスク完了ごとのチャージ量</string>
+  <string name="TouOptionOperativeDisplayCooldown">カメラ表示のクールダウン</string>
+  <string name="TouOptionOperativeMaxDisplayDuration">カメラ表示の最大時間</string>
+  <!-- Rotting -->
+  <!-- Rotting Wiki / Description -->
+  <string name="TouModifierRotting">ロッティング</string>
+  <string name="TouModifierRottingIntroBlurb">死亡時に死体が腐敗して消滅します。</string>
+  <string name="TouModifierRottingTabDescription">\%rotDelay\% 秒後に死体が消滅します。</string>
+  <string name="TouModifierRottingWikiDescription">\%rotDelay\% 秒経過すると死体が消滅し、通報できなくなります。</string>
+  <!-- Rotting Options -->
+  <string name="TouOptionRottingDelay">死体が消滅するまでの時間</string>
+  <!-- Scientist -->
+  <!-- Scientist Wiki / Description -->
+  <string name="TouModifierScientist">サイエンティスト</string>
+  <string name="TouModifierScientistIntroBlurb">移動しながらバイタルを利用できます。</string>
+  <string name="TouModifierScientistTabDescription">チャージがある限り、いつでもどこでもバイタルにアクセスできます。</string>
+  <string name="TouModifierScientistWikiDescription">バッテリー制限はありますが、いつでもバイタルを使用できます。</string>
+  <!-- Scientist Options -->
+  <string name="TouOptionScientistMoveVitals">バイタル使用中に移動可能</string>
+  <string name="TouOptionScientistStartingCharge">初期チャージ</string>
+  <string name="TouOptionScientistChargedEachRound">各ラウンドごとのチャージ量</string>
+  <string name="TouOptionScientistChargedPerTask">タスク完了ごとのチャージ量</string>
+  <string name="TouOptionScientistDisplayCooldown">バイタル表示のクールダウン</string>
+  <string name="TouOptionScientistMaxDisplayDuration">バイタル表示の最大時間</string>
+  <!-- Scout -->
+  <!-- Scout Wiki / Description -->
+  <string name="TouModifierScout">スカウト</string>
+  <string name="TouModifierScoutIntroBlurb">明るい所では遠くまで見え、暗い所ではより盲目になります。</string>
+  <string name="TouModifierScoutTabDescription">ライト点灯時は視界が広くなりますが、消灯時は非常に狭くなります。</string>
+  <string name="TouModifierScoutWikiDescription">通常のクルーメイトの2倍の視界を持ちますが、停電時は視界が悪化します。</string>
+  <!-- Spy -->
+  <!-- Spy Wiki / Description -->
+  <string name="TouModifierSpyIntroBlurb">アドミン端末で追加情報を得られます</string>
+  <string name="TouModifierSpyTabDescription">アドミン端末で追加情報を得られます。</string>
+  <string name="TouModifierSpyWikiDescription">アドミン端末で詳細情報を得ることができます。各部屋の人数だけでなく、誰がどの部屋にいるかまで見ることができます。</string>
+  <!-- Taskmaster -->
+  <!-- Taskmaster Wiki / Description -->
+  <string name="TouModifierTaskmaster">タスクマスター</string>
+  <string name="TouModifierTaskmasterIntroBlurb">毎ラウンド、ランダムなタスクを自動完了します。</string>
+  <string name="TouModifierTaskmasterTabDescription">各会議の後、ランダムなタスクが1つ自動的に完了します。</string>
+  <string name="TouModifierTaskmasterWikiDescription">ラウンドが開始されるたびに、自動的にタスクを1つ完了します。</string>
+  <string name="TouModifierTaskmasterTaskNotif">タスク「 \%taskName\% 」が自動完了しました。</string>
+  <!-- Torch -->
+  <!-- Torch Wiki / Description -->
+  <string name="TouModifierTorch">トーチ</string>
+  <string name="TouModifierTorchIntroBlurb">停電時でも視界を確保できます。</string>
+  <string name="TouModifierTorchTabDescription">停電サボタージュ中でも視界が減少しません。</string>
+  <string name="TouModifierTorchWikiDescription">停電の影響を一切受けません。</string>
 </resources>
