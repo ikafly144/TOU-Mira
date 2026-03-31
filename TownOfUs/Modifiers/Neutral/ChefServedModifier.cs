@@ -17,7 +17,7 @@ public sealed class ChefServedModifier(PlayerControl chef, int servingType, int 
     public override bool RemoveOnComplete => false;
     public PlatterType FoodType => (PlatterType)servingType;
     public int BodyId => bodyId;
-    public override string ModifierName => "Chef Served";
+    public override string ModifierName => "提供済み";
     public override bool HideOnUi => true;
 
     public PlayerControl Chef { get; } = chef;

@@ -7,7 +7,7 @@ namespace TownOfUs.Modifiers.HnsGame.Crewmate;
 
 public sealed class HnsFrozenModifier : TimedModifier
 {
-    public override string ModifierName => "Frozen";
+    public override string ModifierName => "フリーズ";
     public override bool HideOnUi => true;
     public override float Duration => OptionGroupSingleton<HnsFrostyOptions>.Instance.ChillDuration;
 

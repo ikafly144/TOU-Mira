@@ -24,7 +24,7 @@ public sealed class ToBecomeTraitorModifier : ExcludedGameModifier, IAssignableT
 {
     public bool ContinuesGame => !Player.HasDied() && Helpers.GetAlivePlayers().Count >
                                  (int)OptionGroupSingleton<TraitorOptions>.Instance.LatestSpawn - 1;
-    public override string ModifierName => "Possible Traitor";
+    public override string ModifierName => "トレイターの可能性";
     public override bool HideOnUi => true;
 
     public int Priority { get; set; } = 3;

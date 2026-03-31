@@ -7,7 +7,7 @@ namespace TownOfUs.Options;
 
 public sealed class GeneralOptions : AbstractOptionGroup
 {
-    public override string GroupName => "General";
+    public override string GroupName => "一般設定";
     public override uint GroupPriority => 1;
 
     // Legacy Compatibility, this allows mods like ChaosTokens to still use this value as normal.
@@ -22,59 +22,59 @@ public sealed class GeneralOptions : AbstractOptionGroup
     
 #pragma warning restore S2325 // Make a static property.
 
-    [ModdedEnumOption("Modifier Type To Show In Role Intro", typeof(ModReveal))]
+    [ModdedEnumOption("ロール紹介で表示するモディファイアの種類", typeof(ModReveal))]
     public ModReveal ModifierReveal { get; set; } = ModReveal.Universal;
 
-    [ModdedToggleOption("Show Faction Modifier On Role Reveal")]
+    [ModdedToggleOption("ロール公開時に陣営モディファイアを表示")]
     public bool TeamModifierReveal { get; set; } = true;
 
-    [ModdedToggleOption("Impostors Don't Know Each Other")]
+    [ModdedToggleOption("インポスター同士が互いを知らない")]
     public bool FFAImpostorMode { get; set; } = false;
 
-    public ModdedToggleOption ImpsKnowRoles { get; set; } = new("Impostors Know Each Other's Roles", true)
+    public ModdedToggleOption ImpsKnowRoles { get; set; } = new("インポスター同士が互いの役職を知る", true)
     {
         Visible = () => !OptionGroupSingleton<GeneralOptions>.Instance.FFAImpostorMode
     };
 
-    public ModdedToggleOption ImpostorChat { get; set; } = new("Impostors Get A Private Meeting Chat", true)
+    public ModdedToggleOption ImpostorChat { get; set; } = new("インポスター専用の会議チャットを使用", true)
     {
         Visible = () => !OptionGroupSingleton<GeneralOptions>.Instance.FFAImpostorMode
     };
 
-    [ModdedToggleOption("Vampires Get A Private Meeting Chat")]
+    [ModdedToggleOption("ヴァンパイア専用の会議チャットを使用")]
     public bool VampireChat { get; set; } = true;
 
-    [ModdedNumberOption("Initial Button Cooldowns", 10f, 30f, 2.5f, MiraNumberSuffixes.Seconds, "0.#")]
+    [ModdedNumberOption("初期ボタンクールダウン", 10f, 30f, 2.5f, MiraNumberSuffixes.Seconds, "0.#")]
     public float GameStartCd { get; set; } = 10f;
 
-    [ModdedEnumOption("Initial Cooldowns Apply For", typeof(StartCooldownType),
-        ["All Buttons", "Specific Cooldowns", "No Buttons"])]
+    [ModdedEnumOption("初期クールダウンの適用対象", typeof(StartCooldownType),
+        ["すべてのボタン", "特定のクールダウンのみ", "なし"])]
     public StartCooldownType StartCooldownMode { get; set; } = StartCooldownType.SpecificCooldowns;
 
-    public ModdedNumberOption StartCooldownMin { get; set; } = new("Minimum Cooldown To Be Applicable", 5f, 0f, 60f,
+    public ModdedNumberOption StartCooldownMin { get; set; } = new("適用対象の最小クールダウン", 5f, 0f, 60f,
         2.5f, MiraNumberSuffixes.Seconds, "0.#")
     {
         Visible = () =>
             OptionGroupSingleton<GeneralOptions>.Instance.StartCooldownMode is StartCooldownType.SpecificCooldowns
     };
 
-    public ModdedNumberOption StartCooldownMax { get; set; } = new("Maximum Cooldown To Be Applicable", 60f, 0f, 60f,
+    public ModdedNumberOption StartCooldownMax { get; set; } = new("適用対象の最大クールダウン", 60f, 0f, 60f,
         2.5f, MiraNumberSuffixes.Seconds, "0.#")
     {
         Visible = () =>
             OptionGroupSingleton<GeneralOptions>.Instance.StartCooldownMode is StartCooldownType.SpecificCooldowns
     };
 
-    [ModdedNumberOption("Voting Time Added After Meeting Death", 0f, 15f, 1f, MiraNumberSuffixes.Seconds, "0.#")]
+    [ModdedNumberOption("会議での死亡後に加算される投票時間", 0f, 15f, 1f, MiraNumberSuffixes.Seconds, "0.#")]
     public float AddedMeetingDeathTimer { get; set; } = 5f;
 
-    [ModdedToggleOption("First Death Shield Next Game")]
+    [ModdedToggleOption("次回のゲームで初手死亡保護シールドを付与")]
     public bool FirstDeathShield { get; set; } = true;
 
-    [ModdedToggleOption("Indicate Round One Victims")]
+    [ModdedToggleOption("第1ラウンドの犠牲者を表示")]
     public bool RoundOneVictims { get; set; } = true;
 
-    [ModdedToggleOption("Powerful Crew Continue The Game")]
+    [ModdedToggleOption("強力なクルーがゲームを続行")]
     public bool CrewKillersContinue { get; set; } = true;
 }
 

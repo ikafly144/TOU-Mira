@@ -23,7 +23,7 @@ public sealed class ImitatorCacheModifier : BaseModifier, ICachedRole, IContinue
         Helpers.GetAlivePlayers().Count > 1;
     private MeetingMenu? _meetingMenu;
     private NetworkedPlayerInfo? _selectedPlr;
-    public override string ModifierName => "Imitator";
+    public override string ModifierName => "イミテーター";
     public override bool HideOnUi => true;
     public bool ShowCurrentRoleFirst => true;
 

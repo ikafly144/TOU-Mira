@@ -13,18 +13,18 @@ public sealed class NoisemakerOptions : AbstractOptionGroup<NoisemakerModifier>
     public override uint GroupPriority => 23;
     public override Color GroupColor => TownOfUsColors.Noisemaker;
 
-    [ModdedToggleOption("Impostors Get Alert")]
+    [ModdedToggleOption("インポスターに通知する")]
     public bool ImpostorsAlerted { get; set; } = true;
 
-    [ModdedToggleOption("Neutral Killers Get Alert")]
+    [ModdedToggleOption("ニュートラルキラーに通知する")]
     public bool NeutsAlerted { get; set; } = true;
 
-    [ModdedToggleOption("Comms Sabotage Prevents Alert")]
+    [ModdedToggleOption("通信サボタージュで通知を阻止する")]
     public bool CommsAffected { get; set; } = false;
 
-    [ModdedToggleOption("Only Triggers If A Body Exists")]
+    [ModdedToggleOption("死体が存在する場合のみ発動する")]
     public bool BodyCheck { get; set; } = true;
 
-    [ModdedNumberOption("Alert Duration", 1f, 20f, 1f, MiraNumberSuffixes.Seconds)]
+    [ModdedNumberOption("通知の持続時間", 1f, 20f, 1f, MiraNumberSuffixes.Seconds)]
     public float AlertDuration { get; set; } = 5f;
 }

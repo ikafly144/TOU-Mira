@@ -18,7 +18,7 @@ public sealed class GrenadierFlashModifier(PlayerControl grenadier) : DisabledMo
     private readonly Color normalVision = new(0.83f, 0.83f, 0.83f, 0f);
 
     private ScreenFlash? flash;
-    public override string ModifierName => "Flashed";
+    public override string ModifierName => "フラッシュ";
     public override bool HideOnUi => true;
     public override float Duration => OptionGroupSingleton<GrenadierOptions>.Instance.GrenadeDuration + 0.5f;
     public override bool AutoStart => true;

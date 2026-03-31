@@ -11,7 +11,7 @@ namespace TownOfUs.Modifiers.Neutral;
 public sealed class ChefArrowModifier(DeadBody deadBody, Color color) : TimedModifier
 {
     private ArrowBehaviour? _arrow;
-    public override string ModifierName => "Death Notifier";
+    public override string ModifierName => "死体通知";
     public override float Duration => OptionGroupSingleton<ChefOptions>.Instance.ChefArrowDuration.Value;
     public override bool AutoStart => false;
     public override bool RemoveOnComplete => true;

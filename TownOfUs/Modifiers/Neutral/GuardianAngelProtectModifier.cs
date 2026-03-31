@@ -16,7 +16,7 @@ namespace TownOfUs.Modifiers.Neutral;
 public sealed class GuardianAngelProtectModifier(PlayerControl guardianAngel) : BaseShieldModifier
 {
     public override float Duration => OptionGroupSingleton<FairyOptions>.Instance.ProtectDuration;
-    public override string ModifierName => "Protected";
+    public override string ModifierName => "保護中";
     public override LoadableAsset<Sprite>? ModifierIcon => TouRoleIcons.Fairy;
     public override string ShieldDescription => "You are protected by your Guardian Angel!\nYou cannot be killed.";
     public override bool AutoStart => true;

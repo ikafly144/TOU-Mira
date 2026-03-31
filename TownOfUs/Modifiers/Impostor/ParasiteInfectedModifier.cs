@@ -18,7 +18,7 @@ namespace TownOfUs.Modifiers.Impostor;
 /// </summary>
 public sealed class ParasiteInfectedModifier(PlayerControl controller) : DisabledModifier, IVisualAppearance, IUncontrollable
 {
-    public override string ModifierName => "Parasite Infected";
+    public override string ModifierName => "パラサイト感染";
     public override bool HideOnUi => true;
     public override bool AutoStart => true;
 

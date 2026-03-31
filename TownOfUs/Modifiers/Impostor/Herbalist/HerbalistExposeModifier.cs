@@ -6,7 +6,7 @@ namespace TownOfUs.Modifiers.Impostor.Herbalist;
 public sealed class HerbalistExposedModifier(PlayerControl herbalist, bool isFfa)
     : BaseRevealModifier
 {
-    public override string ModifierName => "Exposed";
+    public override string ModifierName => "暴露済み";
 
     public override ChangeRoleResult ChangeRoleResult { get; set; } = ChangeRoleResult.Nothing;
 

@@ -36,7 +36,7 @@ public abstract class RevealModifier(int roleChangeResult, bool revealRole, Role
 [MiraIgnore]
 public abstract class BaseRevealModifier : TimedModifier
 {
-    public override string ModifierName => "Revealed";
+    public override string ModifierName => "公開済み";
     public override float Duration => 1f;
     public override bool AutoStart => false;
     public override bool HideOnUi => true;
@@ -52,7 +52,7 @@ public abstract class BaseRevealModifier : TimedModifier
 
     public virtual bool Visible { get; set; } = true;
 
-    public override string GetDescription() => "You are Revealed!";
+    public override string GetDescription() => "正体が明かされています！";
 
     public void SetNewInfo(bool revealRole, string? nameTxt = null, string? roleTxt = null, RoleBehaviour? role2 = null,
         Color? nameColor = null)

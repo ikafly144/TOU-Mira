@@ -6,7 +6,7 @@ namespace TownOfUs.Modifiers.Impostor;
 public sealed class AmbusherArrowTargetModifier(PlayerControl owner, Color color, float update)
     : ArrowTargetModifier(owner, color, update)
 {
-    public override string ModifierName => "Ambusher Arrow";
+    public override string ModifierName => "アンブッシャー矢印";
 
     public override void OnActivate()
     {

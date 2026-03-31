@@ -47,7 +47,7 @@ public sealed class RoleOptions : AbstractOptionGroup
         MiscUtils.GetParsedRoleBucket("Any")
     ];
 
-    public override string GroupName => "Role Settings";
+    public override string GroupName => "ロール設定";
     public override uint GroupPriority => 2;
 
     public RoleDistribution CurrentRoleDistribution()
@@ -88,7 +88,7 @@ public sealed class RoleOptions : AbstractOptionGroup
         }
     }
     public ModdedEnumOption CustomGameMode { get; } =
-        new("Current Game Mode", (int)TouGamemode.Normal, typeof(TouGamemode), ["Normal", "Hide And Seek (N/A)", "Cultist (N/A)"/*, "All Killers (N/A)", "Legacy TOU (N/A)"*/], false)
+        new("現在のゲームモード", (int)TouGamemode.Normal, typeof(TouGamemode), ["通常", "かくれんぼ (未実装)", "カルティスト (未実装)"/*, "All Killers (N/A)", "Legacy TOU (N/A)"*/], false)
         {
             // Who could've possibly thought this code breaks the game?
             /*ChangedEvent = x =>
@@ -118,19 +118,19 @@ public sealed class RoleOptions : AbstractOptionGroup
             Visible = () => true
         };
     public ModdedEnumOption RoleAssignmentType { get; } =
-        new("Role Assignment Type", (int)RoleSelectionMode.RoleList, typeof(RoleSelectionMode), ["Vanilla", "Role List", "Min/Max List"])
+        new("ロール割り当てタイプ", (int)RoleSelectionMode.RoleList, typeof(RoleSelectionMode), ["バニラ", "ロールリスト", "最小/最大リスト"])
         {
             Visible = () => OptionGroupSingleton<RoleOptions>.Instance.IsClassicRoleAssignment
         };
 
     public ModdedToggleOption LastImpostorBias { get; } =
-        new("Reduce Impostor Streak", true)
+        new("インポスターの連続率を減少", true)
         {
             Visible = () => OptionGroupSingleton<RoleOptions>.Instance.IsClassicRoleAssignment && OptionGroupSingleton<RoleOptions>.Instance.CurrentRoleDistribution() is not RoleDistribution.Vanilla
         };
 
     public ModdedNumberOption ImpostorBiasPercent { get; } =
-        new("Reduction Chance", 15f, 0f, 100f, 5f, MiraNumberSuffixes.Percent)
+        new("減少率", 15f, 0f, 100f, 5f, MiraNumberSuffixes.Percent)
         {
             Visible = () => OptionGroupSingleton<RoleOptions>.Instance.LastImpostorBias && OptionGroupSingleton<RoleOptions>.Instance.IsClassicRoleAssignment && OptionGroupSingleton<RoleOptions>.Instance.CurrentRoleDistribution() is not RoleDistribution.Vanilla
         };
@@ -149,139 +149,139 @@ public sealed class RoleOptions : AbstractOptionGroup
         };*/
 
     public ModdedEnumOption<RoleListOption> Slot1 { get; } =
-        new("Slot 1", RoleListOption.CrewCommon, OptionStrings)
+        new("スロット 1", RoleListOption.CrewCommon, OptionStrings)
         {
             Visible = () => OptionGroupSingleton<RoleOptions>.Instance.CurrentRoleDistribution() is RoleDistribution.RoleList
         };
 
     public ModdedEnumOption<RoleListOption> Slot2 { get; } =
-        new("Slot 2", RoleListOption.CrewCommon, OptionStrings)
+        new("スロット 2", RoleListOption.CrewCommon, OptionStrings)
         {
             Visible = () => OptionGroupSingleton<RoleOptions>.Instance.CurrentRoleDistribution() is RoleDistribution.RoleList
         };
 
     public ModdedEnumOption<RoleListOption> Slot3 { get; } =
-        new("Slot 3", RoleListOption.CrewCommon, OptionStrings)
+        new("スロット 3", RoleListOption.CrewCommon, OptionStrings)
         {
             Visible = () => OptionGroupSingleton<RoleOptions>.Instance.CurrentRoleDistribution() is RoleDistribution.RoleList
         };
 
     public ModdedEnumOption<RoleListOption> Slot4 { get; } =
-        new("Slot 4", RoleListOption.ImpCommon, OptionStrings)
+        new("スロット 4", RoleListOption.ImpCommon, OptionStrings)
         {
             Visible = () => OptionGroupSingleton<RoleOptions>.Instance.CurrentRoleDistribution() is RoleDistribution.RoleList
         };
 
     public ModdedEnumOption<RoleListOption> Slot5 { get; } =
-        new("Slot 5", RoleListOption.CrewCommon, OptionStrings)
+        new("スロット 5", RoleListOption.CrewCommon, OptionStrings)
         {
             Visible = () => OptionGroupSingleton<RoleOptions>.Instance.CurrentRoleDistribution() is RoleDistribution.RoleList
         };
 
     public ModdedEnumOption<RoleListOption> Slot6 { get; } =
-        new("Slot 6", RoleListOption.CrewCommon, OptionStrings)
+        new("スロット 6", RoleListOption.CrewCommon, OptionStrings)
         {
             Visible = () => OptionGroupSingleton<RoleOptions>.Instance.CurrentRoleDistribution() is RoleDistribution.RoleList
         };
 
     public ModdedEnumOption<RoleListOption> Slot7 { get; } =
-        new("Slot 7", RoleListOption.CrewCommon, OptionStrings)
+        new("スロット 7", RoleListOption.CrewCommon, OptionStrings)
         {
             Visible = () => OptionGroupSingleton<RoleOptions>.Instance.CurrentRoleDistribution() is RoleDistribution.RoleList
         };
 
     public ModdedEnumOption<RoleListOption> Slot8 { get; } =
-        new("Slot 8", RoleListOption.CrewCommon, OptionStrings)
+        new("スロット 8", RoleListOption.CrewCommon, OptionStrings)
         {
             Visible = () => OptionGroupSingleton<RoleOptions>.Instance.CurrentRoleDistribution() is RoleDistribution.RoleList
         };
 
     public ModdedEnumOption<RoleListOption> Slot9 { get; } =
-        new("Slot 9", RoleListOption.ImpCommon, OptionStrings)
+        new("スロット 9", RoleListOption.ImpCommon, OptionStrings)
         {
             Visible = () => OptionGroupSingleton<RoleOptions>.Instance.CurrentRoleDistribution() is RoleDistribution.RoleList
         };
 
     public ModdedEnumOption<RoleListOption> Slot10 { get; } =
-        new("Slot 10", RoleListOption.CrewCommon, OptionStrings)
+        new("スロット 10", RoleListOption.CrewCommon, OptionStrings)
         {
             Visible = () => OptionGroupSingleton<RoleOptions>.Instance.CurrentRoleDistribution() is RoleDistribution.RoleList
         };
 
     public ModdedEnumOption<RoleListOption> Slot11 { get; } =
-        new("Slot 11", RoleListOption.CrewCommon, OptionStrings)
+        new("スロット 11", RoleListOption.CrewCommon, OptionStrings)
         {
             Visible = () => OptionGroupSingleton<RoleOptions>.Instance.CurrentRoleDistribution() is RoleDistribution.RoleList
         };
 
     public ModdedEnumOption<RoleListOption> Slot12 { get; } =
-        new("Slot 12", RoleListOption.CrewCommon, OptionStrings)
+        new("スロット 12", RoleListOption.CrewCommon, OptionStrings)
         {
             Visible = () => OptionGroupSingleton<RoleOptions>.Instance.CurrentRoleDistribution() is RoleDistribution.RoleList
         };
 
     public ModdedEnumOption<RoleListOption> Slot13 { get; } =
-        new("Slot 13", RoleListOption.CrewCommon, OptionStrings)
+        new("スロット 13", RoleListOption.CrewCommon, OptionStrings)
         {
             Visible = () => OptionGroupSingleton<RoleOptions>.Instance.CurrentRoleDistribution() is RoleDistribution.RoleList
         };
 
     public ModdedEnumOption<RoleListOption> Slot14 { get; } =
-        new("Slot 14", RoleListOption.ImpCommon, OptionStrings)
+        new("スロット 14", RoleListOption.ImpCommon, OptionStrings)
         {
             Visible = () => OptionGroupSingleton<RoleOptions>.Instance.CurrentRoleDistribution() is RoleDistribution.RoleList
         };
 
     public ModdedEnumOption<RoleListOption> Slot15 { get; } =
-        new("Slot 15", RoleListOption.CrewCommon, OptionStrings)
+        new("スロット 15", RoleListOption.CrewCommon, OptionStrings)
         {
             Visible = () => OptionGroupSingleton<RoleOptions>.Instance.CurrentRoleDistribution() is RoleDistribution.RoleList
         };
 
     public ModdedNumberOption MinNeutralBenign { get; } =
-        new("Min Neutral Benign", 0f, 0f, 10f, 1f, MiraNumberSuffixes.None, "0")
+        new("ニュートラル良性の最小数", 0f, 0f, 10f, 1f, MiraNumberSuffixes.None, "0")
         {
             Visible = () => OptionGroupSingleton<RoleOptions>.Instance.CurrentRoleDistribution() is RoleDistribution.MinMaxList
         };
 
     public ModdedNumberOption MaxNeutralBenign { get; } =
-        new("Max Neutral Benign", 0f, 0f, 10f, 1f, MiraNumberSuffixes.None, "0")
+        new("ニュートラル良性の最大数", 0f, 0f, 10f, 1f, MiraNumberSuffixes.None, "0")
         {
             Visible = () => OptionGroupSingleton<RoleOptions>.Instance.CurrentRoleDistribution() is RoleDistribution.MinMaxList
         };
 
     public ModdedNumberOption MinNeutralEvil { get; } =
-        new("Min Neutral Evil", 0f, 0f, 10f, 1f, MiraNumberSuffixes.None, "0")
+        new("ニュートラル悪性の最小数", 0f, 0f, 10f, 1f, MiraNumberSuffixes.None, "0")
         {
             Visible = () => OptionGroupSingleton<RoleOptions>.Instance.CurrentRoleDistribution() is RoleDistribution.MinMaxList
         };
 
     public ModdedNumberOption MaxNeutralEvil { get; } =
-        new("Max Neutral Evil", 0f, 0f, 10f, 1f, MiraNumberSuffixes.None, "0")
+        new("ニュートラル悪性の最大数", 0f, 0f, 10f, 1f, MiraNumberSuffixes.None, "0")
         {
             Visible = () => OptionGroupSingleton<RoleOptions>.Instance.CurrentRoleDistribution() is RoleDistribution.MinMaxList
         };
 
     public ModdedNumberOption MinNeutralKiller { get; } =
-        new("Min Neutral Killer", 0f, 0f, 10f, 1f, MiraNumberSuffixes.None, "0")
+        new("ニュートラルキラーの最小数", 0f, 0f, 10f, 1f, MiraNumberSuffixes.None, "0")
         {
             Visible = () => OptionGroupSingleton<RoleOptions>.Instance.CurrentRoleDistribution() is RoleDistribution.MinMaxList
         };
 
     public ModdedNumberOption MaxNeutralKiller { get; } =
-        new("Max Neutral Killer", 0f, 0f, 10f, 1f, MiraNumberSuffixes.None, "0")
+        new("ニュートラルキラーの最大数", 0f, 0f, 10f, 1f, MiraNumberSuffixes.None, "0")
         {
             Visible = () => OptionGroupSingleton<RoleOptions>.Instance.CurrentRoleDistribution() is RoleDistribution.MinMaxList
         };
 
     public ModdedNumberOption MinNeutralOutlier { get; } =
-        new("Min Neutral Outliers", 0f, 0f, 15f, 1f, MiraNumberSuffixes.None, "0")
+        new("ニュートラル異端の最小数", 0f, 0f, 15f, 1f, MiraNumberSuffixes.None, "0")
         {
             Visible = () => OptionGroupSingleton<RoleOptions>.Instance.CurrentRoleDistribution() is RoleDistribution.MinMaxList
         };
 
     public ModdedNumberOption MaxNeutralOutlier { get; } =
-        new("Max Neutral Outliers", 0f, 0f, 15f, 1f, MiraNumberSuffixes.None, "0")
+        new("ニュートラル異端の最大数", 0f, 0f, 15f, 1f, MiraNumberSuffixes.None, "0")
         {
             Visible = () => OptionGroupSingleton<RoleOptions>.Instance.CurrentRoleDistribution() is RoleDistribution.MinMaxList
         };

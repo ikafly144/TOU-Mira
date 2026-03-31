@@ -18,7 +18,7 @@ public sealed class FootstepsModifier : BaseModifier
     public Dictionary<GameObject, SpriteRenderer>? _currentSteps;
     public bool AnonymousPrints;
     private float _footstepInterval;
-    public override string ModifierName => "Footsteps";
+    public override string ModifierName => "足跡";
     public override bool HideOnUi => true;
 
     public override void OnActivate()

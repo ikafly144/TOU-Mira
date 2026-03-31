@@ -7,23 +7,23 @@ namespace TownOfUs.Options.Modifiers.Impostor;
 
 public sealed class DeadlyQuotaOptions : AbstractOptionGroup<DeadlyQuotaModifier>
 {
-    public override string GroupName => "Deadly Quota";
+    public override string GroupName => "デッドリークォータ";
     public override Color GroupColor => Palette.ImpostorRoleHeaderRed;
     public override uint GroupPriority => 40;
 
-    [ModdedNumberOption("Minimum Kill Quota", 1f, 5f, 1f)]
+    [ModdedNumberOption("キルノルマの最小数", 1f, 5f, 1f)]
     public float KillQuotaMin { get; set; } = 2f;
 
-    [ModdedNumberOption("Maximum Kill Quota", 1f, 5f, 1f)]
+    [ModdedNumberOption("キルノルマの最大数", 1f, 5f, 1f)]
     public float KillQuotaMax { get; set; } = 4f;
 
-    [ModdedToggleOption("Meeting Kills Count Towards Quota")]
+    [ModdedToggleOption("会議でのキルをノルマに加算")]
     public bool MeetingKillsCountTowardsQuota { get; set; } = true;
 
-    [ModdedToggleOption("Temporary Shield Until Quota Is Met")]
+    [ModdedToggleOption("ノルマ達成まで一時的なシールドを付与")]
     public bool QuotaShield { get; set; } = false;
 
-    [ModdedToggleOption("Remove Quota Upon Death")]
+    [ModdedToggleOption("死亡時にノルマを解除")]
     public bool RemoveQuotaUponDeath { get; set; } = true;
 
     /// <summary>

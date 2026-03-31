@@ -12,7 +12,7 @@ namespace TownOfUs.Modifiers.Crewmate;
 
 public sealed class LookoutWatchedModifier(PlayerControl lookout) : BaseModifier
 {
-    public override string ModifierName => "Watched";
+    public override string ModifierName => "監視中";
     public override bool HideOnUi => true;
 
     public PlayerControl Lookout { get; set; } = lookout;

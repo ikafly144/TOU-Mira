@@ -15,7 +15,7 @@ namespace TownOfUs.Modifiers.Impostor;
 /// </summary>
 public sealed class PuppeteerControlModifier(PlayerControl controller) : DisabledModifier, IUncontrollable
 {
-    public override string ModifierName => "Puppeteer Controlled";
+    public override string ModifierName => "パペッティア操作中";
     public override bool HideOnUi => true;
     public override bool AutoStart => true;
 

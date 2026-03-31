@@ -8,7 +8,7 @@ namespace TownOfUs.Modifiers.Crewmate;
 public sealed class SnitchImpostorRevealModifier()
     : BaseRevealModifier
 {
-    public override string ModifierName => "Revealed Impostor";
+    public override string ModifierName => "公開されたインポスター";
 
     public override ChangeRoleResult ChangeRoleResult { get; set; } = ChangeRoleResult.Nothing;
 

@@ -11,7 +11,7 @@ public sealed class SpellslingerHexedModifier(PlayerControl spellslinger) : Base
 {
     public PlayerControl Spellslinger { get; } = spellslinger;
     private readonly Color color = TownOfUsColors.ImpSoft;
-    public override string ModifierName => "Hexed";
+    public override string ModifierName => "呪い済み";
     public override bool HideOnUi => true;
 
     public override void OnActivate()

@@ -6,7 +6,7 @@ namespace TownOfUs.Modifiers.Impostor;
 public sealed class PuppeteerHintArrowModifier(PlayerControl owner)
     : ArrowTargetModifier(owner, Palette.ImpostorRed, 0f)
 {
-    public override string ModifierName => "Hint Arrow";
+    public override string ModifierName => "ヒント矢印";
     public override float Duration => OptionGroupSingleton<PuppeteerOptions>.Instance.VictimSeesControlDirection.Value;
     public override bool AutoStart => true;
 

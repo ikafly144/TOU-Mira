@@ -10,7 +10,7 @@ namespace TownOfUs.Modifiers.HnsCrewmate;
 public sealed class HnsSnitchArrowModifier(PlayerControl owner, Color color, float update)
     : ArrowTargetModifier(owner, color, update)
 {
-    public override string ModifierName => "Snitch Arrow";
+    public override string ModifierName => "スニッチ矢印";
     public override float Duration => OptionGroupSingleton<HnsSnitchOptions>.Instance.SnitchNotifyDuration.Value;
     public override bool AutoStart => true;
 

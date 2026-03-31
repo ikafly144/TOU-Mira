@@ -12,7 +12,7 @@ namespace TownOfUs.Modifiers;
 /// </summary>
 public sealed class FirstDeadShieldDisguiseVisual(PlayerControl target) : TimedModifier, IAnimated
 {
-    public override string ModifierName => "First Death Shield (Disguise)";
+    public override string ModifierName => "初手死亡保護シールド (変装)";
     public override bool HideOnUi => true;
     public override float Duration => float.MaxValue;
     public override bool AutoStart => true;

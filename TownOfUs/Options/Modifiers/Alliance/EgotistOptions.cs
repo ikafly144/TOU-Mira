@@ -13,23 +13,23 @@ public sealed class EgotistOptions : AbstractOptionGroup<EgotistModifier>
     public override uint GroupPriority => 11;
     public override Color GroupColor => TownOfUsColors.Egotist;
 
-    public ModdedToggleOption EgotistMustSurvive { get; set; } = new("Egotist Must Stay Alive To Win", false);
+    public ModdedToggleOption EgotistMustSurvive { get; set; } = new("エゴティストは勝利のために生存が必須", false);
 
-    public ModdedToggleOption EgotistSpeedsUp { get; set; } = new("Egotist Speeds Up The Game", true);
+    public ModdedToggleOption EgotistSpeedsUp { get; set; } = new("エゴティストがゲームを高速化する", true);
 
-    public ModdedNumberOption RoundsToApplyEffects { get; set; } = new("Rounds Required For Speed/Cooldown Changes", 1f, 1f, 5f, 1f,
+    public ModdedNumberOption RoundsToApplyEffects { get; set; } = new("速度/クールダウン変更に必要なラウンド数", 1f, 1f, 5f, 1f,
         MiraNumberSuffixes.None)
     {
         Visible = () => OptionGroupSingleton<EgotistOptions>.Instance.EgotistSpeedsUp
     };
 
-    public ModdedNumberOption SpeedMultiplier { get; set; } = new("Speed Addition", 0.1f, 0f, 1.5f, 0.05f,
+    public ModdedNumberOption SpeedMultiplier { get; set; } = new("速度の加算量", 0.1f, 0f, 1.5f, 0.05f,
         MiraNumberSuffixes.Multiplier, "0.000")
     {
         Visible = () => OptionGroupSingleton<EgotistOptions>.Instance.EgotistSpeedsUp
     };
 
-    public ModdedNumberOption CooldowmOffset { get; set; } = new("Cooldown Reduction", 1.5f, 0f, 5f, 0.1f,
+    public ModdedNumberOption CooldowmOffset { get; set; } = new("クールダウンの短縮量", 1.5f, 0f, 5f, 0.1f,
         MiraNumberSuffixes.Seconds, "0.00")
     {
         Visible = () => OptionGroupSingleton<EgotistOptions>.Instance.EgotistSpeedsUp

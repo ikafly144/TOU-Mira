@@ -16,7 +16,7 @@ namespace TownOfUs.Modifiers.HnsCrewmate;
 
 public sealed class HnsChameleonSwoopModifier : ConcealedModifier, IVisualAppearance
 {
-    public override string ModifierName => "Swooped";
+    public override string ModifierName => "透明化中";
     public override float Duration => OptionGroupSingleton<HnsChameleonOptions>.Instance.SwoopDuration;
     public override bool HideOnUi => true;
     public override bool AutoStart => true;

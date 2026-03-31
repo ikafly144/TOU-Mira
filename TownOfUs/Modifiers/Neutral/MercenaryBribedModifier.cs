@@ -9,7 +9,7 @@ namespace TownOfUs.Modifiers.Neutral;
 public sealed class MercenaryBribedModifier(PlayerControl mercenary) : BaseModifier
 {
     public bool alerted;
-    public override string ModifierName => "Mercenary Bribed";
+    public override string ModifierName => "賄賂受領済み";
     public override bool HideOnUi => true;
 
     public PlayerControl Mercenary { get; } = mercenary;

@@ -16,7 +16,7 @@ public abstract class ArrowTargetModifier(PlayerControl owner, Color color, floa
     private ArrowBehaviour? _arrow;
     private DateTime _time = DateTime.UnixEpoch;
     public ArrowBehaviour? Arrow => _arrow;
-    public override string ModifierName => "Arrow Target";
+    public override string ModifierName => "ターゲット矢印";
     public override bool Unique => false;
     public override bool HideOnUi => true;
 

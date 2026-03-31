@@ -13,7 +13,7 @@ public abstract class ArrowDeadBodyModifier(DeadBody deadBody, Color color, floa
 
     private ArrowBehaviour? _arrow;
     private DateTime _time = DateTime.UnixEpoch;
-    public override string ModifierName => "DeadBody Arrow";
+    public override string ModifierName => "死体矢印";
     public override bool Unique => false;
     public override bool HideOnUi => true;
     public DeadBody DeadBody { get; set; } = deadBody;

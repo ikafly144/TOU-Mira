@@ -26,7 +26,7 @@ public abstract class AssassinModifier : ExcludedGameModifier
 {
     public int maxKills;
     private MeetingMenu meetingMenu;
-    public override string ModifierName => "Assassin";
+    public override string ModifierName => "アサシン";
     public string LastGuessedItem { get; set; }
     public PlayerControl? LastAttemptedVictim { get; set; }
 

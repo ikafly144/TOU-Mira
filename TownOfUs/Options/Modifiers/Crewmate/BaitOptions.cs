@@ -13,9 +13,9 @@ public sealed class BaitOptions : AbstractOptionGroup<BaitModifier>
     public override uint GroupPriority => 20;
     public override Color GroupColor => TownOfUsColors.Bait;
 
-    [ModdedNumberOption("Min Bait Report Delay", 0f, 15f, 0.5f, MiraNumberSuffixes.Seconds)]
+    [ModdedNumberOption("通報強制までの最小遅延時間", 0f, 15f, 0.5f, MiraNumberSuffixes.Seconds)]
     public float MinDelay { get; set; } = 0f;
 
-    [ModdedNumberOption("Max Bait Report Delay", 0f, 15f, 0.5f, MiraNumberSuffixes.Seconds)]
+    [ModdedNumberOption("通報強制までの最大遅延時間", 0f, 15f, 0.5f, MiraNumberSuffixes.Seconds)]
     public float MaxDelay { get; set; } = 1f;
 }

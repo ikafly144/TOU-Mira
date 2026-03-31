@@ -12,7 +12,7 @@ namespace TownOfUs.Modifiers.Impostor.Herbalist;
 
 public sealed class HerbalistConfusedModifier(PlayerControl herbalist) : TimedModifier
 {
-    public override string ModifierName => "Confused";
+    public override string ModifierName => "混乱";
     public override LoadableAsset<Sprite>? ModifierIcon => TouRoleIcons.Cleric;
     public override float Duration => OptionGroupSingleton<HerbalistOptions>.Instance.ConfuseDuration;
     public override bool AutoStart => true;

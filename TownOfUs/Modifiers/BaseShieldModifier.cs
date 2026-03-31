@@ -7,8 +7,8 @@ namespace TownOfUs.Modifiers;
 [MiraIgnore]
 public abstract class BaseShieldModifier : TimedModifier, IAnimated
 {
-    public override string ModifierName => "Shield Modifier";
-    public virtual string ShieldDescription => "You are protected!";
+    public override string ModifierName => "シールドモディファイア";
+    public virtual string ShieldDescription => "守られています！";
     public override float Duration => 1f;
     public override bool AutoStart => false;
 

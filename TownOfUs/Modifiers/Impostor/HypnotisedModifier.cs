@@ -11,7 +11,7 @@ namespace TownOfUs.Modifiers.Impostor;
 
 public sealed class HypnotisedModifier(PlayerControl hypnotist) : BaseModifier
 {
-    public override string ModifierName => "Hypnotised";
+    public override string ModifierName => "催眠中";
     public override bool HideOnUi => true;
     public PlayerControl Hypnotist { get; } = hypnotist;
 

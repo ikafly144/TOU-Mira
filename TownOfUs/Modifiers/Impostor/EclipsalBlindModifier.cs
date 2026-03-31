@@ -14,7 +14,7 @@ namespace TownOfUs.Modifiers.Impostor;
 
 public sealed class EclipsalBlindModifier(PlayerControl player) : DisabledModifier
 {
-    public override string ModifierName => "Blinded";
+    public override string ModifierName => "盲目";
     public override bool HideOnUi => true;
     public override float Duration => OptionGroupSingleton<EclipsalOptions>.Instance.BlindDuration;
     public override bool AutoStart => true;

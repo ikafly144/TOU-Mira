@@ -9,7 +9,7 @@ namespace TownOfUs.Modifiers.HnsImpostor;
 
 public sealed class HnsGlobalCamouflageModifier(PlayerControl camoSeeker) : ConcealedModifier, IVisualAppearance
 {
-    public override string ModifierName => "Camouflaged";
+    public override string ModifierName => "カモフラージュ中";
     public override float Duration => OptionGroupSingleton<HnsCamouflagerOptions>.Instance.CamoDuration;
     public override bool AutoStart => true;
     public bool VisualPriority => true;

@@ -15,9 +15,9 @@ namespace TownOfUs.Modifiers.Crewmate;
 
 public sealed class ClericBarrierModifier(PlayerControl cleric) : BaseShieldModifier
 {
-    public override string ModifierName => "Barrier";
+    public override string ModifierName => "バリア";
     public override LoadableAsset<Sprite>? ModifierIcon => TouRoleIcons.Cleric;
-    public override string ShieldDescription => "You are shielded by a Cleric!\nNo one can interact with you.";
+    public override string ShieldDescription => "クレリックに守られています！\n誰もあなたに干渉できません。";
     public override float Duration => OptionGroupSingleton<ClericOptions>.Instance.BarrierCooldown;
     public override bool AutoStart => true;
     public bool ShowBarrier { get; set; }

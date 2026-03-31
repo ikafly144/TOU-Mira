@@ -13,6 +13,6 @@ public sealed class SaboteurOptions : AbstractOptionGroup<SaboteurModifier>
     public override Color GroupColor => Palette.ImpostorRoleHeaderRed;
     public override uint GroupPriority => 41;
 
-    [ModdedNumberOption("Reduced Sabotage Bonus", 5f, 15f, 1f, MiraNumberSuffixes.Seconds, "0")]
+    [ModdedNumberOption("サボタージュクールダウンの短縮量", 5f, 15f, 1f, MiraNumberSuffixes.Seconds, "0")]
     public float ReducedSaboCooldown { get; set; } = 10f;
 }

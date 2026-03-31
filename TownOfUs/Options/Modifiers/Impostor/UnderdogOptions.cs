@@ -13,9 +13,9 @@ public sealed class UnderdogOptions : AbstractOptionGroup<UnderdogModifier>
     public override Color GroupColor => Palette.ImpostorRoleHeaderRed;
     public override uint GroupPriority => 43;
 
-    [ModdedNumberOption("Kill Cooldown Bonus", 2.5f, 10f, 2.5f, MiraNumberSuffixes.Seconds)]
+    [ModdedNumberOption("キルクールダウンのボーナス", 2.5f, 10f, 2.5f, MiraNumberSuffixes.Seconds)]
     public float KillCooldownIncrease { get; set; } = 5f;
 
-    [ModdedToggleOption("Increased Kill Cooldown When 2+ Imps")]
+    [ModdedToggleOption("インポスターが2人以上の時のクールダウン増加")]
     public bool ExtraImpsKillCooldown { get; set; } = false;
 }

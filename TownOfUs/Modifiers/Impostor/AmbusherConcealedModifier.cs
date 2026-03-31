@@ -18,7 +18,7 @@ namespace TownOfUs.Modifiers.Impostor;
 
 public sealed class AmbusherConcealedModifier(PlayerControl target) : ConcealedModifier, IVisualAppearance
 {
-    public override string ModifierName => "Swooped";
+    public override string ModifierName => "潜伏中";
     public override bool HideOnUi => true;
     public override bool AutoStart => false;
     public bool VisualPriority => true;

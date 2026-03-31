@@ -19,7 +19,7 @@ public sealed class MediatedModifier(byte mediumId) : TimedModifier
 
     private MediumRole? _medium;
     private PlayerControl? _mediumPlayer;
-    public override string ModifierName => "Mediated";
+    public override string ModifierName => "瞑想中";
     public override bool HideOnUi => true;
     public byte MediumId { get; } = mediumId;
     public override float Duration => OptionGroupSingleton<MediumOptions>.Instance.MediateDuration.Value + 1f;

@@ -9,7 +9,7 @@ namespace TownOfUs.Options.Maps;
 public sealed class BetterPolusOptions : AbstractOptionGroup
 {
     public override MenuCategory ParentMenu => MenuCategory.CustomOne;
-    public override string GroupName => "Better Polus";
+    public override string GroupName => "Better Polus (拡張設定)";
     public override uint GroupPriority => 5;
     public override Color GroupColor => new Color32(157, 146, 198, 255);
 

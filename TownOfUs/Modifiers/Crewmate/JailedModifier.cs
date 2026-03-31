@@ -15,7 +15,7 @@ namespace TownOfUs.Modifiers.Crewmate;
 public sealed class JailedModifier(byte jailorId) : BaseModifier
 {
     private GameObject? jailCell;
-    public override string ModifierName => "Jailed";
+    public override string ModifierName => "投獄中";
     public override bool HideOnUi => true;
     public byte JailorId { get; } = jailorId;
     public bool HasOpenedQuickChat { get; set; }
@@ -49,13 +49,13 @@ public sealed class JailedModifier(byte jailorId) : BaseModifier
 
         if (Player.AmOwner)
         {
-            var title = $"<color=#{TownOfUsColors.Jailor.ToHtmlStringRGBA()}>Jailee Feedback</color>";
+            var title = $"<color=#{TownOfUsColors.Jailor.ToHtmlStringRGBA()}>投獄者のフィードバック</color>";
             var text =
-                "You are jailed, convince the Jailor that you are Crew to avoid being executed in the chatbox above the user report button.";
+                "あなたは投獄されました。処刑を避けるために、報告ボタンの上のチャットボックスで自分がクルーであることをジェイラーに伝えましょう。";
             if (PlayerControl.LocalPlayer.Is(ModdedRoleTeams.Crewmate))
             {
                 text =
-                    "You are jailed, provide relevant information to the Jailor to prove you are Crew in the chatbox above the user report button.";
+                    "あなたは投獄されました。自分がクルーであることを証明するために、報告ボタンの上のチャットボックスでジェイラーに有益な情報を伝えましょう。";
             }
 
             MiscUtils.AddFakeChat(PlayerControl.LocalPlayer.Data, title, text, false, true);

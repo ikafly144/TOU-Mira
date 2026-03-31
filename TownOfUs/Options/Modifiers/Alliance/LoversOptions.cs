@@ -13,18 +13,18 @@ public sealed class LoversOptions : AbstractOptionGroup<LoverModifier>
     public override uint GroupPriority => 12;
     public override Color GroupColor => TownOfUsColors.Lover;
 
-    [ModdedToggleOption("Both Lovers Die And Revive Together")]
+    [ModdedToggleOption("両方の恋人が同時に死亡・蘇生する")]
     public bool BothLoversDie { get; set; } = true;
 
-    [ModdedNumberOption("Loving Another Killer Probability", 0, 100, 10f, MiraNumberSuffixes.Percent)]
+    [ModdedNumberOption("別のキラーと恋に落ちる確率", 0, 100, 10f, MiraNumberSuffixes.Percent)]
     public float LovingImpPercent { get; set; } = 20;
 
-    [ModdedToggleOption("Neutral Roles Can Be Lovers")]
+    [ModdedToggleOption("ニュートラル役職も恋人になれる")]
     public bool NeutralLovers { get; set; } = true;
 
-    [ModdedToggleOption("Lover Can Kill Faction Teammates")]
+    [ModdedToggleOption("恋人は同じ陣営の仲間をキルできる")]
     public bool LoverKillTeammates { get; set; } = false;
 
-    [ModdedToggleOption("Lovers Can Kill One Another")]
+    [ModdedToggleOption("恋人同士でキルし合える")]
     public bool LoversKillEachOther { get; set; } = true;
 }
