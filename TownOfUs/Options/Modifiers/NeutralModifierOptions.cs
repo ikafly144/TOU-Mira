@@ -8,17 +8,17 @@ namespace TownOfUs.Options.Modifiers;
 
 public sealed class NeutralModifierOptions : AbstractOptionGroup
 {
-    public override string GroupName => "Neutral Modifiers";
+    public override string GroupName => "ニュートラルモディファイア";
     public override Func<bool> GroupVisible => () => OptionGroupSingleton<RoleOptions>.Instance.IsClassicRoleAssignment;
     public override Color GroupColor => TownOfUsColors.Neutral;
     public override bool ShowInModifiersMenu => true;
     public override uint GroupPriority => 4;
 
-    [ModdedNumberOption("Double Shot Amount", 0, 5)]
+    [ModdedNumberOption("ダブルショットの数", 0, 5)]
     public float DoubleShotAmount { get; set; } = 0;
 
     public ModdedNumberOption DoubleShotChance { get; } =
-        new("Double Shot Chance", 50f, 0, 100f, 10f, MiraNumberSuffixes.Percent)
+        new("ダブルショットの出現率", 50f, 0, 100f, 10f, MiraNumberSuffixes.Percent)
         {
             Visible = () => OptionGroupSingleton<NeutralModifierOptions>.Instance.DoubleShotAmount > 0
         };

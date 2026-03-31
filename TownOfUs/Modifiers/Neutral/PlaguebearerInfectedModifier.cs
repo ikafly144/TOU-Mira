@@ -6,7 +6,7 @@ namespace TownOfUs.Modifiers.Neutral;
 
 public sealed class PlaguebearerInfectedModifier(byte plaguebearerId) : BaseModifier
 {
-    public override string ModifierName => "Infected";
+    public override string ModifierName => "感染済み";
     public override bool HideOnUi => true;
 
     public byte PlagueBearerId { get; } = plaguebearerId;

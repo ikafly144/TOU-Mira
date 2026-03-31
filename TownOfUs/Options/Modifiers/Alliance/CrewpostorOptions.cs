@@ -12,11 +12,11 @@ public sealed class CrewpostorOptions : AbstractOptionGroup<CrewpostorModifier>
     public override uint GroupPriority => 10;
     public override Color GroupColor => Palette.ImpostorRoleHeaderRed;
 
-    public ModdedToggleOption CrewpostorReplacesImpostor { get; set; } = new("Crewpostor Replaces A Real Impostor", true);
+    public ModdedToggleOption CrewpostorReplacesImpostor { get; set; } = new("クルーポスターが本物のインポスターと入れ替わる", true);
 
-    public ModdedToggleOption CanAlwaysSabotage { get; set; } = new("Crewpostor Can Always Sabotage", false);
+    public ModdedToggleOption CanAlwaysSabotage { get; set; } = new("クルーポスターは常にサボタージュ可能", false);
 
-    public ModdedToggleOption CrewpostorVision { get; set; } = new("Crewpostor Gets Impostor Vision", true);
+    public ModdedToggleOption CrewpostorVision { get; set; } = new("クルーポスターはインポスター視界を持つ", true);
 
-    public ModdedToggleOption ShowsAsImpostor { get; set; } = new("Crewpostor Appears Like A Traitor", false);
+    public ModdedToggleOption ShowsAsImpostor { get; set; } = new("クルーポスターはトレイターのように表示される", false);
 }

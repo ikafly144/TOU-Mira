@@ -9,7 +9,7 @@ namespace TownOfUs.Options.Maps;
 public sealed class BetterFungleOptions : AbstractOptionGroup
 {
     public override MenuCategory ParentMenu => MenuCategory.CustomOne;
-    public override string GroupName => "Better Fungle";
+    public override string GroupName => "Better Fungle (拡張設定)";
     public override uint GroupPriority => 7;
     public override Color GroupColor => new Color32(239, 98, 162, 255);
 

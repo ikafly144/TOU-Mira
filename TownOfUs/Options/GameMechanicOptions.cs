@@ -7,10 +7,10 @@ namespace TownOfUs.Options;
 
 public sealed class GameMechanicOptions : AbstractOptionGroup
 {
-    public override string GroupName => "Game Mechanics";
+    public override string GroupName => "ゲームメカニクス";
     public override uint GroupPriority => 1;
 
-    /*[ModdedToggleOption("Hide Names Out Of Sight")]
+    /*[ModdedToggleOption("視界外の名前を隠す")]
     public bool HideNamesOutOfSight { get; set; } = true;*/
 
     [ModdedToggleOption("Powerful Crew Continue The Game")]

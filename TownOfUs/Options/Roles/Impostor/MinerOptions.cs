@@ -10,21 +10,21 @@ public sealed class MinerOptions : AbstractOptionGroup<MinerRole>
 {
     public override string GroupName => TouLocale.Get("TouRoleMiner", "Miner");
 
-    [ModdedNumberOption("Number Of Miner Vents Per Game", 0f, 30f, 5f, MiraNumberSuffixes.None, "0", true)]
+    [ModdedNumberOption("1ゲームあたりの設置可能ベント数", 0f, 30f, 5f, MiraNumberSuffixes.None, "0", true)]
     public float MaxMines { get; set; } = 0f;
 
-    [ModdedNumberOption("Mine Cooldown", 5f, 120f, 2.5f, MiraNumberSuffixes.Seconds)]
+    [ModdedNumberOption("採掘のクールダウン", 5f, 120f, 2.5f, MiraNumberSuffixes.Seconds)]
     public float MineCooldown { get; set; } = 25f;
 
-    [ModdedEnumOption("Mine Visiblity", typeof(MineVisiblityOptions), ["Immediate", "After Use"])]
+    [ModdedEnumOption("設置ベントの可視性", typeof(MineVisiblityOptions), ["即時", "使用後"])]
     public MineVisiblityOptions MineVisibility { get; set; } = MineVisiblityOptions.Immediate;
 
-    public ModdedNumberOption MineDelay { get; } = new("Mine Delay", 3f, 0f, 10f, 0.5f, MiraNumberSuffixes.Seconds)
+    public ModdedNumberOption MineDelay { get; } = new("設置の遅延", 3f, 0f, 10f, 0.5f, MiraNumberSuffixes.Seconds)
     {
         Visible = () => OptionGroupSingleton<MinerOptions>.Instance.MineVisibility is MineVisiblityOptions.Immediate
     };
 
-    [ModdedToggleOption("Miner Can Kill With Teammate")]
+    [ModdedToggleOption("仲間と一緒にキル可能")]
     public bool MinerKill { get; set; } = true;
 }
 

@@ -23,7 +23,7 @@ public sealed class ClericCleanseModifier(PlayerControl cleric) : BaseModifier
         Hex
     }
 
-    public override string ModifierName => "Cleric Cleanse";
+    public override string ModifierName => "クレリックの浄化";
     public override bool HideOnUi => true;
     public PlayerControl Cleric { get; } = cleric;
 
@@ -51,7 +51,7 @@ public sealed class ClericCleanseModifier(PlayerControl cleric) : BaseModifier
         // Error($"ClericCleanseModifier.OnMeetingStart");
         if (Cleric.AmOwner)
         {
-            var text = new StringBuilder($"Cleansed effects on {Player.Data.PlayerName}:");
+            var text = new StringBuilder($"{Player.Data.PlayerName} の以下の状態異常を浄化しました:");
 
             foreach (var effect in Effects)
             {
@@ -62,10 +62,10 @@ public sealed class ClericCleanseModifier(PlayerControl cleric) : BaseModifier
 
             if (Effects.Count == 0)
             {
-                text = new StringBuilder($"No negative effects were found on {Player.Data.PlayerName}.");
+                text = new StringBuilder($"{Player.Data.PlayerName} にマイナスの状態異常は見つかりませんでした。");
             }
 
-            var title = $"<color=#{TownOfUsColors.Cleric.ToHtmlStringRGBA()}>Cleric Feedback</color>";
+            var title = $"<color=#{TownOfUsColors.Cleric.ToHtmlStringRGBA()}>クレリックのフィードバック</color>";
             MiscUtils.AddFakeChat(PlayerControl.LocalPlayer.Data, title, text.ToString(), false, true);
         }
     }

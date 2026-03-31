@@ -24,7 +24,7 @@ public sealed class FootstepsModifier : BaseModifier
     public bool CheckDistance;
     private Vector3 _lastPos;
     private float _footstepInterval;
-    public override string ModifierName => "Footsteps";
+    public override string ModifierName => "足跡";
     public override bool HideOnUi => true;
 
     public override void OnActivate()

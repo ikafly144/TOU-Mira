@@ -9,7 +9,7 @@ namespace TownOfUs.Options.Maps;
 public sealed class BetterSkeldOptions : AbstractOptionGroup
 {
     public override MenuCategory ParentMenu => MenuCategory.CustomOne;
-    public override string GroupName => "Better Skeld";
+    public override string GroupName => "Better Skeld (拡張設定)";
     public override uint GroupPriority => 3;
     public override Color GroupColor => new Color32(188, 206, 200, 255);
 

@@ -3,7 +3,7 @@
 public sealed class SnitchPlayerRevealModifier(RoleBehaviour role)
     : BaseRevealModifier
 {
-    public override string ModifierName => "Revealed Snitch";
+    public override string ModifierName => "公開されたスニッチ";
 
     public override ChangeRoleResult ChangeRoleResult { get; set; } = ChangeRoleResult.Nothing;
 

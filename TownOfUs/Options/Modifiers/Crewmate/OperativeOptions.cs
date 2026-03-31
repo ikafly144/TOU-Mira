@@ -22,21 +22,21 @@ public sealed class OperativeOptions : AbstractOptionGroup<OperativeModifier>
         [ModdedToggleOption("Move While Using Fungle Binoculars")]
         public bool MoveOnFungle { get; set; } = false;
      */
-    [ModdedToggleOption("Move While Using Mira Doorlog")]
+    [ModdedToggleOption("Miraのドアログ使用中に移動可能")]
     public bool MoveOnMira { get; set; } = true;
 
-    [ModdedNumberOption("Starting Charge", 0f, 30f, 2.5f, MiraNumberSuffixes.Seconds)]
+    [ModdedNumberOption("初期チャージ", 0f, 30f, 2.5f, MiraNumberSuffixes.Seconds)]
     public float StartingCharge { get; set; } = 20f;
 
-    [ModdedNumberOption("Battery Charged Each Round", 0f, 30f, 2.5f, MiraNumberSuffixes.Seconds)]
+    [ModdedNumberOption("各ラウンドごとのチャージ量", 0f, 30f, 2.5f, MiraNumberSuffixes.Seconds)]
     public float RoundCharge { get; set; } = 10f;
 
-    [ModdedNumberOption("Battery Charged Per Task", 0f, 30f, 2.5f, MiraNumberSuffixes.Seconds)]
+    [ModdedNumberOption("タスク完了ごとのチャージ量", 0f, 30f, 2.5f, MiraNumberSuffixes.Seconds)]
     public float TaskCharge { get; set; } = 7.5f;
 
-    [ModdedNumberOption("Security Display Cooldown", 0f, 30f, 5f, MiraNumberSuffixes.Seconds)]
+    [ModdedNumberOption("カメラ表示のクールダウン", 0f, 30f, 5f, MiraNumberSuffixes.Seconds)]
     public float DisplayCooldown { get; set; } = 15f;
 
-    [ModdedNumberOption("Max Security Display Duration", 0f, 30f, 5f, MiraNumberSuffixes.Seconds, zeroInfinity: true)]
+    [ModdedNumberOption("カメラ表示の最大時間", 0f, 30f, 5f, MiraNumberSuffixes.Seconds, zeroInfinity: true)]
     public float DisplayDuration { get; set; } = 15f;
 }

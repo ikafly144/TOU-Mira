@@ -5,7 +5,7 @@ namespace TownOfUs.Modifiers.Crewmate;
 public sealed class MayorRevealModifier(RoleBehaviour role)
     : BaseRevealModifier
 {
-    public override string ModifierName => "Mayor Reveal";
+    public override string ModifierName => "メイヤー公開";
 
     public override ChangeRoleResult ChangeRoleResult { get; set; } = ChangeRoleResult.RemoveModifier;
 

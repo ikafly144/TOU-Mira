@@ -7,7 +7,7 @@ namespace TownOfUs.Modifiers;
 [MiraIgnore]
 public abstract class NoTransportModifier : TimedModifier
 {
-    public override string ModifierName => "Untransportable Modifier";
+    public override string ModifierName => "転送不能モディファイア";
 
     public override float Duration => 1f;
     public override bool AutoStart => false;
@@ -16,7 +16,7 @@ public abstract class NoTransportModifier : TimedModifier
 
     public override string GetDescription()
     {
-        return "You cannot be transported!";
+        return "転送することができません！";
     }
 
     public override void OnDeath(DeathReason reason)

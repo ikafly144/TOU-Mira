@@ -6,7 +6,7 @@ namespace TownOfUs.Modifiers.Crewmate;
 
 public sealed class OracleBlessedModifier(PlayerControl oracle) : BaseModifier
 {
-    public override string ModifierName => "Blessed";
+    public override string ModifierName => "祝福済み";
     public override bool HideOnUi => true;
     public PlayerControl Oracle { get; } = oracle;
 

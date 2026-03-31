@@ -4,7 +4,7 @@ namespace TownOfUs.Modifiers.Crewmate;
 
 public sealed class JailSparedModifier(byte jailorId) : BaseModifier
 {
-    public override string ModifierName => "Jail Immune";
+    public override string ModifierName => "投獄無効";
     public override bool HideOnUi => true;
     public byte JailorId { get; } = jailorId;
 

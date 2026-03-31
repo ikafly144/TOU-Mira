@@ -11,10 +11,10 @@ public sealed class ExecutionerOptions : AbstractOptionGroup<ExecutionerRole>
     [ModdedEnumOption("TouOptionExecutionerBecomesTargetDeath", typeof(BecomeOptions), ["CrewmateKeyword", "TouRoleAmnesiac", "TouRoleSurvivor", "TouRoleMercenary", "TouRoleJester"])]
     public BecomeOptions OnTargetDeath { get; set; } = BecomeOptions.Jester;
 
-    [ModdedToggleOption("Executioner Can Button")]
+    [ModdedToggleOption("エクセキューショナーはボタン使用可能")]
     public bool CanButton { get; set; } = true;
 
-    [ModdedEnumOption("Executioner Win", typeof(ExeWinOptions), ["Ends Game", "Leaves & Torments", "Nothing"])]
+    [ModdedEnumOption("エクセキューショナー勝利時の挙動", typeof(ExeWinOptions), ["ゲーム終了", "退出して苦悶させる", "何もしない"])]
     public ExeWinOptions ExeWin { get; set; } = ExeWinOptions.Torments;
 }
 

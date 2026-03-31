@@ -7,7 +7,7 @@ namespace TownOfUs.Modifiers.Crewmate;
 
 public sealed class DeputyCampedModifier(PlayerControl deputy) : BaseModifier
 {
-    public override string ModifierName => "Camped";
+    public override string ModifierName => "張り付き中";
     public override bool HideOnUi => true;
 
     public PlayerControl Deputy { get; } = deputy;

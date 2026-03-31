@@ -9,7 +9,7 @@ namespace TownOfUs.Modifiers;
 [MiraIgnore]
 public abstract class DisabledModifier : TimedModifier
 {
-    public override string ModifierName => "Disabled Modifier";
+    public override string ModifierName => "無効化モディファイア";
 
     public virtual bool CanBeInteractedWith => true;
     public virtual bool IsConsideredAlive => true;
@@ -23,7 +23,7 @@ public abstract class DisabledModifier : TimedModifier
 
     public override string GetDescription()
     {
-        return "You are disabled!";
+        return "アビリティが無効化されています！";
     }
 
     public override void OnDeath(DeathReason reason)

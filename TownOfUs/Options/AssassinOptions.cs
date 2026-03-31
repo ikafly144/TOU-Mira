@@ -7,75 +7,75 @@ namespace TownOfUs.Options;
 
 public sealed class AssassinOptions : AbstractOptionGroup
 {
-    public override string GroupName => "Assassin Options";
+    public override string GroupName => "アサシン設定";
     public override uint GroupPriority => 7;
     public override Func<bool> GroupVisible => () => OptionGroupSingleton<RoleOptions>.Instance.IsClassicRoleAssignment;
 
-    [ModdedNumberOption("Number Of Impostor Assassins", 0, 4, 1, MiraNumberSuffixes.None, "0")]
+    [ModdedNumberOption("インポスターのアサシンの数", 0, 4, 1, MiraNumberSuffixes.None, "0")]
     public float NumberOfImpostorAssassins { get; set; } = 1;
 
     public ModdedNumberOption ImpAssassinChance { get; } =
-        new("Impostor Assassin Chance", 100f, 0, 100f, 10f, MiraNumberSuffixes.Percent)
+        new("インポスターのアサシンの出現率", 100f, 0, 100f, 10f, MiraNumberSuffixes.Percent)
         {
             Visible = () => OptionGroupSingleton<AssassinOptions>.Instance.NumberOfImpostorAssassins > 0
         };
 
-    [ModdedNumberOption("Number Of Neutral Assassins", 0, 5, 1, MiraNumberSuffixes.None, "0")]
+    [ModdedNumberOption("ニュートラルのアサシンの数", 0, 5, 1, MiraNumberSuffixes.None, "0")]
     public float NumberOfNeutralAssassins { get; set; } = 1;
 
     public ModdedNumberOption NeutAssassinChance { get; } =
-        new("Neutral Assassin Chance", 100f, 0, 100f, 10f, MiraNumberSuffixes.Percent)
+        new("ニュートラルのアサシンの出現率", 100f, 0, 100f, 10f, MiraNumberSuffixes.Percent)
         {
             Visible = () => OptionGroupSingleton<AssassinOptions>.Instance.NumberOfNeutralAssassins > 0
         };
 
-    public ModdedToggleOption AmneTurnImpAssassin { get; } = new($"Amnesiac Turned Impostor Gets Ability", true);
+    public ModdedToggleOption AmneTurnImpAssassin { get; } = new($"アムネジアックがインポスターになった際にアビリティを付与", true);
 
     public ModdedToggleOption AmneTurnNeutAssassin { get; } =
-        new($"Amnesiac Turned Neutral Killing Gets Ability", true);
+        new($"アムネジアックがニュートラルキラーになった際にアビリティを付与", true);
 
-    [ModdedToggleOption("Traitor Gets Ability")]
+    [ModdedToggleOption("トレイターにアビリティを付与")]
     public bool TraitorCanAssassin { get; set; } = true;
 
-    [ModdedNumberOption("Number Of Assassin Kills", 1, 15, 1, MiraNumberSuffixes.None, "0")]
+    [ModdedNumberOption("アサシンのキル回数", 1, 15, 1, MiraNumberSuffixes.None, "0")]
     public float AssassinKills { get; set; } = 5;
 
-    [ModdedToggleOption("Assassin Can Kill More Than Once Per Meeting")]
+    [ModdedToggleOption("1回の会議で複数回キル可能")]
     public bool AssassinMultiKill { get; set; } = true;
 
-    [ModdedToggleOption("Non-Basic Vanilla Roles Are Guessable")]
+    [ModdedToggleOption("バニラの特殊役職を推測可能")]
     public bool GuessVanillaRoles { get; set; } = true;
 
-    [ModdedToggleOption("Assassin Can Guess \"Crewmate\"")]
+    [ModdedToggleOption("「クルーメイト」を推測可能")]
     public bool AssassinCrewmateGuess { get; set; } = false;
 
-    [ModdedToggleOption("Assassin Can Guess Crew Investigative Roles")]
+    [ModdedToggleOption("クルー調査役職を推測可能")]
     public bool AssassinGuessInvest { get; set; } = false;
 
-    [ModdedToggleOption("Assassin Can Guess Neutral Benign Roles")]
+    [ModdedToggleOption("ニュートラル良性役職を推測可能")]
     public bool AssassinGuessNeutralBenign { get; set; } = true;
 
-    [ModdedToggleOption("Assassin Can Guess Neutral Evil Roles")]
+    [ModdedToggleOption("ニュートラル悪性役職を推測可能")]
     public bool AssassinGuessNeutralEvil { get; set; } = true;
 
-    [ModdedToggleOption("Assassin Can Guess Neutral Killing Roles")]
+    [ModdedToggleOption("ニュートラルキラー役職を推測可能")]
     public bool AssassinGuessNeutralKilling { get; set; } = true;
 
-    [ModdedToggleOption("Assassin Can Guess Neutral Outlier Roles")]
+    [ModdedToggleOption("ニュートラル異端役職を推測可能")]
     public bool AssassinGuessNeutralOutlier { get; set; } = true;
 
-    [ModdedToggleOption("Assassin Can Guess Impostor Roles")]
+    [ModdedToggleOption("インポスター役職を推測可能")]
     public bool AssassinGuessImpostors { get; set; } = true;
 
-    [ModdedToggleOption("Assassin Can Guess Crewmate Modifiers")]
+    [ModdedToggleOption("クルーメイトモディファイアを推測可能")]
     public bool AssassinGuessCrewModifiers { get; set; } = true;
 
     public ModdedToggleOption AssassinGuessUtilityModifiers { get; } =
-        new("Assassin Can Guess Crew Utility Modifiers", false)
+        new("クルーユーティリティモディファイアを推測可能", false)
         {
             Visible = () => OptionGroupSingleton<AssassinOptions>.Instance.AssassinGuessCrewModifiers
         };
 
-    [ModdedToggleOption("Assassin Can Guess Alliances")]
+    [ModdedToggleOption("同盟モディファイアを推測可能")]
     public bool AssassinGuessAlliances { get; set; } = true;
 }

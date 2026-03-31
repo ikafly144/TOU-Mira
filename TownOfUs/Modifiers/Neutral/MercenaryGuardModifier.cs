@@ -8,7 +8,7 @@ public sealed class MercenaryGuardModifier(PlayerControl mercenary) : TimedModif
 {
     public override float Duration => 2.5f;
     public override bool AutoStart => false;
-    public override string ModifierName => "Mercenary Guard";
+    public override string ModifierName => "護衛中";
     public override bool HideOnUi => true;
     public PlayerControl Mercenary { get; } = mercenary;
 

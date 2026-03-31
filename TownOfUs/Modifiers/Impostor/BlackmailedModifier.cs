@@ -14,7 +14,7 @@ public sealed class BlackmailedModifier(byte blackMailerId) : BaseModifier
     public static bool OnlyTargetSees => OptionGroupSingleton<BlackmailerOptions>.Instance.OnlyTargetSeesBlackmail;
     public SpriteRenderer BmOverlay;
     public PlayerVoteArea VoteArea;
-    public override string ModifierName => "Blackmailed";
+    public override string ModifierName => "脅迫済み";
     public override bool HideOnUi => true;
 
     public byte BlackMailerId { get; } = blackMailerId;
