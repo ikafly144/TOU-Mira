@@ -99,6 +99,8 @@ public static class GhostRoleEvents
             if (!isSkipped)
             {
                 var deadCrew = PlayerControl.AllPlayerControls.ToArray().Where(x =>
+                    x.Data != null &&
+                    x.GetRoleWhenAlive() != null &&
                     (x.Data.IsDead || x == exiled) && x.GetRoleWhenAlive().IsCrewmate() && !x.HasModifier<AllianceGameModifier>() &&
                     x.CanGetGhostRole() &&
                     x.Data.Role).ToList();
@@ -126,6 +128,8 @@ public static class GhostRoleEvents
             if (!isSkipped)
             {
                 var deadNeutral = PlayerControl.AllPlayerControls.ToArray().Where(x =>
+                    x.Data != null &&
+                    x.GetRoleWhenAlive() != null &&
                     x.Data.IsDead && x != exiled && x.GetRoleWhenAlive().IsNeutral() &&
                     !x.GetRoleWhenAlive().DidWin(GameOverReason.CrewmatesByVote) &&
                     x.CanGetGhostRole() &&
