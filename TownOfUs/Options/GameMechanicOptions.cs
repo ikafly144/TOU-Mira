@@ -27,7 +27,7 @@ public sealed class GameMechanicOptions : AbstractOptionGroup
 
     public ModdedToggleOption GhostwalkerFixSabos { get; set; } = new("Ghostwalkers Can Fix Sabotages", false);
 
-    [ModdedNumberOption("Temp Save Cooldown Reset", 0f, 15f, 0.5f, MiraNumberSuffixes.Seconds, "0.#")]
+    [ModdedNumberOption("一時保存クールダウンのリセット", 0f, 15f, 0.5f, MiraNumberSuffixes.Seconds, "0.#")]
     public float TempSaveCdReset { get; set; } = 5f;
 }
 

@@ -22,7 +22,7 @@ public sealed class GeneralOptions : AbstractOptionGroup
 
 #pragma warning restore S2325 // Make a static property.
 
-    [ModdedToggleOption("Impostors Don't Know Each Other")]
+    [ModdedToggleOption("インポスター同士が互いを知らない")]
     public bool FFAImpostorMode { get; set; } = false;
 
     public ModdedToggleOption ImpsKnowRoles { get; set; } = new("インポスター同士が互いの役職を知る", true)
@@ -38,6 +38,29 @@ public sealed class GeneralOptions : AbstractOptionGroup
     [ModdedToggleOption("ヴァンパイア専用の会議チャットを使用")]
     public bool VampireChat { get; set; } = true;
 
-    [ModdedNumberOption("Voting Time Added After Meeting Death", 0f, 15f, 1f, MiraNumberSuffixes.Seconds, "0.#")]
+    [ModdedNumberOption("会議での死亡後に加算される投票時間", 0f, 15f, 1f, MiraNumberSuffixes.Seconds, "0.#")]
     public float AddedMeetingDeathTimer { get; set; } = 5f;
+
+    [ModdedToggleOption("First Death Shield Next Game")]
+    public bool FirstDeathShield { get; set; } = true;
+
+    [ModdedToggleOption("Indicate Round One Victims")]
+    public bool RoundOneVictims { get; set; } = true;
+
+    [ModdedToggleOption("Powerful Crew Continue The Game")]
+    public bool CrewKillersContinue { get; set; } = true;
+}
+
+public enum StartCooldownType
+{
+    AllButtons,
+    SpecificCooldowns,
+    NoButtons
+}
+
+public enum ModReveal
+{
+    Alliance,
+    Universal,
+    Neither
 }

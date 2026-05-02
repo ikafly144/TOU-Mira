@@ -43,17 +43,3 @@ public sealed class InitialRoundOptions : AbstractOptionGroup
     [ModdedToggleOption("Indicate Round One Victims")]
     public bool RoundOneVictims { get; set; } = true;
 }
-
-public enum StartCooldownType
-{
-    AllButtons,
-    SpecificCooldowns,
-    NoButtons
-}
-
-public enum ModReveal
-{
-    Alliance,
-    Universal,
-    Neither
-}
